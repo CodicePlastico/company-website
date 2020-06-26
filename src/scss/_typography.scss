@@ -14,48 +14,32 @@ $type-scale: (
   5: 5.653em
 );
 
-@function type-scale($level) {
-  @return map-get($type-scale, $level);
+@function type-scale($typeScaleValue) {
+  @return map-get($type-scale, $typeScaleValue);
 }
 
 //Base sizes
 $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.25;
 
-//Line heights
-$line-height: (
-  -1: $base-line-height,
-  0: $base-line-height,
-  1: $base-line-height,
-  2: $base-line-height,
-  3: $base-line-height,
-  4: $base-line-height,
-  5: $base-line-height
-);
-
-@function line-height($level) {
-  @return map-get($line-height, $level);
-}
-
-//margin-bottom
-$margin-bottom: (
+$value: (
   -1: $base-line-height / 2,
-  0: $base-line-height,
+  0: 0,
   1: $base-line-height,
-  2: $base-line-height,
-  3: $base-line-height,
-  4: $base-line-height,
-  5: $base-line-height
+  2: $base-line-height * 2,
+  3: $base-line-height * 3,
+  4: $base-line-height * 4,
+  5: $base-line-height * 5
 );
 
-@function margin-bottom($level) {
-  @return map-get($margin-bottom, $level);
+@function vr($baseLineValue) {
+  @return map-get($value, $baseLineValue);
 }
 
-@mixin type-setting($level: 0) {
-  font-size: type-scale($level);
-  line-height: line-height($level);
-  margin-bottom: margin-bottom($level);
+@mixin type-setting($typeScale: 1, $lhValue: 1, $mgValue: 1) {
+  font-size: type-scale($typeScale);
+  line-height: vr($lhValue);
+  margin-bottom: vr($mgValue);
 }
 
 
@@ -71,7 +55,7 @@ h1, h2, h3, h4, h5, p, small, a {
 }
 
 h1 {
-  @include type-setting(5);
+  @include type-setting(5, 1, 2);
 
   & strong {
     font-family: $ff-barlow-condensed;

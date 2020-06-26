@@ -10,7 +10,6 @@ const Header = ({ siteTitle }) => (
         <li>menu item</li>
         <li>menu item</li>
         <li>menu item</li>
-        <li>menu item</li>
       </ul>
     </div>
   </header>

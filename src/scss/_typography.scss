@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600&display=swap');
+
+//Font-family
+$ff-barlow-condensed: 'Barlow Condensed';
+
+//Type-scale
+$type-scale: (
+  -1: 0.75em,
+  0: 1em,
+  1: 1.414em,
+  2: 1.999em,
+  3: 2.827em,
+  4: 3.998em,
+  5: 5.653em
+);
+
+@function type-scale($level) {
+  @return map-get($type-scale, $level);
+}
+
+//Base sizes
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.25;
+
+//Line heights
+$line-height: (
+  -1: $base-line-height,
+  0: $base-line-height,
+  1: $base-line-height,
+  2: $base-line-height,
+  3: $base-line-height,
+  4: $base-line-height,
+  5: $base-line-height
+);
+
+@function line-height($level) {
+  @return map-get($line-height, $level);
+}
+
+//margin-bottom
+$margin-bottom: (
+  -1: $base-line-height / 2,
+  0: $base-line-height,
+  1: $base-line-height,
+  2: $base-line-height,
+  3: $base-line-height,
+  4: $base-line-height,
+  5: $base-line-height
+);
+
+@function margin-bottom($level) {
+  @return map-get($margin-bottom, $level);
+}
+
+@mixin type-setting($level: 0) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+  margin-bottom: margin-bottom($level);
+}
+
+
+//Headings, p, small, a
+h1, h2, h3, h4, h5, p, small, a {
+  font-family: $ff-barlow-condensed;
+  font-weight: 300;
+}
+
+h1 {
+  @include type-setting(5);
+}
+
+h2 {
+  @include type-setting(4);
+}
+
+h3 {
+  @include type-setting(3);
+}
+
+h4 {
+  @include type-setting(2);
+}
+
+h5 {
+  @include type-setting(1);
+}
+
+p {
+  @include type-setting(0);
+}
+
+p strong {
+  font-family: $ff-barlow-condensed;
+  font-weight: 600;
+}
+
+small {
+  @include type-setting(-1);
+}

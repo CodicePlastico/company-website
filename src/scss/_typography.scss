@@ -97,3 +97,7 @@ p strong {
 small {
   @include type-setting(-1);
 }
+
+a {
+  color: $main-color;
+}

@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, p, small, a {
   font-weight: 300;
   color: $main-dark;
 
-  & span {
+  & > span {
     color: $main-color;
   }
 }
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, p, small, a {
 h1 {
   @include type-setting(5, 1, 2);
 
-  & strong {
+  & > strong {
     font-family: $ff-barlow-condensed;
     font-weight: 500;
   }

@@ -1,0 +1,14 @@
+footer {
+  background-color: $main-dark;
+  width: 100%;
+  padding: vr(-1);
+
+  & ul {
+    display: flex;
+  }
+
+  & p {
+    color: $main-light;
+    margin: 0;
+  }
+}

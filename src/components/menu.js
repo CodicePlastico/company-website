@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 
 const Menu = () => {
-  return(
+  return (
     <nav role="navigation">
       <div id="menuToggle">
         {/* <!--
@@ -9,7 +9,7 @@ const Menu = () => {
         so you can use the :checked selector on it.
         --> */}
         <input type="checkbox" />
-        
+
         {/* <!--
         Some spans to act as a hamburger.
         
@@ -19,7 +19,7 @@ const Menu = () => {
         <span></span>
         <span></span>
         <span></span>
-        
+
         {/* <!--
         Too bad the menu has to be inside of the button
         but hey, it's pure CSS magic.
@@ -29,10 +29,13 @@ const Menu = () => {
           <li>About</li>
           <li>Info</li>
           <li>Contact</li>
-          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          <a href="https://erikterwan.com/" target="_blank">
+            <li>Show me more</li>
+          </a>
         </ul>
       </div>
-    </nav>)
+    </nav>
+  )
 }
 
 export default Menu

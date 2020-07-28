@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, p, small, a, ul, li {
 }
 
 h1 {
-  @include type-setting(5, 1, 2);
+  @include type-setting(5);
 
   & > strong {
     font-family: $ff-barlow-condensed;

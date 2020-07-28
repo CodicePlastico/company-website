@@ -1,14 +1,46 @@
-footer {
-  background-color: $main-dark;
-  width: 100%;
-  padding: vr(-1);
+$prefix: cp-footer;
 
-  & ul {
+
+.#{$prefix} {
+  background-color: $main-dark;
+  padding: vr(4) vr(2);
+  color: $main-light;
+  text-align: center;
+
+  &__logo{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: vr(2);
+
+    &-image{
+      margin-right: vr(1);
+    }
   }
 
-  & p {
-    color: $main-light;
-    margin: 0;
+  &__company{
+    &-separator{
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    &-address,
+    &-mail,
+    &-phone{
+      text-decoration: none;
+      color: $main-light;
+    }
+  }
+
+
+  &__social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: vr(2);
+
+    &-item{
+      margin: 0 vr(1);
+    }
   }
 }

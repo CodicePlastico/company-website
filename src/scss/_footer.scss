@@ -1,6 +1,5 @@
 $prefix: cp-footer;
 
-
 .#{$prefix} {
   background-color: $main-dark;
   padding: vr(4) vr(2);
@@ -15,6 +14,11 @@ $prefix: cp-footer;
 
     &-image{
       margin-right: vr(1);
+      height: 45px;
+    }
+
+    &-brand{
+      height: 10px;
     }
   }
 
@@ -41,6 +45,12 @@ $prefix: cp-footer;
 
     &-item{
       margin: 0 vr(1);
+    }
+
+    &-link{
+      display: block;
+      width: 24px;
+      height: 24px;
     }
   }
 }

@@ -24,7 +24,6 @@ $prefix: cp-footer;
 
   &__company{
     &-separator{
-      display: inline-block;
       margin: 0 5px;
     }
 
@@ -51,6 +50,33 @@ $prefix: cp-footer;
       display: block;
       width: 24px;
       height: 24px;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+    &__logo{
+      &-image{
+        height: 69px;
+      }
+  
+      &-brand{
+        height: 15px;
+      }
+    }
+
+    &__company{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__social{
+      &-link{
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 }

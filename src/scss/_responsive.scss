@@ -1,0 +1,30 @@
+.cp-desktop{
+  &__visible{
+    display: none;
+
+    &--inline,
+    &--inline-block{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .cp-desktop{
+    &__visible{
+      display: block;
+  
+      &--inline{
+        display: inline;
+      }
+  
+      &--inline-block{
+        display: inline-block;
+      }
+    }
+  
+    &__hidden{
+      display: none;
+    }
+  }
+}

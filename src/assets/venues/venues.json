@@ -1,0 +1,40 @@
+{
+  "venues": [
+    {
+      "id": "headquarter",
+      "name": "Headquarter",
+      "picture": "headquarter",
+      "size": 300
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "picture": "planet1",
+      "size": 200
+    },
+    {
+      "id": "milano",
+      "name": "Milano",
+      "picture": "planet1",
+      "size": 200
+    },
+    {
+      "id": "cremona",
+      "name": "Cremona",
+      "picture": "planet2",
+      "size": 100
+    },
+    {
+      "id": "piacenza",
+      "name": "Piacenza",
+      "picture": "planet2",
+      "size": 100
+    },
+    {
+      "id": "tenerife",
+      "name": "Tenerife",
+      "picture": "planet2",
+      "size": 100
+    }
+  ] 
+}

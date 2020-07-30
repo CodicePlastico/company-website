@@ -67,12 +67,10 @@ const Venues: React.FC<{}> = () => {
     const { venues } = data 
     let startX = 0
     const planetsSize = venues.reduce((sum, ven) => {
-      sum = sum + ven.size + 20
+      sum = sum + ven.size + 30
       return sum;
     }, 0)
-    console.log(planetsSize, universeWidth)
     const sizeProportion = planetsSize < universeWidth ? 1 : planetsSize / universeWidth;
-    console.log(sizeProportion)  
     planets = venues.reduce((acc, v) => {
       const queryImg = files[v.picture]
       if (queryImg){
@@ -80,7 +78,6 @@ const Venues: React.FC<{}> = () => {
         const img = p5.loadImage(fluidImg)
         const size = Math.floor(v.size / sizeProportion)
         const startY = p5.random(0, universeHeight - size)
-        console.log(startX, size)
         const planet = new Planet(v.id, v.name, startX, startY, size, img)
         startX = startX + size + 10
         acc.push(planet)

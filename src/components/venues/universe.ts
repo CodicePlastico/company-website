@@ -30,6 +30,11 @@ class Universe {
     const collision = dist <= (firstSize + secondSize)
     return collision;
   }
+
+  leftSide(planet) {
+    const center = planet.getCenter()
+    return (center.x < (this.width / 2))
+  }
 }
 
 export default Universe

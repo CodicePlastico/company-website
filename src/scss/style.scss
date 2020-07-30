@@ -1,8 +1,9 @@
-@import "./colors.scss";
-@import "./reset.scss";
-@import "./typography.scss";
-// @import "./layout.scss";
+@import "./colors";
+@import "./variables";
+@import "./reset";
+@import "./typography";
+@import "./responsive";
 
-@import "./header.scss";
-@import "./menu.scss";
-@import "./footer.scss";
+@import "./header";
+@import "./menu";
+@import "./footer";

@@ -42,6 +42,10 @@ $value: (
   margin-bottom: vr($mgValue);
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: $ff-barlow-condensed;
   font-weight: 300;

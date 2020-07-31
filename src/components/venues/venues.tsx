@@ -78,8 +78,7 @@ const Venues: React.FC<{}> = () => {
     font = p5.loadFont(fontFile)
     let startX = 0
     const planetsSize = venues.reduce((sum, ven) => {
-      sum = sum + ven.size + 30
-      return sum;
+      return sum + ven.size + 30
     }, 0)
     const sizeProportion = planetsSize < universeWidth ? 1 : planetsSize / universeWidth;
     const offset = planetsSize > universeWidth ? 10 : Math.floor((universeWidth - planetsSize) / venues.length);
@@ -92,7 +91,7 @@ const Venues: React.FC<{}> = () => {
         const startY = p5.random(0, universeHeight - size)
         const planet = new Planet(v.id, v.name, startX, startY, size, img)
         startX = startX + size + offset
-        acc.push(planet)
+        return [...acc, planet]
       }
       return acc
     }, [])

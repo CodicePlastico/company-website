@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600&display=swap');
 
+$prefix: cp-typography;
+
 //Font-family
 $ff-barlow-condensed: 'Barlow Condensed';
 
 //Type-scale
 $type-scale: (
-  -1: 0.75em,
-  0: 1em,
-  1: 1.414em,
-  2: 1.999em,
-  3: 2.827em,
-  4: 3.998em,
-  5: 5.653em
+  -1: 0.75rem,
+  0: 1rem,
+  1: 1.414rem,
+  2: 1.999rem,
+  3: 2.827rem,
+  4: 3.998rem,
+  5: 5.653rem,
+  6: 9.375rem
 );
 
 @function type-scale($typeScaleValue) {
@@ -19,7 +22,7 @@ $type-scale: (
 }
 
 //Base sizes
-$base-font-size: 1em;
+$base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.25;
 
 $value: (
@@ -29,7 +32,8 @@ $value: (
   2: $base-line-height * 2,
   3: $base-line-height * 3,
   4: $base-line-height * 4,
-  5: $base-line-height * 5
+  5: $base-line-height * 5,
+  6: $base-line-height * 6
 );
 
 @function vr($baseLineValue) {
@@ -40,6 +44,14 @@ $value: (
   font-size: type-scale($typeScale);
   line-height: vr($lhValue);
   margin-bottom: vr($mgValue);
+}
+
+html {
+  font-size: 12px;
+
+  @media only screen and (min-width: $desktop-min-width) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -58,31 +70,28 @@ h1, h2, h3, h4, h5, p, small, a, ul, li {
 }
 
 h1 {
-  @include type-setting(5);
-
-  & > strong {
-    font-weight: 500;
-  }
+  @include type-setting(6, 6, 4);
+  font-weight: 500;
 }
 
 h2 {
-  @include type-setting(4);
+  @include type-setting(4, 4, 4);
 }
 
 h3 {
-  @include type-setting(3);
+  @include type-setting(3, 3, 3);
 }
 
 h4 {
-  @include type-setting(2);
+  @include type-setting(2, 2, 1);
 }
 
 h5 {
-  @include type-setting(1);
+  @include type-setting(1, 1, 1);
 }
 
 p {
-  @include type-setting(0);
+  @include type-setting(0, 1, 1);
 }
 
 p strong {
@@ -90,7 +99,7 @@ p strong {
 }
 
 small {
-  @include type-setting(-1);
+  @include type-setting(-1, -1, -1);
 }
 
 a {
@@ -101,4 +110,10 @@ svg{
   display: block;
   height: 100%;
   width: auto;
+}
+
+.#{$prefix} {
+  &__main-text{
+    @include type-setting(2, 2, 2);
+  }
 }

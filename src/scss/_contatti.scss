@@ -1,0 +1,41 @@
+$prefix: cp-contatti;
+
+.#{$prefix}{
+  padding-bottom: vr(6);
+
+  &__company{
+
+    &-address{
+      color: $main-dark;
+      text-decoration: none;
+    }
+  }
+
+  &__venues{
+    padding: vr(2) 0;
+
+    canvas{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+    &__company{
+      &-data,
+      &-contacts{
+        display: flex;
+      }
+
+      &-separator{
+        padding: 0 3px;
+      }
+
+      &-phone{
+        padding-left: 5px;
+      }
+    }
+  }
+}

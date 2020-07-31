@@ -8,7 +8,8 @@ const Contatti = ({data}) => (
   <Layout>
     <SEO title="Contatti" />
     <div className="cp-contatti">
-      <div className="cp-grid">
+      <div className="cp-contatti__bg"></div>
+      <div className="cp-contatti__content cp-grid">
         <div className="cp-grid__content">
           <h1><span>Contatti</span></h1>
           <div className="cp-contatti__company cp-typography__main-text">

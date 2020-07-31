@@ -1,4 +1,6 @@
-header {
+$prefix: cp-header;
+
+.#{$prefix}{
   background-color: $main-light;
   width: 100%;
   padding: vr(-1);
@@ -9,16 +11,140 @@ header {
   position: sticky;
   top: 0;
 
-  & ul {
+  &__logo{
     display: flex;
+    align-items: center;
 
-    & li a {
+    svg{
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+
+    &-image{
+      height: 34px;
+      svg path{
+        fill: $main-color;
+      }
+    }
+
+    &-brand{
+      height: 8px;
+      margin-left: 14px;
+      svg path{
+        fill: $main-dark;
+      }
+    }
+  }
+
+  &__burger{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    &:focus{
+      outline: none;
+    }
+
+    &-bar{
+      display: block;
+      width: 18px;
+      height: 1px;
+      background-color: $main-dark;
+      transition: all .2s ease-out;
+
+      .#{$prefix}__burger--open &{
+        background-color: $main-color;
+      }
+
+      &:nth-child(1){
+        .#{$prefix}__burger--open &{
+          transform: rotate(-45deg);
+        }
+      }
+
+      &:nth-child(2){
+        margin: 5px 0;
+        .#{$prefix}__burger--open &{
+          display: none;
+        }
+      }
+
+      &:nth-child(3){
+        .#{$prefix}__burger--open &{
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: $main-light;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+
+    &--open{
+      max-height: 240px;
+    }
+
+    &-item{
+      text-align: center;
+    }
+
+    &-link{
+      display: block;
       color: $main-dark;
       text-decoration: none;
-      margin-left: vr(1);
+      padding: vr(1);
 
-      &:hover {
+      &:hover,
+      &--selected{
         color: $main-color;
+        font-weight: 600;
+      }
+
+      &--external{
+        &:hover{
+          color: $main-dark;
+          font-weight: 300;
+        }
+      }
+
+      &:before {
+        display: block;
+        content: attr(title);
+        font-weight: bold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+    &__burger{
+      display: none;
+    }
+
+    &__menu{
+      max-height: none;
+      position: static;
+
+      &-items{
+        display: flex;
+      }
+
+      &-link{
+        padding: 0 vr(1);
       }
     }
   }

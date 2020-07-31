@@ -46,6 +46,10 @@ $value: (
   margin-bottom: vr($mgValue);
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   font-size: 12px;
 

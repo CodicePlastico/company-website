@@ -16,7 +16,7 @@ const Header = () => {
   const menuItems = [
     {
       id: 'about',
-      href: '/about-us/',
+      href: '/about/',
       label: 'About',
       internal: true
     },

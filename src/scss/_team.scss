@@ -1,6 +1,14 @@
 $prefix: cp-team;
 
 .#{$prefix}{
+  &__container{
+    margin-top: vr(6);
+  }
+
+  &__content{
+    margin-top: vr(6);
+  }
+
   &__main-text{
     margin-top: vr(4);
   }

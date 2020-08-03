@@ -1,13 +1,31 @@
 $prefix: cp-grid;
 
 .#{$prefix}{
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 10fr) minmax(0, 1fr);
-  grid-template-areas: "left-space content right-space";
+  grid-template-columns:  0 auto 0;
+  grid-template-areas: "left container right";
+  
+  &__container{
+    grid-area: container;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 10fr) minmax(0, 1fr);
+    grid-template-areas: "left-space content right-space";
+  }
 
   &__content{
     grid-area: content;
   }
+
+  &__left{
+    grid-area: left;
+    overflow: hidden;
+    justify-self: end;
+  }
 }
+
+@media only screen and (min-width: 1200px) {
+  .#{$prefix}{
+    grid-template-columns:  minmax(0, 1fr) 1200px minmax(0, 1fr);
+  }
+}
+

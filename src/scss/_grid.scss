@@ -1,0 +1,13 @@
+$prefix: cp-grid;
+
+.#{$prefix}{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 10fr) minmax(0, 1fr);
+  grid-template-areas: "left-space content right-space";
+
+  &__content{
+    grid-area: content;
+  }
+}

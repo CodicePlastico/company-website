@@ -2,7 +2,10 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Venues from '../components/venues/venues'
+
+import loadable from '@loadable/component'
+
+const Venues = loadable(() => import('../components/venues/venues'))
 
 const Contatti = ({data}) => (
   <Layout>

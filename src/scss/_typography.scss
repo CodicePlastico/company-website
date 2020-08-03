@@ -14,7 +14,7 @@ $type-scale: (
   3: 2.827rem,
   4: 3.998rem,
   5: 5.653rem,
-  6: 9.375rem
+  6: 7.777rem
 );
 
 @function type-scale($typeScaleValue) {
@@ -51,10 +51,10 @@ $value: (
 }
 
 html {
-  font-size: 12px;
+  font-size: 13px;
 
   @media only screen and (min-width: $desktop-min-width) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-  @include type-setting(3, 3, 3);
+  @include type-setting(3, 3, 1);
 }
 
 h4 {

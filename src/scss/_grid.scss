@@ -8,6 +8,7 @@ $prefix: cp-grid;
   &__container{
     grid-area: container;
     display: grid;
+    column-gap: 20px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 10fr) minmax(0, 1fr);
     grid-template-areas: "left-space content right-space";
   }
@@ -20,6 +21,12 @@ $prefix: cp-grid;
     grid-area: left;
     overflow: hidden;
     justify-self: end;
+  }
+
+  &__right{
+    grid-area: right;
+    overflow: hidden;
+    justify-self: start;
   }
 }
 

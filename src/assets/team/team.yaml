@@ -1,0 +1,42 @@
+team: 
+  - id: amelchiori
+    name: Alessandro Melchiori
+    nick: amelchiori 
+    role: Founder & Sofftware Architect
+    description: >-
+      Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
+      Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
+      Ora questa passione è diventata il mio lavoro: dai Lego allo sviluppo software il passo è stato breve. 
+      Ogni giorno studio le soluzioni per far funzionare al meglio un sistema complesso, oliandone tutti gli ingraggi. 
+      C#, WCF, ESB, MongoDb e Azure fanno parte del mio kit di sopravvivenza e mi aiutano 
+      a destreggiarmi tra i sistemi distribuiti e le soluzioni enterprise. 
+      Tra un comando e un evento, partecipo attivamente alla vita delle community 
+      che mi hanno adottato in questi anni, come Ugidotnet e WEBdeBS.
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/amelchiori/
+      - label: Twitter
+        link: https://twitter.com/amelchiori
+      - label: Slideshare
+        link: https://www.slideshare.net/melkio
+      - label: Github
+        link: https://github.com/melkio
+  - id: edelbono
+    name: Emanuele Del Bono
+    nick: emadb 
+    role: Founder & Sofftware Architect
+    description: >-
+      Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
+      Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
+      C#, Ruby, Javascript, Test Driven Development, Pattern e Clean Code sono i linguaggi che parlo ogni giorno. 
+      Amo condividere quello che imparo, partecipando attivamente come speaker a numerosi eventi delle community di sviluppatori. 
+      Non vivendo di sola tecnologia, mi diletto come velista d’acqua dolce sul Lago di Garda e come padre modello.
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/emanueledb/
+      - label: Twitter
+        link: https://twitter.com/emadb
+      - label: Slideshare
+        link: https://www.slideshare.net/emadb
+      - label: Github
+        link: https://github.com/emadb

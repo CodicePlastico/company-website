@@ -1,0 +1,70 @@
+$prefix: cp-member;
+
+.#{$prefix}{
+  margin-bottom: vr(2);
+  &__content{
+    text-align: center;
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid $main-dark;
+  }
+
+  &__plus{
+    background: transparent;
+    border: 1px solid $main-dark;
+    height: 32px;
+    width: 32px;
+
+    &:focus{
+      outline: none;
+    }
+
+    &--hidden{
+      display: none;
+    }
+  }
+
+  &__description{
+    display: none;
+    background-color: $main-color;
+    padding: vr(1) calc(1.25rem + 20px);
+    text-align: center;
+    margin-left: calc(-10% - 20px);
+    margin-right: calc(-10% - 20px);
+
+    &--visible{
+      display: block;
+    }
+
+    &-close{
+      color: $main-light;
+      background-color: transparent;
+      border: none;
+      margin-bottom: vr(1);
+    }
+
+    &-text{
+      color: $main-light;
+    }
+  }
+
+  &__social{
+    display: flex;
+    justify-content: center;
+
+    &-link{
+      color: $main-dark;
+      text-transform: uppercase;
+      margin: 0 5px;
+    }
+  }
+}

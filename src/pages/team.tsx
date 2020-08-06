@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
+import classNames from 'classnames'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-import Spaceman from '../assets/team/spaceman.svg'
 import TeamGrid from '../components/team/teamGrid'
-import { useStaticQuery, graphql } from 'gatsby'
+import TeamList from '../components/team/teamList'
 
 import data from '../assets/team/team.yaml'
 
 const Team = () => {
+
+  const [activeFilter, setActiveFilter] = useState('Tutti')
+  const [layout, setLayout] = useState('Griglia')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -26,11 +29,38 @@ const Team = () => {
     }`
   )
 
+
   const teamMembers = data.team.map(m => {
     const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
     const img = nodeImg ? nodeImg.childImageSharp.fluid.src : ''
     return Object.assign({}, m, {img})
   })
+
+  const teamFilters = teamMembers.reduce((acc, t) => {
+    return [...acc, ...t.tags]
+  }, []).reduce((acc, tag) => {
+    if (acc.indexOf(tag) < 0 ){
+      return [...acc, tag]
+    }
+    return acc
+  }, [])
+
+  const filters = ['Tutti', ...teamFilters]
+
+  const visibleMembers = teamMembers.filter(t => {
+    return activeFilter === 'Tutti' || t.tags.includes(activeFilter)
+  })
+
+  const visibilityFilters = ['Relazioni', 'Griglia']
+
+  const gridClass = classNames('cp-team__members-grid', {
+    'cp-team__members-grid--active': layout === 'Griglia'
+  })
+
+  const relationClass = classNames('cp-team__members-relation', {
+    'cp-team__members-relation--active': layout === 'Relazioni'
+  })
+
 
   return (
     <Layout>
@@ -38,17 +68,57 @@ const Team = () => {
       <div className="cp-internal-page cp-team">
         <div className="cp-internal-page__bg"></div>
         <div className="cp-internal-page__content cp-grid">
+          <div className="cp-grid__left cp-team__rocket"></div>
           <div className="cp-grid__container">
             <div className="cp-grid__content">
               <h1><span>Il</span> Team</h1>
-              <TeamGrid team={teamMembers} />
+              <div className="cp-team__members">
+                <div className={gridClass} >
+                  <TeamGrid team={visibleMembers} />
+                </div>
+                <div className={relationClass} >
+                  <TeamList team={visibleMembers} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="cp-team__filters">
+          <div className="cp-grid">
+            <div className="cp-grid__container">
+              <div className="cp-grid__content cp-team__filters-container">
+                <div>
+                  <h5 className="cp-team__filters-title"><span>Visualizza</span></h5>
+                  <div className="cp-team__filters-buttons">
+                    {visibilityFilters.map(f => {
+                      const buttonClass = classNames('cp-team__filters-button', {
+                        'cp-team__filters-button--selected': layout === f 
+                      })
+                      return (
+                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={setLayout.bind(null, f)}>{f}</button>
+                      )
+                    })}
+                  </div>
+                </div>
+                <div>
+                  <h5 className="cp-team__filters-title"><span>Filtra</span></h5>
+                  <div className="cp-team__filters-buttons cp-team__filters-buttons--tags">
+                    {filters.map(f => {
+                      const buttonClass = classNames('cp-team__filters-button', {
+                        'cp-team__filters-button--selected': activeFilter === f 
+                      })
+                      return (
+                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={setActiveFilter.bind(null, f)}>{f}</button>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className="cp-grid">
-          <div className="cp-grid__left">
-            <Spaceman />
-          </div>
+          <div className="cp-grid__left cp-team__spaceman"></div>
           <div className="cp-grid__container">
             <div className="cp-grid__content cp-team__content">  
               <h3>Perchè i Supereroi e Navicelle?</h3>

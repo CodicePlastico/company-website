@@ -113,12 +113,6 @@ a {
   color: $main-color;
 }
 
-svg{
-  display: block;
-  height: 100%;
-  width: auto;
-}
-
 .#{$prefix} {
   &__main-text{
     @include type-setting(2, 2, 2);

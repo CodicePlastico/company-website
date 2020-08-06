@@ -4,6 +4,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -27,6 +29,9 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
+      - FrontEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -47,6 +52,9 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - Design
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -70,6 +78,9 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - Design
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -90,6 +101,9 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - BackEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -113,6 +127,8 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -133,6 +149,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -156,6 +174,8 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -176,6 +196,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - Design
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -199,6 +221,8 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - Design
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -219,6 +243,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -242,6 +268,8 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -262,6 +290,9 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - Design
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -285,6 +316,9 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - BackEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -305,6 +339,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -328,6 +364,9 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - BackEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -348,6 +387,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - Design
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -371,6 +412,8 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 
@@ -391,6 +434,8 @@ team:
     name: Alessandro Melchiori
     nick: amelchiori 
     role: Founder & Sofftware Architect
+    tags: 
+      - BackEnd
     description: >-
       Artigiano del software, marito, padre, ex-sportivo e curioso lettore. 
       Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. 
@@ -414,6 +459,9 @@ team:
     name: Emanuele Del Bono
     nick: emadb 
     role: Founder & Sofftware Architect
+    tags: 
+      - FrontEnd
+      - BackEnd
     description: >-
       Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. 
       Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. 

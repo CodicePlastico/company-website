@@ -23,6 +23,7 @@ $prefix: cp-member;
     border: 1px solid $main-dark;
     height: 32px;
     width: 32px;
+    cursor: pointer;
 
     &:focus{
       outline: none;
@@ -41,6 +42,10 @@ $prefix: cp-member;
     margin-left: calc(-10% - 20px);
     margin-right: calc(-10% - 20px);
 
+    &-info{
+      display: none;
+    }
+
     &--visible{
       display: block;
     }
@@ -50,6 +55,11 @@ $prefix: cp-member;
       background-color: transparent;
       border: none;
       margin-bottom: vr(1);
+      cursor: pointer;
+
+      &:focus{
+        outline: none;
+      }
     }
 
     &-text{
@@ -65,6 +75,93 @@ $prefix: cp-member;
       color: $main-dark;
       text-transform: uppercase;
       margin: 0 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+    position: relative;
+
+    &__content{
+      position: relative;
+    }
+
+    &__plus{
+      border: none;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 170px;
+      height: 170px;
+      border-radius: 100%;
+      font-size: 0;
+    }
+
+    &__description{
+      position: absolute;
+      top: 35px;
+      left: 100%;
+      max-width: 700px;
+      z-index: 2;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left;
+
+      &:before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 50px 25px 0;
+        border-color: transparent $main-color transparent transparent;
+        position: absolute;
+        top: 25px;
+        left: -25px;
+      }
+
+      &--right{
+        left: auto;
+        right: 100%;
+
+        &:before{
+          left: auto;
+          right: -25px;
+          border-width: 25px 0 25px 50px;
+          border-color: transparent transparent transparent $main-color;
+        }
+      }
+
+      &-title{
+        color: $main-light;
+        text-transform: uppercase;
+      }
+
+      &-info{
+        display: block;
+      }
+
+      &-close{
+        position: absolute;
+        top: vr(1);
+        right: vr(1);
+      }
+    }
+
+    &__img{
+      width: 170px;
+      height: 170px;
+      border-width: 5px;
+    }
+
+    &__info{
+      display: none;
+    }
+
+    &__social{
+      justify-content: flex-start;
     }
   }
 }

@@ -27,7 +27,7 @@ const Team = () => {
   )
 
   const teamMembers = data.team.map(m => {
-    const nodeImg = files.allFile.nodes.find(f => f.name === m.id)
+    const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
     const img = nodeImg ? nodeImg.childImageSharp.fluid.src : ''
     return Object.assign({}, m, {img})
   })

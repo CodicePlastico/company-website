@@ -10,3 +10,19 @@ $prefix: cp-team;
     margin-top: vr(4);
   }
 }
+
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+    &__grid{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+
+      &-item{
+        margin: 0 10px;
+      }
+    }
+  }
+}

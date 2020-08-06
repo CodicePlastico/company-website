@@ -94,7 +94,7 @@ h4 {
 }
 
 h5 {
-  @include type-setting(1, 1, 1);
+  @include type-setting(1, 1, -1);
 }
 
 p {

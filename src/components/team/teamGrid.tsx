@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Member from './member'
 import { FullMember } from './model'
 
@@ -7,12 +7,24 @@ export interface TeamMembers {
 }
 
 const TeamGrid = (props: TeamMembers) => {
+  const [open, setOpen] = useState<string>()
+
+  const openDescription = (id: string) => {
+    if (open && open === id ) {
+      setOpen(null)
+    } else {
+      setOpen(id)
+    }
+  }
+
   const { team } = props
-  console.log(team)
+
   return (
-    <div className="cp-team-grid">
+    <div className="cp-team__grid">
       {team.map(m => (
-        <Member member={m} key={m.id}/>
+        <div className="cp-team__grid-item" key={m.id}>
+          <Member member={m} openId={open} toggleOpen={openDescription}/>
+        </div>
       ))}
     </div>
   )

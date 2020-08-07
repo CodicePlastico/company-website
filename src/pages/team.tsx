@@ -61,6 +61,12 @@ const Team = () => {
     'cp-team__members-relation--active': layout === 'Relazioni'
   })
 
+  const filterElements = (filter) => {
+    setActiveFilter(filter);
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 0)
+  }
 
   return (
     <Layout>
@@ -108,7 +114,7 @@ const Team = () => {
                         'cp-team__filters-button--selected': activeFilter === f 
                       })
                       return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={setActiveFilter.bind(null, f)}>{f}</button>
+                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={filterElements.bind(null, f)}>{f}</button>
                       )
                     })}
                   </div>

@@ -98,5 +98,12 @@ $prefix: cp-about;
         }
       }
     }
+
+    &__spaceship{
+      background-image: url('/spaceship.svg');
+      background-position: top left;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
   }
 }

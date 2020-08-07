@@ -3,7 +3,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import Spaceship from '../assets/about/spaceship.svg'
 import Customers from '../components/customers'
 
 interface Skill {
@@ -41,9 +40,7 @@ const AboutUs = () => (
             </p>
           </div>
         </div>
-        <div className="cp-grid__right">
-          <Spaceship />
-        </div>
+        <div className="cp-grid__right cp-about__spaceship"></div>
       </div>
       <div className="cp-grid cp-about__skills">
         <div className="cp-grid__left">

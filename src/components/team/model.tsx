@@ -1,10 +1,11 @@
 export interface Channel {
-  label: string;
-  link: string;
+  label: string
+  link: string
 }
 
 export interface MemberModel {
-  id: string;
+  id: string
+  img: string
   name: string
   nick: string 
   role: string

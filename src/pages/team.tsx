@@ -12,7 +12,7 @@ import data from '../assets/team/team.yaml'
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
-  const [layout, setLayout] = useState('Griglia')
+  const [layout, setLayout] = useState('Relazioni')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {

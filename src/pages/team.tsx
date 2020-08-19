@@ -83,7 +83,7 @@ const Team = () => {
                   <TeamGrid team={visibleMembers} />
                 </div>
                 <div className={relationClass} >
-                  <TeamList team={visibleMembers} />
+                  <TeamList team={visibleMembers} categories={teamFilters} />
                 </div>
               </div>
             </div>

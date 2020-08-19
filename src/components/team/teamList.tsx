@@ -3,46 +3,146 @@ import Sketch from 'react-p5'
 import p5Types from 'p5'
 
 import { FullMember } from './model'
+import TeamCanvas from './teamCanvas'
 
 export interface TeamMembers {
-  team: FullMember[]
+  team: FullMember[],
+  categories: string[]
 }
 
 const TeamList = (props: TeamMembers) => {
   const [members, setMembers] = useState([])
-  const { team } = props
+  const [canvas, setCanvas] = useState<TeamCanvas>()
+  const [size, setSize] = useState<number>(100)
+  const { team, categories } = props
 
   const frameRate = 30
-  const fontSize = 18
-  let canvasWidth, canvasHeight
   
   const preload = (p5: p5Types) => {
-    canvasWidth = p5.min(1200, window.innerWidth - 40)
-    canvasHeight = p5.min(1000, window.innerHeight - 200)
-    const members = team.map(m => {
-      const x = p5.random(0, canvasWidth)
-      const y = p5.random(0, canvasHeight)
+    const width = p5.min(1200, window.innerWidth - 40)
+    const height = p5.min(1000, window.innerHeight - 200)
+    const memberSize = Math.floor(Math.sqrt(width * height / (team.length * 2))) - 50;
+    setSize(memberSize)
+    setCanvas(new TeamCanvas(width, height))
+    const coordinates = []
+    let protection = 0;
+    while(coordinates.length < team.length) {
+      let overlapping = false;
+      const coords = {
+        x: p5.random(0, width - memberSize),
+        y: p5.random(0, height - memberSize)
+      }
+
+      coordinates.forEach(c => {
+        const distance = p5.dist(coords.x, coords.y, c.x, c.y)
+        if(distance < (memberSize * 2)) {
+          overlapping = true;
+        }
+      })
+
+      if (!overlapping) {
+        coordinates.push(coords);
+      }
+      protection++
+      if (protection > 10000) {
+        break;
+      }
+
+    }
+
+
+
+    const members = coordinates.map((c, i) => {
+      const m = team[i]
       const p5Img = p5.loadImage(m.img)
+      const { x, y } = c
       return Object.assign({}, m, {p5Img, x, y})
     })
     setMembers(members)
   }
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
-    p5.createCanvas(canvasWidth, canvasHeight).parent(canvasParentRef)
+    const canvasEl = p5.createCanvas(canvas.width, canvas.height).parent(canvasParentRef) as unknown as any
     p5.frameRate(frameRate)
+    p5.noFill()
+    categories.forEach(c => {
+      const drawInfo = getLine(c)
+      p5.strokeWeight(drawInfo.strokeWeight)
+      const {r,g, b} = drawInfo.color
+      p5.stroke(r, g, b)
+      const centers = members.filter(m => {
+        return m.tags.includes(c)
+      }).map(mb => getCenter(mb.x, mb.y, size))
+      centers.forEach((c, i) => {
+        const next = centers[i + 1]
+        if (next && canvasEl.drawingContext) {
+          if (drawInfo.style === 'dash'){
+            canvasEl.drawingContext.setLineDash([5, 15]);
+          } else {
+            canvasEl.drawingContext.setLineDash([]);
+          }
+          p5.line(c.x, c.y, next.x, next.y)
+        }
+      })
+    })
+    team.forEach(t => {
+      const m = members.find(m => m.id === t.id)
+      if(m){
+        p5.image(m.p5Img, m.x, m.y, size, size)
+      }
+    })
+  }
+
+  const getCenter = (px, py, size) => {
+    const halfSize = Math.floor(size / 2)
+    return {
+      x: px + halfSize,
+      y: py + halfSize,
+    }
+  }
+
+  const getLine = (category: string) => {
+    switch (category.toLowerCase()){
+      case 'frontend':
+        return {
+          color: {
+            r: 217, 
+            g: 50, 
+            b: 50
+          },
+          strokeWeight: 2,
+          style: 'line'
+        }
+        case 'design':
+          return {
+            color: {
+              r: 0, 
+              g: 0, 
+              b: 0
+            },
+            strokeWeight: 2,
+            style: 'dash'
+          }
+      default:
+        return {
+          color: {
+            r: 0, 
+            g: 0, 
+            b: 0
+          },
+          strokeWeight: 2,
+          style: 'line'
+        }
+    }
   }
 
   const draw = (p5: p5Types) => {
-    team.forEach(t => {
-      const m = members.find(m => m.id === t.id)
-      p5.image(m.p5Img, m.x, m.y)
-    })
+    
   }
 
   return (
     <div className="cp-team__list">
-      <Sketch preload={preload} setup={setup} draw={draw} />
+      <Sketch preload={preload} setup={setup} />
     </div>
   )
 }

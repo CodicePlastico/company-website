@@ -10,7 +10,7 @@ interface MemberProps {
 
 const Member = (props: MemberProps) => {
   const [right, setRight] = useState(false);
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState<number | 'auto'>(0);
   const [nodeImg, setNodeImg] = useState();
 
   const { member, openId, toggleOpen } = props 

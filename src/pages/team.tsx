@@ -6,14 +6,17 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import TeamGrid from '../components/team/teamGrid'
-import TeamRelations from '../components/team/teamRelations'
 
 import data from '../assets/team/team.yaml'
+
+import loadable from '@loadable/component'
+
+const TeamRelations = loadable(() => import('../components/team/teamRelations'))
 
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
-  const [layout, setLayout] = useState('Relazioni')
+  const [layout, setLayout] = useState('Griglia')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {

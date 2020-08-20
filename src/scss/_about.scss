@@ -27,7 +27,7 @@ $prefix: cp-about;
   }
 
   &__message{
-    background-image: url('/universe.png');
+    background-image: url('/universe.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 440px;
@@ -100,7 +100,8 @@ $prefix: cp-about;
     }
 
     &__spaceship{
-      background-image: url('/spaceship.svg');
+      background-image: url('/spaceship.png');
+      background-size: 300px;
       background-position: top left;
       background-repeat: no-repeat;
       width: 100%;

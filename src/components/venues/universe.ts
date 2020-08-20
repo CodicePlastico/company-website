@@ -1,6 +1,5 @@
 import Planet from "./planet"
 import p5Types from 'p5'
-import { Coordinates } from './model'
 
 class Universe {
   width: number

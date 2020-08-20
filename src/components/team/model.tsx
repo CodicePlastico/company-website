@@ -10,9 +10,15 @@ export interface MemberModel {
   nick: string 
   role: string
   description: string
-  social: Channel[]
+  social: Channel[],
+  tags: string[]
 }
 
 export interface FullMember extends MemberModel {
   img: string
+}
+
+export interface Coordinates {
+  x: number
+  y: number
 }

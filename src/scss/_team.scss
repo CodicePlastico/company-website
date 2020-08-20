@@ -25,6 +25,8 @@ $prefix: cp-team;
 
     &-relation{
       display: none;  
+      grid-column-start: 1;
+      grid-column-end: 4;
       
       &--active{
         display: none;
@@ -37,14 +39,14 @@ $prefix: cp-team;
 @media only screen and (min-width: $desktop-min-width) {
   .#{$prefix}{
     &__rocket{
-      background-image: url('/rocket.svg');
+      background-image: url('/rocket.jpg');
       background-position: bottom right;
       background-repeat: no-repeat;
       width: 100%;
     }
 
     &__spaceman{
-      background-image: url('/spaceman.svg');
+      background-image: url('/spaceman.jpg');
       background-position: center right;
       background-repeat: no-repeat;
       background-size: cover;
@@ -52,10 +54,10 @@ $prefix: cp-team;
     }
 
     &__members{
-      padding-bottom: 170px;
 
       &-grid, 
       &-relation{
+        padding-bottom: 170px;
         display: none;
 
         &--active{
@@ -72,6 +74,14 @@ $prefix: cp-team;
 
       &-item{
         margin: 0 10px;
+      }
+    }
+
+    &__list{
+      position: relative;
+
+      canvas {
+        display: block;
       }
     }
 

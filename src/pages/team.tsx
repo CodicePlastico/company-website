@@ -30,7 +30,6 @@ const Team = () => {
     }`
   )
 
-
   const teamMembers = data.team.map(m => {
     const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
     const img = nodeImg ? nodeImg.childImageSharp.fluid.src : ''
@@ -38,7 +37,8 @@ const Team = () => {
   })
 
   const teamFilters = teamMembers.reduce((acc, t) => {
-    return [...acc, ...t.tags]
+    const tags = t.tags || []
+    return [...acc, ...tags]
   }, []).reduce((acc, tag) => {
     if (acc.indexOf(tag) < 0 ){
       return [...acc, tag]
@@ -49,7 +49,7 @@ const Team = () => {
   const filters = ['Tutti', ...teamFilters]
 
   const visibleMembers = teamMembers.filter(t => {
-    return activeFilter === 'Tutti' || t.tags.includes(activeFilter)
+    return activeFilter === 'Tutti' || (t.tags && t.tags.includes(activeFilter))
   })
 
   const visibilityFilters = ['Relazioni', 'Griglia']
@@ -68,6 +68,15 @@ const Team = () => {
       window.dispatchEvent(new Event('resize'));
     }, 0)
   }
+
+  const changeLayout = (layout) => {
+    setLayout(layout);
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 0)
+  }
+
+
 
   return (
     <Layout>
@@ -104,7 +113,7 @@ const Team = () => {
                         'cp-team__filters-button--selected': layout === f 
                       })
                       return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={setLayout.bind(null, f)}>{f}</button>
+                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={changeLayout.bind(null, f)}>{f}</button>
                       )
                     })}
                   </div>

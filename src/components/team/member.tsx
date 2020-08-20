@@ -83,12 +83,12 @@ const Member = (props: MemberProps) => {
         <button className="cp-member__description-close" onClick={toggleDescription}>x</button>
         <div className="cp-member__description-info">
           <h5 className="cp-member__description-title">{member.name}</h5>
-          <p><strong>{member.nick && <>@{member.nick}</>} - {member.role}</strong></p>
+          <p><strong>{member.nick && <>@{member.nick} - </>}  {member.role}</strong></p>
         </div>
         <p className="cp-member__description-text">
           {member.description}
         </p>
-        {member.social.length > 0 && <ul className="cp-member__social">
+        {member.social && member.social.length > 0 && <ul className="cp-member__social">
           {member.social.map(s => (  
             <li key={`${member.id}-social-${s.label}`}>
               <a className="cp-member__social-link" href={s.link} target="_blank" rel="noopener noreferrer">{s.label}</a>  

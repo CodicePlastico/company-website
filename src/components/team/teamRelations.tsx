@@ -47,8 +47,6 @@ const TeamRelations = (props: TeamMembers) => {
       })
 
       if (!overlapping) {
-        console.log(width, height, memberSize)
-        console.log(coords)
         coordinates.push(coords);
       }
       protection++
@@ -103,7 +101,7 @@ const TeamRelations = (props: TeamMembers) => {
       const {r,g, b} = drawInfo.color
       p5.stroke(r, g, b)
       const centers = members.filter(m => {
-        return m.tags.includes(category)
+        return m.tags && m.tags.includes(category)
       }).map(mb => mb.getCenter())
       centers.forEach((c, i) => {
         const next = centers[i + 1]
@@ -232,7 +230,6 @@ const TeamRelations = (props: TeamMembers) => {
   const getMemberStyle = (right: boolean) => {
     if (activeMember) {
       const top = activeMember.coordinates.y
-      console.log(activeMember.coordinates, canvas.width)
       if (right) {
         return {
           top,
@@ -272,12 +269,12 @@ const TeamRelations = (props: TeamMembers) => {
         <button className="cp-member__description-close" onClick={toggleDescription}>x</button>
         <div className="cp-member__description-info">
           <h5 className="cp-member__description-title">{activeMember.memberName}</h5>
-          <p><strong>{activeMember.nick && <>@{activeMember.nick}</>} - {activeMember.role}</strong></p>
+          <p><strong>{activeMember.nick && <>@{activeMember.nick} - </>}{activeMember.role}</strong></p>
         </div>
         <p className="cp-member__description-text">
           {activeMember.description}
         </p>
-        {activeMember.social.length > 0 && <ul className="cp-member__social">
+        {activeMember.social && activeMember.social.length > 0 && <ul className="cp-member__social">
           {activeMember.social.map(s => (  
             <li key={`${activeMember.memberId}-social-${s.label}`}>
               <a className="cp-member__social-link" href={s.link} target="_blank" rel="noopener noreferrer">{s.label}</a>  

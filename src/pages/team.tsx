@@ -4,8 +4,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
 import TeamGrid from '../components/team/teamGrid'
-import TeamList from '../components/team/teamList'
+import TeamRelations from '../components/team/teamRelations'
 
 import data from '../assets/team/team.yaml'
 
@@ -82,13 +83,15 @@ const Team = () => {
                 <div className={gridClass} >
                   <TeamGrid team={visibleMembers} />
                 </div>
-                <div className={relationClass} >
-                  <TeamList team={visibleMembers} categories={teamFilters} />
-                </div>
               </div>
             </div>
+            <div className={relationClass} >
+              <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
+            </div>
           </div>
+          
         </div>
+       
         <div className="cp-team__filters">
           <div className="cp-grid">
             <div className="cp-grid__container">

@@ -10,7 +10,8 @@ export interface MemberModel {
   nick: string 
   role: string
   description: string
-  social: Channel[]
+  social: Channel[],
+  tags: string[]
 }
 
 export interface FullMember extends MemberModel {

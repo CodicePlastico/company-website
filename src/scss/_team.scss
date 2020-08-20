@@ -25,6 +25,8 @@ $prefix: cp-team;
 
     &-relation{
       display: none;  
+      grid-column-start: 1;
+      grid-column-end: 4;
       
       &--active{
         display: none;
@@ -52,10 +54,10 @@ $prefix: cp-team;
     }
 
     &__members{
-      padding-bottom: 170px;
 
       &-grid, 
       &-relation{
+        padding-bottom: 170px;
         display: none;
 
         &--active{
@@ -72,6 +74,14 @@ $prefix: cp-team;
 
       &-item{
         margin: 0 10px;
+      }
+    }
+
+    &__list{
+      position: relative;
+
+      canvas {
+        display: block;
       }
     }
 

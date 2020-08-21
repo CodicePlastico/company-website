@@ -82,6 +82,7 @@ $prefix: cp-team;
 
       canvas {
         display: block;
+        margin: 0 auto;
       }
     }
 
@@ -99,8 +100,13 @@ $prefix: cp-team;
         justify-content: space-between;
       }
 
+      &-left{
+        margin-right: 20px;
+      }
+
       &-title{
         text-transform: uppercase;
+        margin-bottom: 0;
       }
 
       &-button{
@@ -109,6 +115,7 @@ $prefix: cp-team;
         height: 32px;
         width: 105px;
         margin-right: 20px;
+        margin-top: 20px;
         cursor: pointer;
 
         &:last-child{

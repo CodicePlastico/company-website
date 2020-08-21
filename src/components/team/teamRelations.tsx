@@ -23,39 +23,68 @@ const TeamRelations = (props: TeamMembers) => {
   const { team, categories } = props
 
   const frameRate = 30
+
+  const getMainSize = (members: number, ratio: number): {mainSize: number, lowSize: number} => {
+    let mainSize = ratio;
+    let lowSize = 1;
+    while(mainSize * lowSize < members) {
+      lowSize++;
+      mainSize = ratio * lowSize;
+    }
+    return {
+      mainSize,
+      lowSize
+    }
+  }
+
+  const retrieveCenters = (width: number, height: number, members: number, p5: p5Types): {squareSize: number, centers: Coordinates[]} => {
+    let columns = 0
+    let rows = 0
+    let ratio = 0
+    if (width > height) {
+      ratio = Math.floor(width / height)
+      const sizes = getMainSize(members, ratio)
+      rows = sizes.mainSize
+      columns = sizes.lowSize
+    } else {
+      ratio = Math.floor(height / width)
+      const sizes = getMainSize(members, ratio)
+      rows = sizes.lowSize
+      columns = sizes.mainSize
+    }
+    const columnSize = Math.floor(width / columns)
+    const rowSize = Math.floor(height / rows)
+    const squareSize = p5.min(columnSize, rowSize)
+    const centers = []
+    for (let x = 0; x < columns; x++) {
+      for (let y = 0; y < rows; y++) {
+        const xCoord = x * columnSize + Math.floor(columnSize / 2) + Math.floor(p5.random(-20, 21))
+        const yCoord = y * rowSize + Math.floor(rowSize / 2) + Math.floor(p5.random(-20, 21))
+        centers.push({ x: xCoord, y: yCoord })
+      }
+    }
+    return {squareSize, centers}
+  } 
+
+  const shuffleArray = (sortableArray) => {
+    const array = sortableArray.slice();
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
+}
   
   const preload = (p5: p5Types) => {
     const width = p5.min(1200, window.innerWidth - 40)
     const height = p5.min(1000, window.innerHeight - 200)
-    const memberSize = Math.floor(Math.sqrt(width * height / (team.length * 2))) - 50;
+    const centers = retrieveCenters(width, height, team.length, p5)
+    const memberSize = Math.floor(centers.squareSize / 1.5)
+    const halfSize = Math.floor(memberSize / 2)
     setSize(memberSize)
     setCanvas(new TeamCanvas(width, height))
-    const coordinates = []
-    let protection = 0;
-    while(coordinates.length < team.length) {
-      let overlapping = false;
-      const coords = {
-        x: p5.random(2, width - memberSize - 50),
-        y: p5.random(2, height - memberSize - 50)
-      }
-
-      coordinates.forEach(c => {
-        const distance = p5.dist(coords.x, coords.y, c.x, c.y)
-        if(distance < (memberSize * 2)) {
-          overlapping = true;
-        }
-      })
-
-      if (!overlapping) {
-        coordinates.push(coords);
-      }
-      protection++
-      if (protection > 10000) {
-        break;
-      }
-
-    }
-
+    console.log(centers.centers)
+    const coordinates = shuffleArray(centers.centers).slice(0, team.length)
     const members = coordinates.map((c, i) => {
       const m = team[i]
       const p5Img = p5.loadImage(m.img)
@@ -63,9 +92,9 @@ const TeamRelations = (props: TeamMembers) => {
       return new MemberCanvas(
         m.id, 
         m.name, 
-        x, 
-        y, 
-        size, 
+        x - halfSize, 
+        y - halfSize, 
+        memberSize, 
         p5Img, 
         m.tags,
         m.nick, 
@@ -145,16 +174,26 @@ const TeamRelations = (props: TeamMembers) => {
           strokeWeight: 2,
           style: 'line'
         }
-        case 'design':
-          return {
-            color: {
-              r: 0, 
-              g: 0, 
-              b: 0
-            },
-            strokeWeight: 2,
-            style: 'dash'
-          }
+      case 'design':
+        return {
+          color: {
+            r: 0, 
+            g: 0, 
+            b: 0
+          },
+          strokeWeight: 2,
+          style: 'dash'
+        }
+      case 'management':
+        return {
+          color: {
+            r: 217, 
+            g: 50, 
+            b: 50
+          },
+          strokeWeight: 2,
+          style: 'dash'
+        }
       default:
         return {
           color: {

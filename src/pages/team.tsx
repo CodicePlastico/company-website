@@ -16,7 +16,7 @@ const TeamRelations = loadable(() => import('../components/team/teamRelations'))
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
-  const [layout, setLayout] = useState('Griglia')
+  const [layout, setLayout] = useState('Relazioni')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -108,7 +108,7 @@ const Team = () => {
           <div className="cp-grid">
             <div className="cp-grid__container">
               <div className="cp-grid__content cp-team__filters-container">
-                <div>
+                <div className="cp-team__filters-left">
                   <h5 className="cp-team__filters-title"><span>Visualizza</span></h5>
                   <div className="cp-team__filters-buttons">
                     {visibilityFilters.map(f => {

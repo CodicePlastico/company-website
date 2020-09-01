@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.13.1",
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "classnames": "^2.2.6",
     "gatsby": "^2.23.10",
     "gatsby-image": "^2.4.8",
@@ -17,6 +18,7 @@
     "gatsby-plugin-sharp": "^2.6.13",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-sharp": "^2.5.6",
+    "gsap": "^3.5.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

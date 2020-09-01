@@ -7,7 +7,7 @@ $prefix: cp-internal-page;
     background-image: url('/bgk_small.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 120px;
   }
 }
@@ -15,22 +15,21 @@ $prefix: cp-internal-page;
 
 @media only screen and (min-width: $desktop-min-width) {
   .#{$prefix}{
-    position: relative;
-    padding-top: vr(6);
-
     &__content{
       position: relative;
       z-index: 1;
+      padding-top: vr(6);
+
+      &--bg {
+        background-image: url('/bgk_big.jpg');
+        background-position: top right;
+        background-size: auto 80%;
+        background-repeat: no-repeat;
+      }
     }
     
     &__bg{
-      background-image: url('/bgk_big.jpg');
-      background-position: top right;
-      width: 50%;
-      height: 50vh;
-      position: absolute;
-      top: 0;
-      right: 0;
+      display: none;
     }
   }
 }

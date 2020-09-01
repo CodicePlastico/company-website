@@ -86,24 +86,37 @@ const Team = () => {
       <SEO title="Team" />
       <div className="cp-internal-page cp-team">
         <div className="cp-internal-page__bg"></div>
-        <div className="cp-internal-page__content cp-grid">
+        <div className="cp-internal-page__content cp-internal-page__content--bg cp-grid">  
           <div className="cp-grid__left cp-team__rocket"></div>
           <div className="cp-grid__container">
             <div className="cp-grid__content">
               <h1><span>Il</span> Team</h1>
-              <div className="cp-team__members">
+              <p className="cp-team__intro">
+                Qualsiasi siano i problemi dei nostri clienti, 
+                siamo in grado di entrare nel loro dominio e di trovare un modo di <strong>utilizzare la tecnologia 
+                per migliorare il loro metodo di lavoro</strong>, senza creare frizioni tra l’uomo e il computer. 
+              </p>
+              <p className="cp-team__intro">
+                <strong>Affinchè questo avvenga è necessaria una squadra di persone preparate e appassionate:</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="cp-team__members">
+          <div className="cp-grid">
+            <div className="cp-grid__container">
+              <div className="cp-grid__content">
                 <div className={gridClass} >
                   <TeamGrid team={visibleMembers} />
                 </div>
               </div>
             </div>
-            <div className={relationClass} >
-              <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
-            </div>
           </div>
-          
+          <div className={relationClass} >
+            <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
+          </div>
         </div>
-       
+
         <div className="cp-team__filters">
           <div className="cp-grid">
             <div className="cp-grid__container">

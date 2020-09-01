@@ -53,7 +53,13 @@ $prefix: cp-team;
       width: 100%;
     }
 
+    &__intro{
+      max-width: 600px;
+    }
+
     &__members{
+      background-color: $main-color;
+      margin-top: vr(2);
 
       &-grid, 
       &-relation{

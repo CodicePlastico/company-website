@@ -16,7 +16,7 @@ const TeamRelations = loadable(() => import('../components/team/teamRelations'))
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
-  const [layout, setLayout] = useState('Relazioni')
+  const [layout, setLayout] = useState('Griglia')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -106,6 +106,34 @@ const Team = () => {
           <div className="cp-grid">
             <div className="cp-grid__container">
               <div className="cp-grid__content">
+                <div className="cp-team__filters">
+                  <div className="cp-team__filters-left">
+                    <p className="cp-team__filters-title">Visualizza</p>
+                    <div className="cp-team__filters-buttons">
+                      {visibilityFilters.map(f => {
+                        const buttonClass = classNames('cp-team__filters-button', {
+                          'cp-team__filters-button--selected': layout === f 
+                        })
+                        return (
+                          <button className={buttonClass} type="button" key={`filter-${f}`} onClick={changeLayout.bind(null, f)}>{f}</button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                  <div className="cp-team__filters-right">
+                    <p className="cp-team__filters-title">Filtra</p>
+                    <div className="cp-team__filters-buttons cp-team__filters-buttons--tags">
+                      {filters.map(f => {
+                        const buttonClass = classNames('cp-team__filters-button', {
+                          'cp-team__filters-button--selected': activeFilter === f 
+                        })
+                        return (
+                          <button className={buttonClass} type="button" key={`filter-${f}`} onClick={filterElements.bind(null, f)}>{f}</button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
                 <div className={gridClass} >
                   <TeamGrid team={visibleMembers} />
                 </div>
@@ -120,35 +148,7 @@ const Team = () => {
         <div className="cp-team__filters">
           <div className="cp-grid">
             <div className="cp-grid__container">
-              <div className="cp-grid__content cp-team__filters-container">
-                <div className="cp-team__filters-left">
-                  <h5 className="cp-team__filters-title"><span>Visualizza</span></h5>
-                  <div className="cp-team__filters-buttons">
-                    {visibilityFilters.map(f => {
-                      const buttonClass = classNames('cp-team__filters-button', {
-                        'cp-team__filters-button--selected': layout === f 
-                      })
-                      return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={changeLayout.bind(null, f)}>{f}</button>
-                      )
-                    })}
-                  </div>
-                </div>
-                <div>
-                  <h5 className="cp-team__filters-title"><span>Filtra</span></h5>
-                  <div className="cp-team__filters-buttons cp-team__filters-buttons--tags">
-                    {filters.map(f => {
-                      const buttonClass = classNames('cp-team__filters-button', {
-                        'cp-team__filters-button--selected': activeFilter === f 
-                      })
-                      return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={filterElements.bind(null, f)}>{f}</button>
-                      )
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> 
           </div>
         </div>
         <div className="cp-grid">

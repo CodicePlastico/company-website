@@ -75,7 +75,7 @@ const Member = (props: MemberProps) => {
         <img className="cp-member__img" src={member.img} alt={member.name} ref={imgCallBack} />
         <div className="cp-member__info">
           <h4 className="cp-member__title"><span>{member.name}</span></h4>
-          <p>{member.nick && <>@{member.nick}</>} - {member.role}</p>
+          <p>{member.nick && <>@{member.nick}</>} {member.nick && member.role && <>-</>} {member.role}</p>
         </div>
         <button className={plusClass} onClick={toggleDescription}>+</button>
       </div>

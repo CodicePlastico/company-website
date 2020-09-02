@@ -16,7 +16,7 @@ const TeamRelations = loadable(() => import('../components/team/teamRelations'))
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
-  const [layout, setLayout] = useState('Relazioni')
+  const [layout, setLayout] = useState('Griglia')
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -86,56 +86,69 @@ const Team = () => {
       <SEO title="Team" />
       <div className="cp-internal-page cp-team">
         <div className="cp-internal-page__bg"></div>
-        <div className="cp-internal-page__content cp-grid">
+        <div className="cp-internal-page__content cp-internal-page__content--bg cp-grid">  
           <div className="cp-grid__left cp-team__rocket"></div>
           <div className="cp-grid__container">
             <div className="cp-grid__content">
               <h1><span>Il</span> Team</h1>
-              <div className="cp-team__members">
+              <p className="cp-team__intro">
+                Qualsiasi siano i problemi dei nostri clienti, 
+                siamo in grado di entrare nel loro dominio e di trovare un modo di <strong>utilizzare la tecnologia 
+                per migliorare il loro metodo di lavoro</strong>, senza creare frizioni tra l’uomo e il computer. 
+              </p>
+              <p className="cp-team__intro">
+                <strong>Affinchè questo avvenga è necessaria una squadra di persone preparate e appassionate:</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="cp-team__members">
+          <div className="cp-grid">
+            <div className="cp-grid__container">
+              <div className="cp-grid__content">
+                <div className="cp-team__filters" draggable="false">
+                  <div className="cp-team__filters-left">
+                    <p className="cp-team__filters-title">Visualizza</p>
+                    <div className="cp-team__filters-buttons">
+                      {visibilityFilters.map(f => {
+                        const buttonClass = classNames('cp-team__filters-button', {
+                          'cp-team__filters-button--selected': layout === f 
+                        })
+                        return (
+                          <button className={buttonClass} type="button" key={`filter-${f}`} onClick={changeLayout.bind(null, f)}>{f}</button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                  <div className="cp-team__filters-right">
+                    <p className="cp-team__filters-title">Filtra</p>
+                    <div className="cp-team__filters-buttons cp-team__filters-buttons--tags">
+                      {filters.map(f => {
+                        const buttonClass = classNames('cp-team__filters-button', {
+                          'cp-team__filters-button--selected': activeFilter === f 
+                        })
+                        return (
+                          <button className={buttonClass} type="button" key={`filter-${f}`} onClick={filterElements.bind(null, f)}>{f}</button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
                 <div className={gridClass} >
                   <TeamGrid team={visibleMembers} />
                 </div>
               </div>
             </div>
-            <div className={relationClass} >
-              <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
-            </div>
           </div>
-          
+          <div className={relationClass} >
+            <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
+          </div>
         </div>
-       
+
         <div className="cp-team__filters">
           <div className="cp-grid">
             <div className="cp-grid__container">
-              <div className="cp-grid__content cp-team__filters-container">
-                <div className="cp-team__filters-left">
-                  <h5 className="cp-team__filters-title"><span>Visualizza</span></h5>
-                  <div className="cp-team__filters-buttons">
-                    {visibilityFilters.map(f => {
-                      const buttonClass = classNames('cp-team__filters-button', {
-                        'cp-team__filters-button--selected': layout === f 
-                      })
-                      return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={changeLayout.bind(null, f)}>{f}</button>
-                      )
-                    })}
-                  </div>
-                </div>
-                <div>
-                  <h5 className="cp-team__filters-title"><span>Filtra</span></h5>
-                  <div className="cp-team__filters-buttons cp-team__filters-buttons--tags">
-                    {filters.map(f => {
-                      const buttonClass = classNames('cp-team__filters-button', {
-                        'cp-team__filters-button--selected': activeFilter === f 
-                      })
-                      return (
-                        <button className={buttonClass} type="button" key={`filter-${f}`} onClick={filterElements.bind(null, f)}>{f}</button>
-                      )
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> 
           </div>
         </div>
         <div className="cp-grid">

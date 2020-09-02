@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Sketch from 'react-p5'
 import p5Types from 'p5'
-import classNames from 'classnames'
 
 import { FullMember } from './model'
 import TeamCanvas from './teamCanvas'
 import MemberCanvas from './memberCanvas'
+import MemberDescription from './memberDescription'
 
 export interface TeamMembers {
   team: FullMember[],
@@ -20,6 +20,7 @@ const TeamRelations = (props: TeamMembers) => {
   const [size, setSize] = useState<number>(100)
   const [drag, setDrag] = useState<boolean>(false) 
   const [activeMember, setActiveMember] = useState<MemberCanvas>()
+  const [draggedMember, setDraggedMember] = useState<MemberCanvas>()
   const { team, categories } = props
 
   const frameRate = 30
@@ -83,7 +84,6 @@ const TeamRelations = (props: TeamMembers) => {
     const halfSize = Math.floor(memberSize / 2)
     setSize(memberSize)
     setCanvas(new TeamCanvas(width, height))
-    console.log(centers.centers)
     const coordinates = shuffleArray(centers.centers).slice(0, team.length)
     const members = coordinates.map((c, i) => {
       const m = team[i]
@@ -113,7 +113,7 @@ const TeamRelations = (props: TeamMembers) => {
 
   const drawRelations = (p5, canvasEl) => {
     const { currentCategory } = props
-    p5.background(255)
+    p5.background(217, 50, 50)
     p5.noFill()
     if (currentCategory != 'Tutti') {
       drawCategoryRelation(currentCategory, p5, canvasEl)
@@ -123,7 +123,7 @@ const TeamRelations = (props: TeamMembers) => {
       })
     }
   }
-
+ 
   const drawCategoryRelation = (category, p5, canvasEl) => {
     const drawInfo = getLine(category)
       p5.strokeWeight(drawInfo.strokeWeight)
@@ -149,7 +149,7 @@ const TeamRelations = (props: TeamMembers) => {
     canvasEl.drawingContext.setLineDash([]);
     p5.stroke(0, 0, 0)
     team.forEach(t => {
-      const m = members.find(m => m.memberId === t.id)
+      const m = members.find(m => m.id === t.id)
       if(m){
         const center = m.getCenter()
         p5.ellipse(center.x, center.y, m.size + 2)
@@ -158,18 +158,14 @@ const TeamRelations = (props: TeamMembers) => {
     })
   } 
 
-  const drawActiveMember = () => {
-
-  }
-
   const getLine = (category: string) => {
     switch (category.toLowerCase()){
       case 'frontend':
         return {
           color: {
-            r: 217, 
-            g: 50, 
-            b: 50
+            r: 255, 
+            g: 255, 
+            b: 255
           },
           strokeWeight: 2,
           style: 'line'
@@ -187,9 +183,9 @@ const TeamRelations = (props: TeamMembers) => {
       case 'management':
         return {
           color: {
-            r: 217, 
-            g: 50, 
-            b: 50
+            r: 255, 
+            g: 255, 
+            b: 255
           },
           strokeWeight: 2,
           style: 'dash'
@@ -210,7 +206,6 @@ const TeamRelations = (props: TeamMembers) => {
   const draw = (p5: p5Types) => {
     drawRelations(p5, canvasEl)
     drawTeam(p5, canvasEl)
-    drawActiveMember()
   }
 
 
@@ -221,16 +216,24 @@ const TeamRelations = (props: TeamMembers) => {
     const x = mouseX > halfSize ? (mouseX < (canvas.width - halfSize) ? mouseX : canvas.width - halfSize) : halfSize
     const y = mouseY > halfSize ? (mouseY < (canvas.height - halfSize) ? mouseY : canvas.height - halfSize) : halfSize
     if (mouseX === x || mouseY === y) {
-      const member = getActiveElement(p5, x, y)
-      if (member) {
-        member.setNewCenter(x, y)
+      if (drag) {
+        if (draggedMember) {
+          draggedMember.setNewCenter(x, y)
+        }
+      } else {  
+        const member = getActiveElement(p5, x, y)
+        if (member) {
+          member.setNewCenter(x, y)
+          setDraggedMember(member)
+        }
       }
-    }
     return false
+    } 
   }
 
   const mouseReleased = () => {
     setTimeout(() => {
+      setDraggedMember(null)
       setDrag(false)
     })
   }
@@ -239,7 +242,7 @@ const TeamRelations = (props: TeamMembers) => {
     const { mouseX, mouseY } = p5
     const member = getActiveElement(p5, mouseX, mouseY)
     if (member && !drag) {
-      if (!activeMember || activeMember.memberId !== member.memberId) {
+      if (!activeMember || activeMember.id !== member.id) {
         setActiveMember(member)
       } else {
         setActiveMember(null)
@@ -263,8 +266,6 @@ const TeamRelations = (props: TeamMembers) => {
   }
 
   const rightActiveMember = activeMember && (activeMember.coordinates.x > (Math.floor(canvas.width / 2)))
-
-  const descriptionClass = classNames('cp-member__description', {'cp-member__description--visible': activeMember}, {'cp-member__description--right': rightActiveMember})
 
   const getMemberStyle = (right: boolean) => {
     if (activeMember) {
@@ -304,23 +305,8 @@ const TeamRelations = (props: TeamMembers) => {
         mouseDragged={mouseDragged} 
         mouseReleased={mouseReleased} 
         mouseClicked={mouseClicked} />
-      {activeMember && <div className={descriptionClass} style={memberStyle} onClick={handleClick}>
-        <button className="cp-member__description-close" onClick={toggleDescription}>x</button>
-        <div className="cp-member__description-info">
-          <h5 className="cp-member__description-title">{activeMember.memberName}</h5>
-          <p><strong>{activeMember.nick && <>@{activeMember.nick} - </>}{activeMember.role}</strong></p>
-        </div>
-        <p className="cp-member__description-text">
-          {activeMember.description}
-        </p>
-        {activeMember.social && activeMember.social.length > 0 && <ul className="cp-member__social">
-          {activeMember.social.map(s => (  
-            <li key={`${activeMember.memberId}-social-${s.label}`}>
-              <a className="cp-member__social-link" href={s.link} target="_blank" rel="noopener noreferrer">{s.label}</a>  
-            </li>
-          ))}
-        </ul>}
-      </div>}
+      {activeMember && <MemberDescription visible={!!activeMember} right={rightActiveMember} memberStyle={memberStyle}
+          member={activeMember} handleClick={handleClick} toggleDescription={toggleDescription} />}
     </div>
   )
 }

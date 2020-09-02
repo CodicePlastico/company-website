@@ -113,6 +113,11 @@ a {
   color: $main-color;
 }
 
+button {
+  font-family: $ff-barlow-condensed;
+  font-weight: 300;
+}
+
 .#{$prefix} {
   &__main-text{
     @include type-setting(2, 2, 2);

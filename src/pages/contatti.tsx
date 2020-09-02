@@ -12,7 +12,7 @@ const Contatti = ({data}) => (
     <SEO title="Contatti" />
     <div className="cp-internal-page cp-contatti">
       <div className="cp-internal-page__bg"></div>
-      <div className="cp-internal-page__content cp-grid">
+      <div className="cp-internal-page__content cp-internal-page__content--bg cp-grid">
         <div className="cp-grid__container">
           <div className="cp-grid__content">
             <h1><span>Contatti</span></h1>

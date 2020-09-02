@@ -2,8 +2,8 @@ import p5Types from 'p5'
 import { Coordinates, Channel } from './model'
 
 class MemberCanvas {
-  memberId: string
-  memberName: string
+  id: string
+  name: string
   coordinates: Coordinates
   size: number
   img: p5Types.Image
@@ -26,8 +26,8 @@ class MemberCanvas {
     role: string,
     social: Channel[]
   ) {
-    this.memberId = memberId
-    this.memberName = memberName
+    this.id = memberId
+    this.name = memberName
     this.coordinates = { x, y}
     this.size = size
     this.img = img

@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useEffect, useRef } from 'react'
 import { FullMember } from './model'
 import classNames from 'classnames'
+import MemberDescription from './memberDescription';
 
 interface MemberProps {
   member: FullMember,
@@ -59,8 +60,7 @@ const Member = (props: MemberProps) => {
 
 
   const plusClass = classNames('cp-member__plus', {'cp-member__plus--hidden': open})
-  const descriptionClass = classNames('cp-member__description', {'cp-member__description--visible': open}, {'cp-member__description--right': right})
-
+  
   const descriptionStyle = {
     width: width
   }
@@ -75,27 +75,11 @@ const Member = (props: MemberProps) => {
         <img className="cp-member__img" src={member.img} alt={member.name} ref={imgCallBack} />
         <div className="cp-member__info">
           <h4 className="cp-member__title"><span>{member.name}</span></h4>
-          <p>{member.nick && <>@{member.nick}</>} - {member.role}</p>
+          <p>{member.nick && <>@{member.nick}</>} {member.nick && member.role && <>-</>} {member.role}</p>
         </div>
         <button className={plusClass} onClick={toggleDescription}>+</button>
       </div>
-      <div className={descriptionClass} style={descriptionStyle}>
-        <button className="cp-member__description-close" onClick={toggleDescription}>x</button>
-        <div className="cp-member__description-info">
-          <h5 className="cp-member__description-title">{member.name}</h5>
-          <p><strong>{member.nick && <>@{member.nick} - </>}  {member.role}</strong></p>
-        </div>
-        <p className="cp-member__description-text">
-          {member.description}
-        </p>
-        {member.social && member.social.length > 0 && <ul className="cp-member__social">
-          {member.social.map(s => (  
-            <li key={`${member.id}-social-${s.label}`}>
-              <a className="cp-member__social-link" href={s.link} target="_blank" rel="noopener noreferrer">{s.label}</a>  
-            </li>
-          ))}
-        </ul>}
-      </div>
+      <MemberDescription visible={open} right={right} memberStyle={descriptionStyle} member={member} toggleDescription={toggleDescription} />
     </div>
   )
 }

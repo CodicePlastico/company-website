@@ -31,7 +31,7 @@ const AboutUs = () => (
     <div className="cp-internal-page cp-about">
       <div className="cp-grid">
         <div className="cp-grid__container">
-          <div className="cp-grid__content">
+          <div className="cp-internal-page__content cp-grid__content">
             <h1><span>Chi</span> siamo</h1>
             <p className="cp-typography__main-text">
               Siamo sviluppatori, analisti, designer: ci piace molto lavorare in squadra, 

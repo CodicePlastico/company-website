@@ -106,7 +106,7 @@ const Team = () => {
           <div className="cp-grid">
             <div className="cp-grid__container">
               <div className="cp-grid__content">
-                <div className="cp-team__filters">
+                <div className="cp-team__filters" draggable="false">
                   <div className="cp-team__filters-left">
                     <p className="cp-team__filters-title">Visualizza</p>
                     <div className="cp-team__filters-buttons">

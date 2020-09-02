@@ -12,6 +12,8 @@ $prefix: cp-team;
 
   &__filters{
     display: none;
+    -webkit-user-drag: none;
+    user-drag: none;
   }
 
   &__members{
@@ -70,6 +72,10 @@ $prefix: cp-team;
           display: block;
         }
       }
+
+      &-relation{
+        text-align: center;
+      }
     }
 
     &__grid{
@@ -85,6 +91,11 @@ $prefix: cp-team;
 
     &__list{
       position: relative;
+      display: inline-block;
+
+      .react-p5{
+        display: inline-block;
+      }
 
       canvas {
         display: block;

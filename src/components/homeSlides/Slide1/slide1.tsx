@@ -1,11 +1,11 @@
-import React, { useState, useCallback, DOMElement, useEffect } from 'react'
+import React, { useState, useCallback } from 'react'
 import { gsap } from 'gsap'
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
-import stars from './stars.png';
-import planet1 from './planet_01.png';
-import planet2 from './planet_02.png';
+import stars from './stars.png'
+import planet1 from './planet_01.png'
+import planet2 from './planet_02.png'
 
 gsap.registerPlugin(MotionPathPlugin)
 
@@ -44,7 +44,7 @@ const Slide1 = () => {
     }
     const tween = gsap.to(ref, animation);
     setTween(tween);
-  }, []);
+  }, [])
   
   
   const onPathSet = useCallback(ref => {
@@ -52,7 +52,7 @@ const Slide1 = () => {
       const { height } = ref.getBoundingClientRect();
       setHeight(height)
     }
-  }, []);
+  }, [])
   
   return (
     <div className="cp-home__slide cp-slide-1">

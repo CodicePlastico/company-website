@@ -1,0 +1,58 @@
+$prefix: cp-slide-1;
+
+.#{$prefix} {
+  background-image: url('/home_01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__ship{
+    width: 200px;
+    vertical-align: top;
+  }
+
+  &__stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__planet1{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    z-index: 2;
+  }
+
+  &__border1{
+    position: absolute;
+    top: 45px;
+    left: 545px;
+    animation: rotation 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__planet2{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    z-index: 2;
+  }
+
+  &__border2{
+    position: absolute;
+    bottom: 130px;
+    left: -267px;
+    animation: rotation 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__footer{
+    background-image: url('/home_div_01.png');
+    background-position: center center;
+    height: 300px;
+    background-size: contain;
+  }
+}

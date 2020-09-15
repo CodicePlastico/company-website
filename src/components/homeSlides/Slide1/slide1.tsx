@@ -15,7 +15,6 @@ const Slide1 = () => {
   const [height, setHeight] = useState(0)
   const [translate, setTranslate] = useState(0)
 
-  console.log(translate);
   const style = {
     transform: `translateZ(${translate}px)`
   }
@@ -66,16 +65,16 @@ const Slide1 = () => {
         </svg>
         <img className="cp-slide-1__planet1" src={planet1} alt="small planet"/>
         <svg className="cp-slide-1__border1" width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="79" cy="79" r="78" stroke="white" stroke-width="2" stroke-dasharray="5 5"/>
+          <circle cx="79" cy="79" r="78" stroke="white" strokeWidth="2" strokeDasharray="5 5"/>
         </svg>
         <img className="cp-slide-1__planet2" src={planet2} alt="big planet"/>
         <svg className="cp-slide-1__border2" width="533" height="533" viewBox="0 0 533 533" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="266.5" cy="266.5" r="263.5" stroke="white" stroke-width="6" stroke-dasharray="20 20"/>
+          <circle cx="266.5" cy="266.5" r="263.5" stroke="white" strokeWidth="6" strokeDasharray="20 20"/>
         </svg>
       </div>
       <div className="cp-grid cp-home__grid">
         <div className="cp-grid__container cp-home__grid-container">
-          <div className="cp-home__grid-content cp-home__grid-content--right">
+          <div className="cp-home__grid-content cp-home__grid-content--right cp-home__grid-content--full">
             <h1 className="cp-home__title">
               <span>Costruiamo <strong>sinergie</strong><br/>tra aziende e tecnologia</span>
             </h1>

@@ -21,16 +21,18 @@ $prefix: cp-grid;
     grid-area: left;
     overflow: hidden;
     justify-self: end;
+    width: calc(50vw - #{$half-container});
   }
 
   &__right{
     grid-area: right;
     overflow: hidden;
     justify-self: start;
+    width: calc(50vw - #{$half-container});
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: $container-wmax-width) {
   .#{$prefix}{
     grid-template-columns:  minmax(0, 1fr) 1200px minmax(0, 1fr);
   }

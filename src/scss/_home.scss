@@ -30,16 +30,19 @@ $min-height: calc(100vh - 3.75rem);
     z-index: 2;
 
     &-content{
-      min-height: $min-height;
       padding: vr(1) vr(1) 150px vr(1);
       grid-column-start: 1;
       grid-column-end: 4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
 
       &--right{
         text-align: right;
+      }
+
+      &--full{
+        min-height: $min-height;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }
@@ -87,7 +90,6 @@ $min-height: calc(100vh - 3.75rem);
     left: 0;
     right: 0;
     z-index: 2;
-    transform: translateY(50%);
   }
 }
 

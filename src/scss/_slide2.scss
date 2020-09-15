@@ -1,5 +1,70 @@
 $prefix: cp-slide-2;
 
 .#{$prefix} {
+  &__title{
+    padding-top: vr(3);
+  }
+
+  &__universe{
+    position: relative;
+
+    &-planet{
+      position: absolute;
+      top: 10px;
+      left: 500px;
+      z-index: 2;
+    }
   
+    &-border{
+      position: absolute;
+      top: 45px;
+      left: 545px;
+      animation: rotation 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__scene{
+    padding-top: vr(2);
+    align-items: end;
+
+    &-content{
+      padding: 0;
+      position: relative;
+    }
+
+    &-structure{
+      width: 100%;
+      height: auto;
+      margin-bottom: -130px;
+    }
+
+    &-tech{
+      position: absolute;
+      top: -153px;
+      left: 100%;
+      margin-left: -20px;
+    }
+
+    &-footer{
+      display: block;
+      width: 1200px;
+      max-width: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $container-wmax-width) {
+  .#{$prefix}{
+    &__scene{
+      &-tech{
+        display: none;
+      }
+
+      &-footer{
+        max-width: 100%;
+      }
+    }
+  }
 }

@@ -1,0 +1,28 @@
+$prefix: cp-slide-3;
+
+.#{$prefix} {
+  background-color: #d93232;
+
+  &__header {
+    background-image: url('/header_03.png');
+    background-position: left top;
+    background-repeat: repeat-x;
+    height: 175px;
+    background-size: contain;
+  }
+
+  &__footer {
+    background-image: url('/footer_03.png');
+    background-position: right bottom;
+    background-repeat: repeat-x;
+    height: 175px;
+    background-size: contain;
+  }
+
+  &__deck-wrap {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}

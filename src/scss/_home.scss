@@ -1,17 +1,16 @@
 $prefix: cp-home;
 $min-height: calc(100vh - 3.75rem);
 
-
 .#{$prefix} {
-  &__slide{
+  &__slide {
     min-height: $min-height;
     width: 100%;
     position: relative;
   }
 
-  &__title{  
+  &__title {
     @include type-setting(5, 6, 4);
-    
+
     & > span {
       background-color: $main-light;
       box-shadow: 0.2em 0 0 $main-light, -0.2em 0 0 $main-light;
@@ -25,20 +24,20 @@ $min-height: calc(100vh - 3.75rem);
     }
   }
 
-  &__grid{
+  &__grid {
     position: relative;
     z-index: 2;
 
-    &-content{
+    &-content {
       padding: vr(1) vr(1) 150px vr(1);
       grid-column-start: 1;
       grid-column-end: 4;
 
-      &--right{
+      &--right {
         text-align: right;
       }
 
-      &--full{
+      &--full {
         min-height: $min-height;
         display: flex;
         flex-direction: column;
@@ -47,7 +46,7 @@ $min-height: calc(100vh - 3.75rem);
     }
   }
 
-  &__cta{
+  &__cta {
     display: inline-block;
     background-color: $main-color;
     width: 210px;
@@ -58,13 +57,12 @@ $min-height: calc(100vh - 3.75rem);
     text-transform: uppercase;
     padding: vr(-1) 0;
 
-    small{
+    small {
       color: $main-dark;
-
     }
   }
 
-  &__background{
+  &__background {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +73,7 @@ $min-height: calc(100vh - 3.75rem);
     transform-style: preserve-3d;
   }
 
-  &__animation{
+  &__animation {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,9 +82,17 @@ $min-height: calc(100vh - 3.75rem);
     z-index: 2;
   }
 
-  &__footer{
+  &__footer {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 2;

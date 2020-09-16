@@ -25,7 +25,6 @@ const Slide1 = () => {
     const notY = y * -1;
     if (notY && height && notY < height) {
       const progress = notY / height
-      console.log(progress);
       if (tween) {
         tween.progress(progress)
       }

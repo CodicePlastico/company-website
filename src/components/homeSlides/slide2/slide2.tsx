@@ -16,6 +16,7 @@ import openShip from './ship_open.png'
 
 const Slide2 = () => {
   const [baloonVisible, setBaloonVisible] = useState(false)
+  const [animate, setAnimate] = useState(true)
   const slide = useRef(null)
   const shipContainer = useRef(null)
 
@@ -32,10 +33,11 @@ const Slide2 = () => {
   }, [], slide)
 
   useScrollPosition(({ currPos }) => {
-    if (currPos.y < 550) {
+    if (animate && currPos.y < 550) {
       animateShip();
+      setAnimate(false)
     }
-  }, [], shipContainer)
+  }, [animate], shipContainer)
 
 
   

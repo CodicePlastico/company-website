@@ -23,7 +23,6 @@ const Slide2 = () => {
     const tl = gsap.timeline();
     tl.to("#s2-ship-container", {x: -200, y: 240, scale: 1, duration: 1});
     tl.to("#s2-openship", {opacity: 1, duration: 1});
-    tl.to("#s2-ship", {opacity: 0, duration: 1});
   }
 
   useScrollPosition(({ currPos }) => {
@@ -70,7 +69,7 @@ const Slide2 = () => {
             <circle cx="79" cy="79" r="78" stroke="white" strokeWidth="2" strokeDasharray="5 5"/>
           </svg>
           <div className="cp-slide-2__ship" ref={shipContainer} id="s2-ship-container">
-            <img className="cp-slide-2__ship-close" src={ship} alt="s2-ship" id="ship"/>
+            <img className="cp-slide-2__ship-close" src={ship} alt="ship" id="s2-ship"/>
             <img className="cp-slide-2__ship-open" src={openShip} alt="ship open" id="s2-openship" />
           </div>
         </div>

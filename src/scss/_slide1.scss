@@ -8,6 +8,10 @@ $prefix: cp-slide-1;
   &__ship{
     width: 200px;
     vertical-align: top;
+
+    &-path{
+      max-width: calc(100% - 300px);
+    }
   }
 
   &__stars{

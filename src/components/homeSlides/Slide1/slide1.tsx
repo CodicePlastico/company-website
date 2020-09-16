@@ -6,6 +6,7 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import stars from './stars.png'
 import planet1 from './planet_01.png'
 import planet2 from './planet_02.png'
+import ship from './ship.png'
 
 gsap.registerPlugin(MotionPathPlugin)
 
@@ -59,7 +60,7 @@ const Slide1 = () => {
         <img className="cp-slide-1__stars" src={stars} alt="stars" style={style}/>
       </div>
       <div className="cp-home__animation">
-        <img id="ship" className="cp-slide-1__ship" src="/homeship.png" alt="ship" ref={onShipSet} />
+        <img id="ship" className="cp-slide-1__ship" src={ship} alt="ship" ref={onShipSet} />
         <svg width="100vh" height="100vh" viewBox="0 0 1424 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="path" ref={onPathSet} d="M-74 10.6573C9.25962 -13.508 107.722 17.6151 185.498 46.4503C278.155 80.8026 355.466 134.566 422.674 201.553C507.835 286.434 574.278 393.917 600.456 506.697C611.182 552.91 623.818 599.533 634.936 646.072C658.146 743.234 702.044 831.311 780.031 902.046C863.81 978.034 951.988 1035.9 1067.03 1063.29C1183.98 1091.14 1305.9 1099.91 1422 1130" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="10 10"/>
         </svg>

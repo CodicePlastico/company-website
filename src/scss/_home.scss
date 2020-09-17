@@ -1,0 +1,103 @@
+$prefix: cp-home;
+$min-height: calc(100vh - 3.75rem);
+
+
+.#{$prefix} {
+  &__slide{
+    min-height: $min-height;
+    width: 100%;
+    position: relative;
+  }
+
+  &__title{  
+    @include type-setting(5, 6, 4);
+    
+    & > span {
+      background-color: $main-light;
+      box-shadow: 0.2em 0 0 $main-light, -0.2em 0 0 $main-light;
+      font-weight: 500;
+      color: $main-dark;
+    }
+
+    strong {
+      color: $main-color;
+      font-weight: 500;
+    }
+  }
+
+  &__grid{
+    position: relative;
+    z-index: 2;
+
+    &-content{
+      padding: vr(1) vr(1) 150px vr(1);
+      grid-column-start: 1;
+      grid-column-end: 4;
+
+      &--right{
+        text-align: right;
+      }
+
+      &--full{
+        min-height: $min-height;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__cta{
+    display: inline-block;
+    background-color: $main-color;
+    width: 210px;
+    text-align: center;
+    margin-left: auto;
+    color: $main-light;
+    font-family: $ff-comic;
+    text-transform: uppercase;
+    padding: vr(-1) 0;
+
+    small{
+      color: $main-dark;
+
+    }
+  }
+
+  &__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+  }
+
+  &__animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &__footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

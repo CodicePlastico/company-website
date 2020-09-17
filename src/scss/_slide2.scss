@@ -1,0 +1,153 @@
+$prefix: cp-slide-2;
+
+.#{$prefix} {
+  &__title{
+    padding-top: vr(3);
+  }
+
+  &__container{
+    position: relative;
+  }
+
+  &__ship{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 200px;
+    width: 230px;
+    transform: scale(0.5);
+
+    img{
+      position: absolute;
+      width: auto;
+      height: 200px;
+      width: auto;
+      top: 0;
+      right: 0;
+    }
+
+    &-open{
+      opacity: 0;
+    }
+  }
+
+  &__universe{
+    height: 340px;
+    background-image: url('/universe_bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &-bg{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    
+    &-container{
+      position: relative;
+      max-width: $container-wmax-width;
+      margin: 0 auto;
+    }
+
+    &-planet{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+    }
+  
+    &-border{
+      position: absolute;
+      top: 45px;
+      left: 55px;
+      animation: rotation 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__scene{
+    padding-top: vr(4);
+    align-items: end;
+
+    &-content{
+      padding: 0;
+      position: relative;
+    }
+
+    &-structure{
+      width: 100%;
+      height: 200px;
+      margin-bottom: -170px;
+      background-image: url('/structure.png');
+      background-position: top right;
+      background-size: cover;
+    }
+
+    &-tech{
+      position: absolute;
+      top: -153px;
+      left: 100%;
+      margin-left: -20px;
+    }
+
+    &-footer{
+      display: block;
+      width: 1200px;
+      max-width: none;
+    }
+  }
+
+  &__people{
+    position: absolute;
+    top: -200px;
+    right: 450px;
+
+    &-baloon{
+      opacity: 0;
+      transition: all 0.5s linear;
+
+      span{
+        font-family: $ff-comic;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      &--visible{
+        opacity: 1;
+      }
+    }
+
+    &-baloon1{
+      position: absolute;
+      top: -130px;
+      right: 55px;
+    }
+
+    &-baloon2{
+      position: absolute;
+      top: -50px;
+      right: -10px;
+      transition-delay: 1s;
+    }
+  }
+}
+
+@media only screen and (max-width: $container-wmax-width) {
+  .#{$prefix}{
+    &__scene{
+      &-tech{
+        display: none;
+      }
+
+      &-footer{
+        max-width: 100%;
+      }
+    }
+  }
+}

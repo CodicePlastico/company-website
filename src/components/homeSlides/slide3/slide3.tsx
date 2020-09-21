@@ -1,15 +1,102 @@
-import React from 'react'
+import React, { useState, useRef, useCallback } from 'react'
+import { gsap } from 'gsap'
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
 import deck from './deck.png'
+import baloon1 from './baloon_1.png'
+import baloon2 from './baloon_2.png'
+import ship from './ship.png'
+
+gsap.registerPlugin(MotionPathPlugin)
 
 const Slide3 = () => {
-  useScrollPosition(({ currPos }) => {
-    console.log(currPos.y)
-  })
+  const [tween3, setTween3] = useState(null)
+  const [height, setHeight] = useState(0)
+  const slide3 = useRef(null)
+  const path3 = useRef(null)
+
+  const getHeight = (ref: React.MutableRefObject<any>): number => {
+    const { height } = ref.current.getBoundingClientRect()
+
+    return height - 145
+  }
+
+  useScrollPosition(
+    ({ currPos }) => {
+      // console.log(`useScrollPosition`)
+      const { y } = currPos
+      const h = getHeight(path3)
+      const notY = (y - 300) * -1
+      if (notY && h && notY < h) {
+        console.log({ notY, h })
+        const progress = notY < 0 ? 0 : notY / h
+        if (tween3) {
+          console.log(`set progress: ${progress}`)
+          tween3.progress(progress)
+        }
+      } else {
+        tween3.progress(1)
+      }
+    },
+    [tween3],
+    slide3
+  )
+
+  const onShipSet = useCallback(ref => {
+    // console.log(ref)
+    const animation: gsap.TweenVars = {
+      duration: 5,
+      paused: true,
+      ease: 'none',
+      motionPath: {
+        path: '#s3-path',
+        align: '#s3-path',
+        autoRotate: false,
+        alignOrigin: [0.5, 0.5],
+      },
+    }
+    const tween = gsap.to(ref, animation)
+    setTween3(tween)
+  }, [])
+
+  // const onPathSet = useCallback(ref => {
+  //   if (ref) {
+  //     const { height } = ref.getBoundingClientRect()
+  //     console.log(ref, height)
+  //     setHeight(height)
+  //   }
+  // }, [])
 
   return (
-    <div className="cp-home__slide cp-slide-3">
+    <div className="cp-home__slide cp-slide-3" ref={slide3}>
+      <div className="cp-slide-3__animation">
+        <img
+          className="cp-slide-3__ship"
+          src={ship}
+          alt="ship"
+          ref={onShipSet}
+        />
+        <svg
+          className="cp-slide-3__ship-path"
+          width="100vh"
+          height="100vh"
+          viewBox="0 0 1424 1132"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="s3-path"
+            ref={path3}
+            d="M611 2.00003C564.711 2.00002 519.777 13.8515 484.992 56.9452C424.817 131.494 417.923 222.635 416.356 326.621C414.615 442.155 408.508 563.027 341.329 648.414C298.724 702.566 234.813 754.721 178.001 768.5C123.709 781.668 50.6955 779.818 2.00009 747.5"
+            stroke="white"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeDasharray="10 10"
+          />
+        </svg>
+      </div>
       <div className="cp-grid cp-home__grid">
         <div className="cp-grid__container">
           <div className="cp-home__grid-content cp-home__grid-content--right cp-home__grid-content--full">
@@ -41,11 +128,25 @@ const Slide3 = () => {
           </div>
         </div>
       </div>
-
-      <div className="cp-slide-3__dashboard"></div>
+      <div className="cp-slide-3__dashboard">
+        <div className="cp-slide-3__dashboard-baloon is-visible">
+          <span>
+            Tutto ok.
+            <br />
+            <b>Proseguiamo!</b>
+          </span>
+          <img src={baloon1} alt="Baloon" />
+        </div>
+      </div>
       <div className="cp-home__header cp-slide-3__header"></div>
-      <div className="cp-home__header cp-slide-3__deck-wrap">
-        <img className="cp-slide-3__deck" src={deck} alt="deck image" />
+      <div className="cp-slide-3__deck">
+        <img className="cp-slide-3__deck-image" src={deck} alt="deck image" />
+        <div className="cp-slide-3__deck-baloon is-visible">
+          <span>
+            avviare strumenti <b>fase 1!</b>
+          </span>
+          <img src={baloon2} alt="Baloon" />
+        </div>
       </div>
       <div className="cp-s3-scarecrow">
         <div className="cp-s3-scarecrow__background"></div>
@@ -62,8 +163,8 @@ const Slide3 = () => {
             cy="108"
             r="106.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -79,8 +180,8 @@ const Slide3 = () => {
             cy="99"
             r="97.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -96,8 +197,8 @@ const Slide3 = () => {
             cy="91"
             r="89.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -113,8 +214,8 @@ const Slide3 = () => {
             cy="91"
             r="89.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -130,8 +231,8 @@ const Slide3 = () => {
             cy="99"
             r="97.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -149,7 +250,7 @@ const Slide3 = () => {
             height="544.143"
             transform="rotate(30 296.007 23.9355)"
             stroke="#111D24"
-            stroke-width="35"
+            strokeWidth="35"
           />
         </svg>
         <svg
@@ -165,8 +266,8 @@ const Slide3 = () => {
             cy="160"
             r="158.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
         <svg
@@ -182,34 +283,12 @@ const Slide3 = () => {
             cy="229"
             r="227.5"
             stroke="white"
-            stroke-width="3"
-            stroke-dasharray="10 10"
+            strokeWidth="3"
+            strokeDasharray="10 10"
           />
         </svg>
       </div>
       <div className="cp-home__footer cp-slide-3__footer"></div>
-      {/* <div className="cp-home__scene cp-slide-2__universe">
-        <img className="cp-slide-2__universe-bg" src={bg} alt="slide background" />
-        <img className="cp-slide-2__universe-planet" src={planet} alt="small planet"/>
-        <svg className="cp-slide-2__universe-border" width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="79" cy="79" r="78" stroke="white" strokeWidth="2" strokeDasharray="5 5"/>
-        </svg>
-      </div>
-      <div className="cp-grid cp-home__grid cp-slide-2__scene">
-        <div className="cp-grid__left">
-          <img src={footer} className="cp-slide-2__scene-footer" alt="Footer" />
-        </div>
-        <div className="cp-grid__container cp-home__grid-container">
-          <div className="cp-home__grid-content cp-slide-2__scene-content">
-            <img src={structure} alt="Structure" className="cp-slide-2__scene-structure"/>
-            <img src={tech} className="cp-slide-2__scene-tech" alt="Technology" />
-            <img src={footer} className="cp-slide-2__scene-footer" alt="Footer" />
-          </div>
-        </div>
-        <div className="cp-grid__right">
-          <img src={footer} className="cp-slide-2__scene-footer" alt="Footer" />
-        </div>
-      </div> */}
     </div>
   )
 }

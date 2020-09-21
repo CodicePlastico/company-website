@@ -1,5 +1,33 @@
 $prefix: cp-slide-3;
 
+%baloon {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s linear;
+
+  &.is-visible {
+    opacity: 1;
+  }
+
+  & > span {
+    font-family: $ff-comic;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+%circle-rotation {
+  position: absolute;
+  z-index: 2;
+  animation: rotation 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .#{$prefix} {
   background-color: $main-color;
 
@@ -42,11 +70,18 @@ $prefix: cp-slide-3;
     height: 175px;
   }
 
-  &__deck-wrap {
+  &__deck {
     transform: translateY(-50%);
     position: absolute;
     top: 50%;
     left: 0;
+
+    &-baloon {
+      @extend %baloon;
+
+      right: -90px;
+      top: -100px;
+    }
   }
 
   &__left {
@@ -54,6 +89,28 @@ $prefix: cp-slide-3;
     width: 500px;
     text-align: left;
     align-self: flex-end;
+  }
+
+  &__animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &__ship {
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+
+    &-path {
+      position: absolute;
+      left: 640px;
+      top: -210px;
+      // max-width: calc(100% - 300px);
+    }
   }
 
   &__dashboard {
@@ -67,15 +124,18 @@ $prefix: cp-slide-3;
 
     width: 898px;
     height: 363px;
-  }
-}
 
-%circle-rotation {
-  position: absolute;
-  z-index: 2;
-  animation: rotation 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+    &-baloon {
+      @extend %baloon;
+
+      right: 215px;
+      bottom: 145px;
+
+      & > span {
+        top: 10px;
+      }
+    }
+  }
 }
 
 .cp-s3-scarecrow {

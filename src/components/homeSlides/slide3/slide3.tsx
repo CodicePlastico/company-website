@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react'
 import { gsap } from 'gsap'
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import classNames from 'classnames'
 
 import deck from './deck.png'
 import baloon1 from './baloon_1.png'
@@ -11,8 +12,8 @@ import ship from './ship.png'
 gsap.registerPlugin(MotionPathPlugin)
 
 const Slide3 = () => {
+  const [baloonVisible, setBaloonVisible] = useState(false)
   const [tween3, setTween3] = useState(null)
-  const [height, setHeight] = useState(0)
   const slide3 = useRef(null)
   const path3 = useRef(null)
 
@@ -24,16 +25,17 @@ const Slide3 = () => {
 
   useScrollPosition(
     ({ currPos }) => {
-      // console.log(`useScrollPosition`)
       const { y } = currPos
       const h = getHeight(path3)
       const notY = (y - 300) * -1
       if (notY && h && notY < h) {
-        console.log({ notY, h })
         const progress = notY < 0 ? 0 : notY / h
         if (tween3) {
-          console.log(`set progress: ${progress}`)
           tween3.progress(progress)
+        }
+
+        if (baloonVisible === false && progress > 0.15) {
+          setBaloonVisible(true)
         }
       } else {
         tween3.progress(1)
@@ -44,7 +46,6 @@ const Slide3 = () => {
   )
 
   const onShipSet = useCallback(ref => {
-    // console.log(ref)
     const animation: gsap.TweenVars = {
       duration: 5,
       paused: true,
@@ -60,13 +61,12 @@ const Slide3 = () => {
     setTween3(tween)
   }, [])
 
-  // const onPathSet = useCallback(ref => {
-  //   if (ref) {
-  //     const { height } = ref.getBoundingClientRect()
-  //     console.log(ref, height)
-  //     setHeight(height)
-  //   }
-  // }, [])
+  const dashboardClassName = classNames('cp-slide-3__dashboard-baloon', {
+    'is-visible': baloonVisible,
+  })
+  const deckClassName = classNames('cp-slide-3__deck-baloon', {
+    'is-visible': baloonVisible,
+  })
 
   return (
     <div className="cp-home__slide cp-slide-3" ref={slide3}>
@@ -129,11 +129,9 @@ const Slide3 = () => {
         </div>
       </div>
       <div className="cp-slide-3__dashboard">
-        <div className="cp-slide-3__dashboard-baloon is-visible">
+        <div className={dashboardClassName}>
           <span>
-            Tutto ok.
-            <br />
-            <b>Proseguiamo!</b>
+            Tutto ok. <b>Proseguiamo!</b>
           </span>
           <img src={baloon1} alt="Baloon" />
         </div>
@@ -141,7 +139,7 @@ const Slide3 = () => {
       <div className="cp-home__header cp-slide-3__header"></div>
       <div className="cp-slide-3__deck">
         <img className="cp-slide-3__deck-image" src={deck} alt="deck image" />
-        <div className="cp-slide-3__deck-baloon is-visible">
+        <div className={deckClassName}>
           <span>
             avviare strumenti <b>fase 1!</b>
           </span>

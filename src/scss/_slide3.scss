@@ -55,7 +55,7 @@ $prefix: cp-slide-3;
   }
 
   &__header {
-    z-index: 5;
+    z-index: 2;
     background-image: url('/header_03.png');
     background-position: left top;
     background-repeat: repeat-x;
@@ -63,7 +63,7 @@ $prefix: cp-slide-3;
   }
 
   &__footer {
-    z-index: 5;
+    z-index: 2;
     background-image: url('/footer_03.png');
     background-position: right bottom;
     background-repeat: repeat-x;
@@ -98,6 +98,7 @@ $prefix: cp-slide-3;
     right: 0;
     bottom: 0;
     z-index: 2;
+    overflow: hidden;
   }
 
   &__ship {
@@ -109,11 +110,11 @@ $prefix: cp-slide-3;
       position: absolute;
       left: 640px;
       top: -210px;
-      // max-width: calc(100% - 300px);
     }
   }
 
   &__dashboard {
+    z-index: 2;
     position: absolute;
     right: 0;
     bottom: 150px;

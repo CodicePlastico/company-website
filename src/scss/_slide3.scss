@@ -1,22 +1,45 @@
 $prefix: cp-slide-3;
 
 .#{$prefix} {
-  background-color: #d93232;
+  background-color: $main-color;
+
+  &__title {
+    line-height: 6rem;
+    margin-bottom: 4rem;
+
+    & > span {
+      color: $black;
+      box-shadow: 0.2em 0 0 $main-color, -0.2em 0 0 $main-color;
+      background-color: $main-color;
+    }
+
+    & b {
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    & > span {
+      color: $black;
+      box-shadow: 0.2em 0 0 $main-color, -0.2em 0 0 $main-color;
+      background-color: $main-color;
+    }
+  }
 
   &__header {
+    z-index: 5;
     background-image: url('/header_03.png');
     background-position: left top;
     background-repeat: repeat-x;
     height: 175px;
-    background-size: contain;
   }
 
   &__footer {
+    z-index: 5;
     background-image: url('/footer_03.png');
     background-position: right bottom;
     background-repeat: repeat-x;
     height: 175px;
-    background-size: contain;
   }
 
   &__deck-wrap {
@@ -25,4 +48,108 @@ $prefix: cp-slide-3;
     top: 50%;
     left: 0;
   }
+
+  &__left {
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    align-self: flex-end;
+  }
+
+  &__dashboard {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+
+    background-image: url('/slide3_dashboard.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    width: 898px;
+    height: 363px;
+  }
+}
+
+%circle-rotation {
+  position: absolute;
+  z-index: 2;
+  animation: rotation 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cp-s3-scarecrow {
+  position: absolute;
+  z-index: 1;
+  width: 794px;
+  height: 962px;
+  bottom: 60px;
+  left: 250px;
+
+  &__background {
+    position: relative;
+    z-index: 3;
+    background: url('/scarecrow.png') no-repeat;
+    width: 794px;
+    height: 962px;
+  }
+
+  &__border1 {
+    @extend %circle-rotation;
+    top: -32px;
+    left: 286px;
+  }
+
+  &__border2 {
+    @extend %circle-rotation;
+    top: 267px;
+    right: -20px;
+  }
+
+  &__border3 {
+    @extend %circle-rotation;
+    bottom: 197px;
+    right: 138px;
+  }
+
+  &__border4 {
+    @extend %circle-rotation;
+    bottom: 197px;
+    left: 134px;
+  }
+
+  &__border5 {
+    @extend %circle-rotation;
+    top: 267px;
+    left: -26px;
+  }
+
+  &__border6 {
+    @extend %circle-rotation;
+    bottom: 157px;
+    left: 234px;
+  }
+
+  &__border7 {
+    @extend %circle-rotation;
+    top: 179px;
+    left: 165px;
+  }
+
+  &__rect {
+    @extend %circle-rotation;
+    z-index: 1;
+    top: 20px;
+    left: 0;
+  }
+
+  // &__border6 {
+  //   @extend %rotation;
+  //   // bottom: 189px;
+  //   // left: 126px;
+  // }
+
+  // &__border7 {
+  //   @extend %rotation;
+  // }
 }

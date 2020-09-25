@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slide6 = () => {
   return(
-    <div className="cp-home__slide cp-slide-5">
+    <div className="cp-home__slide cp-slide-6">
       <div className="cp-grid cp-home__grid">
         <div className="cp-grid__container">
           <div className="cp-home__grid-content cp-home__grid-content--full">

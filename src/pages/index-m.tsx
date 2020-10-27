@@ -14,7 +14,7 @@ const IndexPage = () => (
         <p>Lavoriamo con le aziende, progettando e realizzando sistemi nei quali la tecnologia è un reale strumento di supporto ai processi operativi di ogni giorno.</p>
         <img src='./02.jpg' />
       </div>
-      <div>
+      <div className='cp-home-mobile__section'>
         <h1>L'altra metà della <span>mela</span></h1>
         <p>Ogni progetto inizia con una stretta di mano, reale o virtuale poco importa. In CodicePlastico collaboriamo con aziende che condividono il nostro metodo e i nostri valori: conoscerci reciprocamente è importante.</p>
         <img src='./03.jpg' />

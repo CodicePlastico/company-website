@@ -10,6 +10,10 @@ $prefix: cp-home-mobile;
 
   &__section {
 
+    h1, p {
+      padding: 0 10px;
+    }
+
     &--red {
       background-color: #DA2222;
 

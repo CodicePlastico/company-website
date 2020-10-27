@@ -77,8 +77,13 @@ h1, h2, h3, h4, h5, p, small, a, ul, li {
 }
 
 h1 {
-  @include type-setting(6, 6, 4);
+  @include type-setting(5, 4, 2);
   font-weight: 500;
+
+  @media only screen and (min-width: $desktop-min-width) {
+    @include type-setting(6, 6, 4);
+    font-weight: 500;
+  }
 }
 
 h2 {
@@ -98,7 +103,11 @@ h5 {
 }
 
 p {
-  @include type-setting(0, 1, 1);
+  @include type-setting(1, 2, 1);
+
+  @media only screen and (min-width: $desktop-min-width) {
+    @include type-setting(0, 1, 1);
+  }
 }
 
 p strong {

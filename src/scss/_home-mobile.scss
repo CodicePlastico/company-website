@@ -1,0 +1,21 @@
+$prefix: cp-home-mobile;
+
+.#{$prefix} {
+  
+  text-align: center;
+
+  & img {
+    display: block;
+  }
+
+  &__section {
+
+    &--red {
+      background-color: #DA2222;
+
+      & span {
+        color: $main-light;
+      }
+    }
+  }
+}

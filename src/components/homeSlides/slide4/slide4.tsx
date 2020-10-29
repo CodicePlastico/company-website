@@ -10,7 +10,6 @@ const Slide4 = () => {
   const magContainer = useRef(null)
 
   useScrollPosition(({ currPos }) => {
-    console.log(currPos.y, animate);
     if (!animate && currPos.y < 550) {
       setAnimate(true)
     }

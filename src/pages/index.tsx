@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserView, MobileView } from 'react-device-detect';
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -9,11 +10,15 @@ import Slide4 from '../components/homeSlides/slide4/slide4'
 import Slide7 from '../components/homeSlides/slide7/slide7'
 import Slide8 from '../components/homeSlides/slide8/slide8'
 import Slide9 from '../components/homeSlides/slide9/slide9'
+import HomeMobile from '../components/homeMobile/homeMobile';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div>
+    <MobileView>
+      <HomeMobile />
+    </MobileView>
+    <BrowserView>
       <Slide1 />
       <Slide2 />
       <Slide3 />
@@ -21,7 +26,7 @@ const IndexPage = () => (
       <Slide7 />
       <Slide8 />
       <Slide9 />
-    </div>
+    </BrowserView>
   </Layout>
 )
 

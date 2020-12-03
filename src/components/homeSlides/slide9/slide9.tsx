@@ -1,5 +1,8 @@
 import React from 'react';
 
+import screen from './finish-line-screen.svg';
+import ship from './ship.png'
+
 const Slide9 = () => {
   return(
     <div className="cp-home__slide cp-slide-7">
@@ -9,6 +12,7 @@ const Slide9 = () => {
             <h1 className="cp-home__title">
               <span>Il<br/><strong>traguardo</strong></span>
             </h1>
+            <img src={screen} alt="screen" />
             <p>
               Vi accompagniamo nel rilascio della piattaforma con attività di supporto
               e formazione. Come per un’automobile, anche per il software è bene

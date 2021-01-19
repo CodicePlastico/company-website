@@ -1,0 +1,25 @@
+$prefix: cp-home-wide;
+
+.#{$prefix} {
+  
+  text-align: center;
+
+  & img {
+    display: block;
+  }
+
+  &__section {
+
+    h1, p {
+      padding: 0 10px;
+    }
+
+    &--red {
+      background-color: #DA2222;
+
+      & span {
+        color: $main-light;
+      }
+    }
+  }
+}

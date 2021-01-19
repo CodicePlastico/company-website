@@ -14,11 +14,247 @@ $prefix: cp-home-wide;
       padding: 0 10px;
     }
 
-    &--red {
-      background-color: #DA2222;
+    // &--red {
+    //   background-color: #DA2222;
 
-      & span {
-        color: $main-light;
+    //   & span {
+    //     color: $main-light;
+    //   }
+    // }
+
+    &__tech {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "header header"
+        "sidebar content";
+      
+      &__header {
+        grid-area: header;
+        height: 100px;
+        background-color: red;
+      }
+
+      &__sidebar {
+        grid-area: sidebar;
+        height: 100px;
+        background-color: green;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+    }
+
+    &__apple {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    
+      &__header {
+        grid-area: header;
+        height: 100px;
+        background-color: red;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__footer {
+        grid-area: footer;
+        height: 100px;
+        background-color: blue;
+      }
+    }
+
+    &__tailor {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    
+      &__header {
+        grid-area: header;
+        height: 100px;
+        background-color: red;
+      }
+
+      &__sidebar {
+        grid-area: sidebar;
+        height: 100px;
+        background-color: green;
+        align-self: center;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__footer {
+        grid-area: footer;
+        height: 100px;
+        background-color: blue;
+      }
+    }
+
+    &__analysis {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "header header"
+      "content sidebar";
+    
+      &__header {
+        grid-area: header;
+        height: 100px;
+        background-color: red;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__sidebar {
+        grid-area: sidebar;
+        height: 100px;
+        background-color: green;
+        align-self: start;
+      }
+    }
+
+    &__compass {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "content-left sidebar-right"
+      "middle middle"
+      "sidebar-left content-right";
+
+      &__content-left {
+        grid-area: content-left;
+      }
+
+      &__sidebar-right {
+        grid-area: sidebar-right;
+        height: 100px;
+        background-color: orange;
+        align-self: end;
+      }
+
+      &__middle {
+        grid-area: middle;
+        height: 100px;
+        background-color: orange;
+      }
+
+      &__content-right {
+        grid-area: content-right;
+      }
+
+      &__sidebar-left {
+        grid-area: sidebar-left;
+        height: 100px;
+        background-color: orange;
+        align-self: start;
+      }
+    }
+
+    &__basement {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "sidebar content"
+      "footer footer";
+
+      &__sidebar {
+        grid-area: sidebar;
+        height: 100px;
+        background-color: green;
+        align-self: end;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__footer {
+        grid-area: footer;
+        height: 100px;
+        background-color: blue;
+      }
+    }
+
+    &__code {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "header header"
+      "content sidebar";
+    
+      &__header {
+        grid-area: header;
+        height: 100px;
+        background-color: red;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__sidebar {
+        grid-area: sidebar;
+        height: 100px;
+        background-color: green;
+        align-self: start;
+      }
+    }
+
+    &__changes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+      "sidebar-left content sidebar-right";
+    
+      &__sidebar-left {
+        grid-area: sidebar-left;
+        height: 100px;
+        background-color: orange;
+        align-self: center;
+      }
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__sidebar-right {
+        grid-area: sidebar-right;
+        height: 100px;
+        background-color: orange;
+        align-self: center;
+      }
+    }
+
+    &__finish-line {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "content"
+      "footer";
+
+      &__content {
+        grid-area: content;
+      }
+
+      &__footer {
+        grid-area: footer;
+        background-color: blue;
+        height: 100px;
       }
     }
   }

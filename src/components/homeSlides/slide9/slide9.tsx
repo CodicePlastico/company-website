@@ -1,13 +1,16 @@
 import React from 'react';
 
+import screen from './finish-line-screen.svg';
+import ship from './ship.png'
+
 const Slide9 = () => {
   return(
-    <div className="cp-home__slide cp-slide-7">
+    <div className="cp-home__slide cp-slide-9">
       <div className="cp-grid cp-home__grid">
         <div className="cp-grid__container">
           <div className="cp-home__grid-content cp-home__grid-content--full">
-            <h1 className="cp-home__title">
-              <span>Il<br/><strong>traguardo</strong></span>
+            <h1 className="cp-home__title cp-slide-9__title">
+              <span>Il <strong>traguardo</strong></span>
             </h1>
             <p>
               Vi accompagniamo nel rilascio della piattaforma con attività di supporto

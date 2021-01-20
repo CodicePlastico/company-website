@@ -1,33 +1,33 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 
-import techHeader from './techHeader.png'
-import techSidebar from './techSidebar.png'
+import techHeader from './techHeader.jpg'
+import techSidebar from './techSidebar.jpg'
 
-import appleHeader from './appleHeader.png'
-import appleFooter from './appleFooter.png'
+import appleHeader from './appleHeader.jpg'
+import appleFooter from './appleFooter.jpg'
 
-import tailorHeader from './tailorHeader.png'
-import tailorSidebar from './tailorSidebar.png'
-import tailorFooter from './tailorFooter.png'
+import tailorHeader from './tailorHeader.jpg'
+import tailorSidebar from './tailorSidebar.jpg'
+import tailorFooter from './tailorFooter.jpg'
 
-import analysisHeader from './analysisHeader.png'
-import analysisSidebar from './analysisSidebar.png'
+import analysisHeader from './analysisHeader.jpg'
+import analysisSidebar from './analysisSidebar.jpg'
 
-import compassSidebarRight from './compassSidebarRight.png'
-import compassMiddle from './compassMiddle.png'
-import compassSidebarLeft from './compassSidebarLeft.png'
+import compassSidebarRight from './compassSidebarRight.jpg'
+import compassMiddle from './compassMiddle.jpg'
+import compassSidebarLeft from './compassSidebarLeft.jpg'
 
-import codeHeader from './codeHeader.png'
-import codeSidebar from './codeSidebar.png'
+import basementSidebar from './basementSidebar.jpg'
+import basementFooter from './basementFooter.jpg'
 
-import basementSidebar from './basementSidebar.png'
-import basementFooter from './basementFooter.png'
+import codeHeader from './codeHeader.jpg'
+import codeSidebar from './codeSidebar.jpg'
 
-import changesSidebarLeft from './changesSidebarLeft.png'
-import changesSidebarRight from './changesSidebarRight.png'
+import changesSidebarLeft from './changesSidebarLeft.jpg'
+import changesSidebarRight from './changesSidebarRight.jpg'
 
-import finishLineFooter from './finishLineFooter.png'
+import finishLineFooter from './finishLineFooter.jpg'
 
 const HomeWide = () => {
 
@@ -75,7 +75,7 @@ const HomeWide = () => {
           <img className="" src={appleFooter} alt=""/>
         </div>
       </div>
-      <div className='cp-home-wide__section cp-home-wide__section--red cp-home-wide__section__tailor'>
+      <div className='cp-home-wide__section cp-home-wide__section__tailor'>
         <div className='cp-home-wide__section__tailor__header'>
           <img className="" src={tailorHeader} alt=""/>
         </div>
@@ -139,7 +139,7 @@ const HomeWide = () => {
           <img className="" src={basementFooter} alt=""/>
         </div>
       </div>
-      <div className='cp-home-wide__section cp-home-wide__section--red cp-home-wide__section__code'>
+      <div className='cp-home-wide__section cp-home-wide__section__code'>
         <div className='cp-home-wide__section__code__header'>
           <img className="" src={codeHeader} alt=""/>
         </div>
@@ -165,12 +165,14 @@ const HomeWide = () => {
         </div>
       </div>
       <div className='cp-home-wide__section cp-home-wide__section__finish-line'>
-        <div className='cp-home-wide__section__finish-line__content'>
+        <div className='cp-home-wide__section__finish-line__title'>
           <h1>Il <span>traguardo</span></h1>
-          <p>Vi accompagniamo nel rilascio della piattaforma con attività di supporto e formazione.  Come per un’automobile, anche per il software è bene definire piani di manutenzione e di feedback periodico: siamo sempre pronti per nuove sfide, raccogliendo indicazioni e nuovi obiettivi,  nell’ottica di un miglioramento continuo del prodotto.</p>
         </div>
         <div className='cp-home-wide__section__finish-line__footer'>
           <img className="" src={finishLineFooter} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__finish-line__content'>
+          <p>Vi accompagniamo nel rilascio della piattaforma con attività di supporto e formazione.  Come per un’automobile, anche per il software è bene definire piani di manutenzione e di feedback periodico: siamo sempre pronti per nuove sfide, raccogliendo indicazioni e nuovi obiettivi,  nell’ottica di un miglioramento continuo del prodotto.</p>
         </div>
       </div>
     </div>

@@ -19,8 +19,13 @@ $prefix: cp-home-wide;
         font-weight: 500;
       }
 
-      @media only screen and (min-width: $desktop-wide-min-width) {
+      @media only screen and (min-width: $desktop-xl-min-width) {
         @include type-setting(5, 4, 3);
+        font-weight: 500;
+      }
+
+      @media only screen and (min-width: $desktop-xxl-min-width) {
+        @include type-setting(6, 6, 3);
         font-weight: 500;
       }
     }
@@ -33,8 +38,12 @@ $prefix: cp-home-wide;
         @include type-setting(0, 1, 2);
       }
 
-      @media only screen and (min-width: $desktop-wide-min-width) {
+      @media only screen and (min-width: $desktop-xl-min-width) {
         @include type-setting(1, 2, 2);
+      }
+
+      @media only screen and (min-width: $desktop-xxl-min-width) {
+        @include type-setting(2, 3, 2);
       }
     }
 

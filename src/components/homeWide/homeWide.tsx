@@ -75,7 +75,7 @@ const HomeWide = () => {
           <img className="" src={appleFooter} alt=""/>
         </div>
       </div>
-      <div className='cp-home-wide__section cp-home-wide__section__tailor'>
+      <div className='cp-home-wide__section cp-home-wide__section--red cp-home-wide__section__tailor'>
         <div className='cp-home-wide__section__tailor__header'>
           <img className="" src={tailorHeader} alt=""/>
         </div>

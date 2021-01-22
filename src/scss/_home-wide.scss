@@ -10,6 +10,14 @@ $prefix: cp-home-wide;
 
   &__section {
 
+    &--red {
+      background-color: #DA2222;
+
+      & span {
+        color: $main-light;
+      }
+    }
+
     & h1 {
 
       @include type-setting(3, 2, 1);

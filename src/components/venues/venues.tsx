@@ -4,7 +4,7 @@ import p5Types from 'p5'
 
 import data from '../../assets/venues/venues.json'
 
-import fontFile from '../../assets/venues/barlow_condensed.ttf'
+// import fontFile from '../../assets/venues/barlow_condensed.ttf'
 
 import { useStaticQuery, graphql } from 'gatsby'
 import Planet from './planet'

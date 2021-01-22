@@ -59,8 +59,10 @@ const HomeMobile = () => {
         <img src={nodes[7].childImageSharp.fluid.src} alt='' />
       </div>
       <div className='cp-home-mobile__section'>
-        <h1>Le <span>fondamenta</span></h1>
-        <p>Pensiamo ad un’applicazione come un insieme di diverse componenti: iniziamo costruendo “<strong>la casa</strong>” che le ospiterà. Ne disegniamo e allestiamo le <strong>fondamenta</strong> avendo idea di quante stanze e quali ambienti serviranno: dove si  muoveranno i nostri utenti? Con quali percorsi?</p>
+        <div className='cp-home-mobile__section-content'>
+          <h1>Le <span>fondamenta</span></h1>
+          <p>Pensiamo ad un’applicazione come un insieme di diverse componenti: iniziamo costruendo “<strong>la casa</strong>” che le ospiterà. Ne disegniamo e allestiamo le <strong>fondamenta</strong> avendo idea di quante stanze e quali ambienti serviranno: dove si  muoveranno i nostri utenti? Con quali percorsi?</p>
+        </div>
         <img src={nodes[8].childImageSharp.fluid.src} alt='' />
         <p>Definiamo anche il “<strong>look</strong>” dell’interfaccia e le interazioni che guideranno l’intera soluzione. Nell’esempio della casa, ne progettiamo <strong>l’aspetto</strong>: dal colore delle pareti, alla posizione delle finestre a come verranno disposti i mobili.</p>
         <img src={nodes[9].childImageSharp.fluid.src} alt='' />

@@ -44,7 +44,6 @@ const AboutUs = () => (
       </div>
       <div className="cp-grid cp-about__skills">
         <div className="cp-grid__left">
-          <p className="cp-about__skills-label">Cosa facciamo</p>
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
@@ -65,7 +64,6 @@ const AboutUs = () => (
       </div>
       <div className="cp-grid cp-about__skills">
         <div className="cp-grid__left">
-          <p className="cp-about__skills-label">Come lavoriamo</p>
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">

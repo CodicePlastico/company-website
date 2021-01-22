@@ -8,6 +8,7 @@ import techCircle from './techCircle.svg'
 
 import appleHeader from './appleHeader.jpg'
 import appleFooter from './appleFooter.jpg'
+import appleCircle from './appleCircle.svg'
 
 import tailorHeader from './tailorHeader.jpg'
 import tailorSidebar from './tailorSidebar.jpg'
@@ -15,21 +16,26 @@ import tailorFooter from './tailorFooter.jpg'
 
 import analysisHeader from './analysisHeader.jpg'
 import analysisSidebar from './analysisSidebar.jpg'
+import analysisCircle from './analysisCircle.svg'
 
 import compassSidebarRight from './compassSidebarRight.jpg'
 import compassMiddle from './compassMiddle.jpg'
 import compassSidebarLeft from './compassSidebarLeft.jpg'
+import compassCircle from './compassCircle.svg'
 
 import basementSidebar from './basementSidebar.jpg'
 import basementFooter from './basementFooter.jpg'
+import basementCircle from './basementCircle.svg'
 
 import codeHeader from './codeHeader.jpg'
 import codeSidebar from './codeSidebar.jpg'
 
 import changesSidebarLeft from './changesSidebarLeft.jpg'
 import changesSidebarRight from './changesSidebarRight.jpg'
+import changesCircle from './changesCircle.svg'
 
 import finishLineFooter from './finishLineFooter.jpg'
+import finishCircle from './finishCircle.svg'
 
 const HomeWide = () => {
 
@@ -56,11 +62,11 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__tech__header'>
           <img className="" src={techHeader} alt=""/>
         </div>
-        <div className='cp-home-wide__section__tech__header cp-home-wide__section__tech__header__circle'>
-          <img className="" src={techCircle} alt=""/>
-        </div>
         <div className='cp-home-wide__section__tech__sidebar'>
           <img className="" src={techSidebar} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__tech__sidebar cp-home-wide__section__tech__sidebar__circle'>
+          <img className="" src={techCircle} alt=""/>
         </div>
         <div className='cp-home-wide__section__tech__content'>
           <h1>Costruiamo <span>sinergie</span> tra aziende e tecnologia</h1>
@@ -84,6 +90,9 @@ const HomeWide = () => {
         </div>
         <div className='cp-home-wide__section__apple__footer'>
           <img className="" src={appleFooter} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__apple__footer cp-home-wide__section__apple__footer__circle'>
+          <img className="" src={appleCircle} alt=""/>
         </div>
       </div>
       <div className='cp-home-wide__section cp-home-wide__section--red cp-home-wide__section__tailor'>
@@ -118,6 +127,9 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__analysis__sidebar'>
           <img className="" src={analysisSidebar} alt=""/>
         </div>
+        <div className='cp-home-wide__section__analysis__sidebar cp-home-wide__section__analysis__sidebar__circle'>
+          <img className="" src={analysisCircle} alt=""/>
+        </div>
       </div>
       <div id="compass" className='cp-home-wide__section cp-home-wide__section__compass'>
         <div className='cp-home-wide__section__compass__content-left'>
@@ -131,6 +143,9 @@ const HomeWide = () => {
         </div>
         <div className='cp-home-wide__section__compass__middle'>
           <img className="" src={compassMiddle} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__compass__middle cp-home-wide__section__compass__middle__circle'>
+          <img className="" src={compassCircle} alt=""/>
         </div>
         <div className='cp-home-wide__section__compass__sidebar-left'>
           <img className="" src={compassSidebarLeft} alt=""/>
@@ -158,6 +173,9 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__basement__footer'>
           <img className="" src={basementFooter} alt=""/>
         </div>
+        <div className='cp-home-wide__section__basement__footer cp-home-wide__section__basement__footer__circle'>
+          <img className="" src={basementCircle} alt=""/>
+        </div>
       </div>
       <div className='cp-home-wide__section cp-home-wide__section__code'>
         <div className='cp-home-wide__section__code__header'>
@@ -179,6 +197,9 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__changes__sidebar-left'>
           <img className="" src={changesSidebarLeft} alt=""/>
         </div>
+        <div className='cp-home-wide__section__changes__sidebar-left cp-home-wide__section__changes__sidebar-left__circle'>
+          <img className="" src={changesCircle} alt=""/>
+        </div>
         <div id="changes" className='cp-home-wide__section__changes__content'>
           <h1>Quando le cose <span>cambiano</span></h1>
           <p>Da questo momento le attività di design, sviluppo, rilascio e test si <strong>ripetono ciclicamente</strong>: ogni volta che una piccola porzione del software è funzionante, la rendiamo disponibile. <strong>Ad ogni iterazione il progetto cresce</strong>, arricchendosi di funzionalità e di dettagli.</p>
@@ -197,6 +218,9 @@ const HomeWide = () => {
         </div>
         <div className='cp-home-wide__section__finish-line__footer'>
           <img className="" src={finishLineFooter} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__finish-line__footer cp-home-wide__section__finish-line__footer__circle'>
+          <img className="" src={finishCircle} alt=""/>
         </div>
         <div className='cp-home-wide__section__finish-line__content'>
           <p>Vi accompagniamo nel <strong>rilascio</strong> della piattaforma con attività di <strong>supporto</strong> e <strong>formazione</strong>. Come per un’automobile, anche per il software è bene definire <strong>piani di manutenzione e di feedback periodico</strong>: siamo sempre pronti per nuove sfide, raccogliendo indicazioni e nuovi obiettivi,  nell’ottica di un <strong>miglioramento continuo</strong> del prodotto.</p>

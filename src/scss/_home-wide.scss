@@ -75,21 +75,21 @@ $prefix: cp-home-wide;
       
       &__header {
         grid-area: header;
+      }
+
+      &__sidebar {
+        grid-area: sidebar;
 
         &__circle {
           position: relative;
 
           & img {
             position: absolute;
-            width: 10%;
-            left: 23%;
-            top: 25%;
+            width: 40%;
+            left: 41%;
+            top: 11%;        
           }
         }
-      }
-
-      &__sidebar {
-        grid-area: sidebar;
       }
 
       &__content {
@@ -118,6 +118,17 @@ $prefix: cp-home-wide;
 
       &__footer {
         grid-area: footer;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 20%;
+            left: 60%;
+            top: 0%;     
+          }
+        }
       }
     }
 
@@ -170,7 +181,17 @@ $prefix: cp-home-wide;
 
       &__sidebar {
         grid-area: sidebar;
-        align-self: start;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 41%;
+            left: 21%;
+            top: 35%;     
+          }
+        }
       }
     }
 
@@ -196,6 +217,17 @@ $prefix: cp-home-wide;
 
       &__middle {
         grid-area: middle;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 20%;
+            left: 10%;
+            top: 25%;    
+          }
+        }
       }
 
       &__content-right {
@@ -231,6 +263,17 @@ $prefix: cp-home-wide;
 
       &__footer {
         grid-area: footer;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 21%;
+            right: 10%;
+            top: -35%;   
+          }
+        }
       }
     }
 
@@ -266,6 +309,17 @@ $prefix: cp-home-wide;
       &__sidebar-left {
         grid-area: sidebar-left;
         align-self: center;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 40%;
+            left: 64%;
+            top: -4%;             
+          }
+        }
       }
 
       &__content {
@@ -295,6 +349,17 @@ $prefix: cp-home-wide;
 
       &__footer {
         grid-area: footer;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 40%;
+            left: 64%;
+            top: -4%;             
+          }
+        }
       }
 
       &__content {

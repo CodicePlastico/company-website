@@ -1,5 +1,5 @@
 <svg width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g transform="translate(84, 84)">
+<g transform="translate(84, 128)">
   <circle cx="0" cy="0" r="82" stroke="white" stroke-width="2" stroke-dasharray="10 10">
         <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0" to="360" begin="0" dur="14s" repeatCount="indefinite" />
   </circle>

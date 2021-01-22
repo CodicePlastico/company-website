@@ -75,6 +75,17 @@ $prefix: cp-home-wide;
       
       &__header {
         grid-area: header;
+
+        &__circle {
+          position: relative;
+
+          & img {
+            position: absolute;
+            width: 10%;
+            left: 23%;
+            top: 25%;
+          }
+        }
       }
 
       &__sidebar {

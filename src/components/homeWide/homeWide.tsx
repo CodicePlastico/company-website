@@ -4,6 +4,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import techHeader from './techHeader.jpg'
 import techSidebar from './techSidebar.jpg'
+import techCircle from './techCircle.svg'
 
 import appleHeader from './appleHeader.jpg'
 import appleFooter from './appleFooter.jpg'
@@ -54,6 +55,9 @@ const HomeWide = () => {
       <div className='cp-home-wide__section cp-home-wide__section__tech'>
         <div className='cp-home-wide__section__tech__header'>
           <img className="" src={techHeader} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__tech__header cp-home-wide__section__tech__header__circle'>
+          <img className="" src={techCircle} alt=""/>
         </div>
         <div className='cp-home-wide__section__tech__sidebar'>
           <img className="" src={techSidebar} alt=""/>

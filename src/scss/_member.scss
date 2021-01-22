@@ -60,6 +60,10 @@ $prefix: cp-member;
       &:focus{
         outline: none;
       }
+
+      & svg {
+        fill: $main-light;
+      }
     }
 
     &-text{

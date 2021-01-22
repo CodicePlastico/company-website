@@ -48,6 +48,7 @@ $prefix: cp-home-wide;
 
       @media only screen and (min-width: $desktop-xl-min-width) {
         @include type-setting(1, 2, 2);
+        line-height: 2rem;
       }
 
       @media only screen and (min-width: $desktop-xxl-min-width) {

@@ -35,6 +35,7 @@ $prefix: cp-home-wide;
       @media only screen and (min-width: $desktop-xxl-min-width) {
         @include type-setting(6, 6, 3);
         font-weight: 500;
+        font-size: 6.8rem;
       }
     }
 
@@ -53,6 +54,7 @@ $prefix: cp-home-wide;
 
       @media only screen and (min-width: $desktop-xxl-min-width) {
         @include type-setting(2, 3, 2);
+        line-height: 3.2rem;
       }
     }
 
@@ -288,6 +290,28 @@ $prefix: cp-home-wide;
         grid-area: content;
         margin: 50px;
       }
+    }
+  }
+
+  &__button {
+    background-color: $main-color;
+    text-decoration: none;
+    width: auto;
+    height: 70px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 0 10px;
+
+    &--white {
+      background-color: $main-dark;
+
+      & span {
+        color: $main-light;
+      }
+    }
+
+    & span {
+      color: $main-light;
     }
   }
 }

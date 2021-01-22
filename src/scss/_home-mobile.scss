@@ -11,7 +11,11 @@ $prefix: cp-home-mobile;
   &__section {
 
     h1, p {
-      padding: 0 10px;
+      padding: 10px 10px 10px 0;
+
+      @media only screen and (min-width: $desktop-min-width) {
+        padding: 0 10px;
+      }
     }
 
     &--red {

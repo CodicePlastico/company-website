@@ -318,7 +318,28 @@ $prefix: cp-home-wide;
 
       &__sidebar {
         grid-area: sidebar;
-        align-self: start;
+
+        &__ship {
+          position: relative;
+  
+          & img {
+            position: absolute;
+            width: 40%;
+            left: 25%;
+            bottom: 20%;
+          }
+        }
+  
+        &__circle {
+          position: relative;
+  
+          & img {
+            position: absolute;
+            width: 40%;
+            left: 25%;
+            bottom: 20%;        
+          }
+        }
       }
     }
 

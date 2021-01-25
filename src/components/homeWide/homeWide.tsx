@@ -4,6 +4,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import cpShipRight from './CPshipRight.png'
 import cpShipFront from './CPshipFront.png'
+import cpShipLeft from './CPshipLeft.png'
 
 import techHeader from './techHeader.jpg'
 import techSidebar from './techSidebar.jpg'
@@ -200,6 +201,12 @@ const HomeWide = () => {
         </div>
         <div className='cp-home-wide__section__code__sidebar'>
           <img className="" src={codeSidebar} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__code__sidebar cp-home-wide__section__code__sidebar__ship'>
+          <img className="" src={cpShipLeft} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__code__sidebar cp-home-wide__section__code__sidebar__circle'>
+          <img className="" src={techCircle} alt=""/>
         </div>
       </div>
       <div className='cp-home-wide__section cp-home-wide__section__changes'>

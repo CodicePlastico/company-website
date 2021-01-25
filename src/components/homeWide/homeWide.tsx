@@ -16,6 +16,7 @@ import appleCircle from './appleCircle.svg'
 
 import tailorHeader from './tailorHeader.jpg'
 import tailorSidebar from './tailorSidebar.jpg'
+import tailorRect from './rect.svg'
 import tailorFooter from './tailorFooter.jpg'
 
 import analysisHeader from './analysisHeader.jpg'
@@ -109,6 +110,12 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__tailor__sidebar'>
           <img className="" src={tailorSidebar} alt=""/>
         </div>
+        {/* <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__ship'>
+          <img className="" src={cpShipFront} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__rect'>
+          <img className="" src={tailorRect} alt=""/>
+        </div> */}
         <div id="tailor" className='cp-home-wide__section__tailor__content'>
           <h1>Su <span>misura</span>, sempre</h1>
           <p>Costruiamo esclusivamente <strong>progetti su misura</strong> e ci rivolgiamo a tutte quelle realtà che hanno bisogno di <strong>soluzioni tecnologiche fortemente personalizzate</strong>.</p>

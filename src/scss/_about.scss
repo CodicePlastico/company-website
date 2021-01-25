@@ -24,6 +24,11 @@ $prefix: cp-about;
     &-item{
       padding-bottom: 5px;
     }
+
+    &--metrics {
+      margin-top: vr(4);
+      margin-bottom: 0;
+    }
   }
 
   &__message{
@@ -79,6 +84,27 @@ $prefix: cp-about;
       }
     }
   }
+
+  &__button {
+    background-color: $main-color;
+    text-decoration: none;
+    width: auto;
+    height: 70px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+
+    &--white {
+      background-color: $main-dark;
+
+      & span {
+        color: $main-light;
+      }
+    }
+
+    & span {
+      color: $main-light;
+    }
+  }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
@@ -87,6 +113,10 @@ $prefix: cp-about;
       &-columns{
         display: flex;
         align-items: flex-start;
+
+        &--metrics {
+          margin-bottom: vr(2);
+        }
       }
 
       &-column{

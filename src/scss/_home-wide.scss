@@ -158,6 +158,22 @@ $prefix: cp-home-wide;
       &__sidebar {
         grid-area: sidebar;
         align-self: center;
+
+        &__ship {
+          justify-self: center;
+
+          & img {
+            top: 35%;     
+          }
+        }
+
+        &__rect {
+          justify-self: center;
+
+          & img {
+            top: 35%;     
+          }
+        }
       }
 
       &__content {

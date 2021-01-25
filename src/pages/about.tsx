@@ -83,11 +83,43 @@ const AboutUs = () => (
       <div className="cp-about__message-container">
         <div className="cp-about__message">
           <div className="cp-about__message-content">
-            Nel nostro team c’è spazio solo per chi ha una passione sfrenata per la tecnologia e per la perfezione.
+            Nel nostro team c’è spazio solo per chi ha una passione sfrenata per la tecnologia.
           </div>
         </div>
       </div>
-      <Customers />
+      <div className="cp-grid cp-about__skills cp-about__skills--metrics">
+        <div className="cp-grid__container">
+          <div className="cp-grid__content">
+            <h4 className=""><span>Progetti e Sinergie</span></h4>
+            <p className="cp-typography__main-text">In questi anni abbiamo lavorato a numerosi <strong>progetti</strong>, affiancato  <strong>Reparti IT interni</strong> ad Aziende e prodotto migliaia di slide in  <strong>corsi</strong> privati e talk pubblici.</p>
+            
+            <div className="cp-about__skills-columns cp-about__skills-columns--metrics">
+                <div className="cp-about__skills-column" >
+                  <ul className="cp-about__skills-items">
+                    <li className="cp-about__skills-item" >Più di...</li>
+                  </ul>
+                  <h3>60 progetti</h3>
+                </div>
+                <div className="cp-about__skills-column" >
+                  <ul className="cp-about__skills-items">
+                    <li className="cp-about__skills-item" >Più di...</li>
+                  </ul>
+                  <h3>100 clienti</h3>
+                </div>
+                <div className="cp-about__skills-column" >
+                  <ul className="cp-about__skills-items">
+                    <li className="cp-about__skills-item" >Formazione erogata: più di...</li>
+                  </ul>
+                  <h3>4.000 ore</h3>
+                </div>
+            </div>
+            <h5>Ok, ma per chi avete lavorato?</h5>
+            <p>Spesso lavorare a progetti IT di altri richiede una buona dose di <strong>riservatezza</strong>. Se vuoi conoscere i nostri lavori, <a href="mailto:info@codicelplastico.com">scrivici</a>: ti invieremo un portfolio che ti aiuterà a misurare la nostra esperienza, nel rispetto della privacy dei progetti sui quali abbiamo lavorato.</p>
+            <a title="toApple" className="cp-about__button " href="/contatti"><span>Contattaci!</span></a>
+          </div>
+        </div>
+      </div>
+      {/* <Customers /> */}
     </div>
   </Layout>
 )

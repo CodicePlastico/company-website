@@ -28,8 +28,8 @@ const HomeMobile = () => {
           <h1>Costruiamo <span>sinergie</span> tra aziende e tecnologia</h1>
           <p>Siamo una squadra di esperti che, da più di dieci anni, <strong>crea soluzioni IT capaci di generare valore</strong>.</p>
           <p>Lavoriamo con le aziende, progettando e realizzando sistemi nei quali la tecnologia è un <strong>reale strumento di supporto ai processi</strong> operativi di ogni giorno.</p>
-        <img src={nodes[1].childImageSharp.fluid.src}  alt='' />
         </div>
+        <img src={nodes[1].childImageSharp.fluid.src}  alt='' />
       </div>
       <div className='cp-home-mobile__section'>
         <div className='cp-home-mobile__section-content'>

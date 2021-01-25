@@ -159,11 +159,18 @@ $prefix: cp-home-wide;
         grid-area: sidebar;
         align-self: center;
 
+        &__engineer {
+          justify-self: left;
+
+          & img {
+            width: 40%;
+          }
+        }
+
         &__ship {
           justify-self: center;
 
-          & img {
-            top: 35%;     
+          & img { 
           }
         }
 
@@ -171,7 +178,6 @@ $prefix: cp-home-wide;
           justify-self: center;
 
           & img {
-            top: 35%;     
           }
         }
       }

@@ -1,6 +1,6 @@
-<svg width="1600" height="1600" viewBox="0 0 1600 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="800" viewBox="0 0 1600 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g transform = "translate(800, 800)">
-  <rect x="-200" y="-200" width="400" height="400" stroke="#111D24" stroke-width="35">
+  <rect x="-400" y="-400" width="800" height="800" stroke="#111D24" stroke-width="50">
     <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0" to="360" begin="0" dur="14s" repeatCount="indefinite" />
   </rect>
 </g>

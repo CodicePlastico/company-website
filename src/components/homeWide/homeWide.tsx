@@ -15,8 +15,10 @@ import appleFooter from './appleFooter.jpg'
 import appleCircle from './appleCircle.svg'
 
 import tailorHeader from './tailorHeader.jpg'
-import tailorSidebar from './tailorSidebar.jpg'
+import tailorSidebar from './tailorSidebar.png'
+import tailorPuppetTop from './tailor-puppet-top.png'
 import tailorRect from './rect.svg'
+import tailorPuppetBottom from './tailor-puppet-bottom.png'
 import tailorFooter from './tailorFooter.jpg'
 
 import analysisHeader from './analysisHeader.jpg'
@@ -107,15 +109,22 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__tailor__header'>
           <img className="" src={tailorHeader} alt=""/>
         </div>
-        <div className='cp-home-wide__section__tailor__sidebar'>
-          <img className="" src={tailorSidebar} alt=""/>
-        </div>
-        {/* <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__ship'>
-          <img className="" src={cpShipFront} alt=""/>
+        <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__ship'>
+          <div>
+            <img className="" src={tailorPuppetBottom} alt=""/>
+          </div>
         </div>
         <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__rect'>
           <img className="" src={tailorRect} alt=""/>
-        </div> */}
+        </div>
+        <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__ship'>
+          <div>
+            <img className="" src={tailorPuppetTop} alt=""/>
+          </div>
+        </div>
+        <div className='cp-home-wide__section__tailor__sidebar cp-home-wide__section__tailor__sidebar__engineer'>
+          <img className="" src={tailorSidebar} alt=""/>
+        </div>
         <div id="tailor" className='cp-home-wide__section__tailor__content'>
           <h1>Su <span>misura</span>, sempre</h1>
           <p>Costruiamo esclusivamente <strong>progetti su misura</strong> e ci rivolgiamo a tutte quelle realtà che hanno bisogno di <strong>soluzioni tecnologiche fortemente personalizzate</strong>.</p>

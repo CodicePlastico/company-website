@@ -2,6 +2,9 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
+import cpShipRight from './CPshipRight.png'
+import cpShipFront from './CPshipFront.png'
+
 import techHeader from './techHeader.jpg'
 import techSidebar from './techSidebar.jpg'
 import techCircle from './techCircle.svg'
@@ -65,6 +68,9 @@ const HomeWide = () => {
         <div className='cp-home-wide__section__tech__sidebar'>
           <img className="" src={techSidebar} alt=""/>
         </div>
+        <div className='cp-home-wide__section__tech__sidebar cp-home-wide__section__tech__sidebar__ship'>
+          <img className="" src={cpShipRight} alt=""/>
+        </div>
         <div className='cp-home-wide__section__tech__sidebar cp-home-wide__section__tech__sidebar__circle'>
           <img className="" src={techCircle} alt=""/>
         </div>
@@ -126,6 +132,9 @@ const HomeWide = () => {
         </div>
         <div className='cp-home-wide__section__analysis__sidebar'>
           <img className="" src={analysisSidebar} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__analysis__sidebar cp-home-wide__section__analysis__sidebar__ship'>
+          <img className="" src={cpShipFront} alt=""/>
         </div>
         <div className='cp-home-wide__section__analysis__sidebar cp-home-wide__section__analysis__sidebar__circle'>
           <img className="" src={analysisCircle} alt=""/>
@@ -196,6 +205,9 @@ const HomeWide = () => {
       <div className='cp-home-wide__section cp-home-wide__section__changes'>
         <div className='cp-home-wide__section__changes__sidebar-left'>
           <img className="" src={changesSidebarLeft} alt=""/>
+        </div>
+        <div className='cp-home-wide__section__changes__sidebar-left cp-home-wide__section__changes__sidebar-left__ship'>
+          <img className="" src={cpShipRight} alt=""/>
         </div>
         <div className='cp-home-wide__section__changes__sidebar-left cp-home-wide__section__changes__sidebar-left__circle'>
           <img className="" src={changesCircle} alt=""/>

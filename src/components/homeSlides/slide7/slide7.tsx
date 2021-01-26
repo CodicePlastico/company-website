@@ -10,7 +10,7 @@ const Slide7 = () => {
               <span>Lo sviluppo</span>
             </h1>
             <p>
-              La condizione necessaria per lavorare in codicePlastico è la passione
+              La condizione necessaria per lavorare in CodicePlastico è la passione
               per il codice. Siamo tecnici preparati, crediamo nella sperimentazione e
               nella formazione continua: lo sviluppo della tua applicazione è in buone
               mani. Contemporaneamente allo sviluppo ci occupiamo della gestione degli

@@ -92,7 +92,7 @@ const Team = () => {
             <div className="cp-grid__content">
               <h1><span>Il</span> Team</h1>
               <p className="cp-team__intro">
-                Qualsiasi siano i problemi dei nostri clienti, 
+                Qualunque sia il problema dei nostri clienti, 
                 siamo in grado di entrare nel loro dominio e di trovare un modo di <strong>utilizzare la tecnologia 
                 per migliorare il loro metodo di lavoro</strong>, senza creare frizioni tra l’uomo e il computer. 
               </p>

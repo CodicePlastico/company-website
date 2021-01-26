@@ -32,8 +32,10 @@ const Layout = ({ children }) => {
         buttonText="Accetto"
         cookieName="gatsby-gdpr-google-tagmanager"
         style={{ background: "#D93232" }}
+        SameSite="none"
+        Secure
         buttonStyle={{ background: "#111D24", color: "#fff", fontSize: "13px" }}>
-        Questo sito usa i cookie, i biscotti sono buoni ma è sempre meglio conoscere cosa c'è dentro per non incappare in strane sorprese. Se vuoi sapere quali sono i nostri ingredienti, <a style={{ color: "#111D24"}} href="www.google.com" target="_blank">clicca qui</a>.
+        <span>Questo sito usa i cookie, i biscotti sono buoni ma è sempre meglio conoscere cosa c'è dentro per non incappare in strane sorprese. Se vuoi sapere quali sono i nostri ingredienti, <a style={{ color: "#111D24"}} href="https://www.iubenda.com/privacy-policy/96999165/legal" target="_blank" rel="noreferrer">clicca qui</a>.</span>
       </CookieConsent>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>

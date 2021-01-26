@@ -209,7 +209,7 @@ const HomeWide = () => {
         </div>
         <div id="code" className='cp-home-wide__section__code__content'>
           <h1>Lo <span>sviluppo</span></h1>
-          <p>La condizione necessaria per lavorare in codicePlastico è la <strong>passione per il codice</strong>. Siamo tecnici preparati, crediamo nella <strong>sperimentazione</strong> e nella formazione continua: lo sviluppo della tua applicazione è in buone mani.</p>
+          <p>La condizione necessaria per lavorare in CodicePlastico è la <strong>passione per il codice</strong>. Siamo tecnici preparati, crediamo nella <strong>sperimentazione</strong> e nella formazione continua: lo sviluppo della tua applicazione è in buone mani.</p>
           <p>Contemporaneamente allo sviluppo ci occupiamo della gestione degli <strong>aspetti tecnici di supporto</strong>, coordinandoci con il vostro Reparto IT.</p>
           <AnchorLink to="/#changes" title="toChange" className="cp-home-wide__button">
             <span>E se cambi idea?</span>

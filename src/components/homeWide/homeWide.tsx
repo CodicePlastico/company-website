@@ -30,7 +30,7 @@ import compassMiddle from './compassMiddle.jpg'
 import compassSidebarLeft from './compassSidebarLeft.jpg'
 import compassCircle from './compassCircle.svg'
 
-import basementSidebar from './basementSidebar.jpg'
+import basementSidebar from './basementSidebar.svg'
 import basementFooter from './basementFooter.jpg'
 import basementCircle from './basementCircle.svg'
 

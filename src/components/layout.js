@@ -30,6 +30,8 @@ const Layout = ({ children }) => {
       <CookieConsent
         location="bottom"
         buttonText="Accetto"
+        enableDeclineButton
+        declineButtonText="Non accetto"
         cookieName="gatsby-gdpr-google-tagmanager"
         style={{ background: "#D93232" }}
         SameSite="none"

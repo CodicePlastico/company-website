@@ -12,15 +12,13 @@ interface MemberProps {
 const Member = (props: MemberProps) => {
   const [right, setRight] = useState(false);
   const [width, setWidth] = useState<number | 'auto'>(0);
-  const [nodeImg, setNodeImg] = useState();
+  const [nodeImg, setNodeImg] = useState({node: null, boundingClientRect: null});
 
   const { member, openId, toggleOpen } = props 
   const open = openId === member.id
 
   const rightSide = (img) => {
-    console.log(window.innerWidth);
     const halfWindowWidth = window.innerWidth / 2;
-    console.log(img.y);
     const center = img.x + (img.width / 2)
     return center > halfWindowWidth
   }
@@ -42,18 +40,18 @@ const Member = (props: MemberProps) => {
     setWidth(availableSpace(node, isRight))
   }
 
-  const handleResize = () => {
-    if (nodeImg) {
-      setDescriptionStyle(nodeImg)
-    }
-  }
-
   const imgCallBack = useCallback(node => {
     if (node !== null) {
       setDescriptionStyle(node.getBoundingClientRect())
-      setNodeImg(node.getBoundingClientRect())
+      setNodeImg({node: node, boundingClientRect: node.getBoundingClientRect()})
     }
   }, []);
+
+  const handleResize = () => {
+    if (nodeImg) {
+      setDescriptionStyle(nodeImg.node.getBoundingClientRect());
+    }
+  }
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
@@ -72,7 +70,7 @@ const Member = (props: MemberProps) => {
   }
 
   return (
-    <div className="cp-member"  ref={imgCallBack}>
+    <div className="cp-member" ref={imgCallBack}>
       <div className="cp-member__content">
         <img className="cp-member__img" src={member.img} alt={member.name} />
         <div className="cp-member__info">

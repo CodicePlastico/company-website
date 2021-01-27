@@ -37,7 +37,6 @@ $prefix: cp-team;
   }
 }
 
-
 @media only screen and (min-width: $desktop-min-width) {
   .#{$prefix}{
     &__rocket{
@@ -151,6 +150,17 @@ $prefix: cp-team;
           border-color: $main-light;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-xxl-min-width) {
+  .#{$prefix}{
+    &__spaceman{
+      background-image: url('/spaceman.jpg');
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 70%;
     }
   }
 }

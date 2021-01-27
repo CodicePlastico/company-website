@@ -11,7 +11,6 @@ const Home = loadable(() => import('../components/homeSlides/home'))
 type HomeView = 'unknown' | 'mobile' | 'browser';
 
 const getContent = (view: HomeView) => {
-  console.log(view);
   switch(view) {
     case 'mobile':
       return <Mobile />;

@@ -46,23 +46,6 @@ import finishCircle from './finishCircle.svg'
 
 const HomeWide = () => {
 
-  // const files = useStaticQuery(graphql`
-  //   query IndexWideQuery {
-  //     allFile(filter: {relativeDirectory: {eq: "home-wide"}, ext: {eq: ".png"}}, sort: {order: ASC, fields: name}) {
-  //       nodes {
-  //         name
-  //         childImageSharp {
-  //           fluid {
-  //             src
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }`
-  // )
-
-  // const {nodes} = files.allFile
-
   return (
     <div className='cp-home-wide'>
       <div className='cp-home-wide__section cp-home-wide__section__tech'>

@@ -1,6 +1,7 @@
 const path = require('path'); 
 
 module.exports = {
+  pathPrefix: 'company-website',
   siteMetadata: {
     title: `CodicePlastico`,
     description: `CodicePlastico è un grande piccolo team di software engineer`,

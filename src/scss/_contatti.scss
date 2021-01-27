@@ -16,6 +16,11 @@ $prefix: cp-contatti;
       margin: 0 auto;
     }
   }
+
+  h1 {
+    display: inline-block;
+    background-color: $main-light;
+  }
 }
 
 @media only screen and (min-width: $desktop-min-width) {

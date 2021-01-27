@@ -105,6 +105,11 @@ $prefix: cp-about;
       color: $main-light;
     }
   }
+
+  h1 {
+    display: inline-block;
+    background-color: $main-light;
+  }
 }
 
 @media only screen and (min-width: $desktop-min-width) {

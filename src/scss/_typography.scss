@@ -83,8 +83,6 @@ h1 {
   @media only screen and (min-width: $desktop-min-width) {
     @include type-setting(6, 6, 4);
     font-weight: 500;
-    display: inline-block;
-    background-color: $main-light;
   }
 }
 

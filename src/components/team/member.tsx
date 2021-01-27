@@ -18,7 +18,9 @@ const Member = (props: MemberProps) => {
   const open = openId === member.id
 
   const rightSide = (img) => {
+    console.log(window.innerWidth);
     const halfWindowWidth = window.innerWidth / 2;
+    console.log(img.y);
     const center = img.x + (img.width / 2)
     return center > halfWindowWidth
   }
@@ -48,8 +50,8 @@ const Member = (props: MemberProps) => {
 
   const imgCallBack = useCallback(node => {
     if (node !== null) {
-      setDescriptionStyle(node)
-      setNodeImg(node)
+      setDescriptionStyle(node.getBoundingClientRect())
+      setNodeImg(node.getBoundingClientRect())
     }
   }, []);
 
@@ -70,9 +72,9 @@ const Member = (props: MemberProps) => {
   }
 
   return (
-    <div className="cp-member">
+    <div className="cp-member"  ref={imgCallBack}>
       <div className="cp-member__content">
-        <img className="cp-member__img" src={member.img} alt={member.name} ref={imgCallBack} />
+        <img className="cp-member__img" src={member.img} alt={member.name} />
         <div className="cp-member__info">
           <h4 className="cp-member__title"><span>{member.name}</span></h4>
           <p>{member.nick && <>@{member.nick}</>} {member.nick && member.role && <>-</>} {member.role}</p>

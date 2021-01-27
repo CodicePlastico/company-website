@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { isBrowser, isMobile } from 'react-device-detect';
+import { isBrowser, isMobile, isTablet } from 'react-device-detect';
 import loadable from '@loadable/component'
 
 import Layout from '../components/layout'
@@ -28,6 +28,8 @@ const IndexPage = () => {
   useState(() => {
     if (isMobile) {
       setView('mobile');
+    } if (isTablet) {
+      setView('browser');
     } else if (isBrowser) {
       setView('browser');
     }

@@ -54,5 +54,90 @@ module.exports = {
         offset: -100
       }
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KZ49XNH",
+  
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+  
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+  
+        // Specify optional GTM environment details.
+        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        dataLayerName: "YOUR_DATA_LAYER_NAME",
+  
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      options: {
+        iubendaOptions: {
+          "whitelabel": false,
+          "lang": "it", 
+          "siteId": 2140395, 
+          "cookiePolicyId": 39068350, 
+          "banner": { 
+              "brandBackgroundColor": "none", 
+              "brandTextColor": "black", 
+              "rejectButtonColor": "#ce0000", 
+              "rejectButtonCaptionColor": "white", 
+              "position": "float-top-center", 
+              "textColor": "black", 
+              "backgroundColor": "white", 
+              "acceptButtonDisplay": true, 
+              "acceptButtonColor": "#ce0000", 
+              "acceptButtonCaptionColor": "white", 
+              "customizeButtonDisplay": true,
+              "customizeButtonColor": "#DADADA",
+              "customizeButtonCaptionColor": "#4D4D4D" 
+          },
+          "callback": {
+              onPreferenceExpressedOrNotNeeded: function(preference) {
+                  dataLayer.push({
+                      iubenda_ccpa_opted_out: _iub.cs.api.isCcpaOptedOut()
+                  });
+                  if (!preference) {
+                      dataLayer.push({
+                          event: "iubenda_preference_not_needed"
+                      });
+                  } else {
+                      if (preference.consent === true) {
+                          dataLayer.push({
+                              event: "iubenda_consent_given"
+                          });
+                      } else if (preference.consent === false) {
+                          dataLayer.push({
+                              event: "iubenda_consent_rejected"
+                          });
+                      } else if (preference.purposes) {
+                          for (var purposeId in preference.purposes) {
+                              if (preference.purposes[purposeId]) {
+                                  dataLayer.push({
+                                      event: "iubenda_consent_given_purpose_" + purposeId
+                                  });
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+        },
+        googleTagManagerOptions: true
+      }
+    }
   ],
 }

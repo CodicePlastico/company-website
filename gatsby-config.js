@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `CodicePlastico - software house`,
+    title: `CodicePlastico - Software House`,
     siteUrl: `https://www.codiceplastico.com`,
-    description: `Creiamo sinergie tra aziende e tecnologia`,
+    description: `CodicePlastico - Software House. Creiamo sinergie tra Aziende e Tecnologia.`,
     author: `CodicePlastico`,
   },
   plugins: [

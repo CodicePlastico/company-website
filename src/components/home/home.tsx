@@ -144,7 +144,7 @@ const Home = () => {
         <div id="tailor" className='cp-home__section__tailor__content'>
           <h1>Su <span>misura</span>, sempre</h1>
           <p>Costruiamo esclusivamente <strong>progetti su misura</strong> e ci rivolgiamo a tutte quelle realtà che hanno bisogno di <strong>soluzioni tecnologiche fortemente personalizzate</strong>.</p>
-          <p>Ogni azienda ha bisogni specifici: con questa scelta facciamo in modo che sia la <strong>tecnologia ad adattarsi alle necessità</strong> delle imprese e non viceversa.</p>
+          <p>Ogni azienda ha bisogni specifici: con questa consapevolezza facciamo in modo che sia la <strong>tecnologia ad adattarsi alle necessità</strong> delle imprese e non viceversa.</p>
           <AnchorLink to="/#analysis" title="toAnalysis" className="cp-home__button cp-home__button--white">
             <span>Di cosa hai bisogno?</span>
           </AnchorLink>
@@ -168,7 +168,7 @@ const Home = () => {
         <div id="analysis" className='cp-home__section__analysis__content'>
           <h1>La lista della spesa: <span>l'analisi</span></h1>
           <p>Diamo il via ai nostri progetti con una fase di analisi. Attraverso attività di <strong>co-design</strong> tracciamo i bisogni tecnici e funzionali, coinvolgendovi nella progettazione.</p>
-          <p>Creiamo un team di lavoro, a cui partecipano sia i nostri <strong>designer</strong> e <strong>developer</strong>, sia le vostre figure chiave: i decisori e gli utenti finali. Quando un cliente arriva da noi spesso ha già una soluzione in mente: la nostra fase di analisi consente di <strong>verificarne efficacia e fattibilità</strong>, tracciando i profili target, mappando processi e disegnando <strong>soluzioni</strong> pensate realmente sugli <strong>utenti</strong>.</p>
+          <p>Creiamo un team di lavoro, a cui partecipano sia i nostri <strong>designer</strong> e <strong>developer</strong> sia le vostre figure chiave: i decisori e gli utenti finali. Quando un cliente arriva da noi spesso ha già una soluzione in mente: la nostra fase di analisi consente di <strong>verificarne efficacia e fattibilità</strong>, tracciando i profili target, mappando processi e disegnando <strong>soluzioni</strong> pensate realmente sugli <strong>utenti</strong>.</p>
           <p>Al termine di queste attività condividiamo una <strong>proposta tecnica dettagliata</strong>, un <strong>prototipo</strong> a bassa fedeltà e una <strong>stima</strong> economica di realizzazione.</p>
           <AnchorLink to="/#compass" title="toCompass" className="cp-home__button">
             <span>Segui il percorso!</span>
@@ -220,7 +220,7 @@ const Home = () => {
           </picture>
         </div>
         <div className='cp-home__section__compass__content-right'>
-          <p>Definiamo inoltre  le persone del team che si occuperanno di gestire feedback e comunicazioni e concordiamo la <strong>suddivisione del lavoro in iterazioni</strong>: l’approccio agile ci consente di consegnare prototipi funzionanti, che <strong>diventeranno sempre più raffinati</strong> nel procedere allo sviluppo. 
+          <p>Definiamo inoltre  le persone del team che si occuperanno di gestire feedback e comunicazioni e concordiamo la <strong>suddivisione del lavoro in iterazioni</strong>: l’approccio agile ci consente di consegnare prototipi funzionanti, che <strong>diventeranno sempre più raffinati</strong> con il procedere allo sviluppo. 
           </p>
           <AnchorLink to="/#basement" title="toBasement" className="cp-home__button">
             <span>Progettiamo!</span>
@@ -233,8 +233,8 @@ const Home = () => {
         </div>
         <div id="basement" className='cp-home__section__basement__content'>
           <h1>Le <span>fondamenta</span></h1>
-          <p>Pensiamo ad un’applicazione come un insieme di diverse componenti: iniziamo costruendo “<strong>la casa</strong>” che le ospiterà. Ne disegniamo e allestiamo le <strong>fondamenta</strong> avendo idea di quante stanze e quali ambienti serviranno: dove si  muoveranno i nostri utenti? Con quali percorsi?</p>
-          <p>Definiamo anche il “<strong>look</strong>” dell’interfaccia e le interazioni che guideranno l’intera soluzione. Nell’esempio della casa, ne progettiamo <strong>l’aspetto</strong>: dal colore delle pareti, alla posizione delle finestre a come verranno disposti i mobili.</p>
+          <p>Pensiamo ad un’applicazione come un insieme di diverse componenti: iniziamo costruendo “<strong>la casa</strong>” che le ospiterà. Ne disegniamo e allestiamo le <strong>fondamenta</strong> avendo idea di quante stanze e quali ambienti serviranno: dove si  muoveranno i nostri utenti? In quali percorsi?</p>
+          <p>Definiamo anche il “<strong>look</strong>” dell’interfaccia e le interazioni che guideranno l’intera soluzione. Tornando alla metafora della casa, ne progettiamo <strong>l’aspetto</strong>: dal colore delle pareti, alla posizione delle finestre a come verranno disposti i mobili.</p>
           <AnchorLink to="/#code" title="toCode" className="cp-home__button">
             <span>è il momento di costruire!</span>
           </AnchorLink>

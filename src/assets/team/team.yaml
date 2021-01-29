@@ -2,7 +2,6 @@ team:
   - id: amelchiori
     img: ale
     name: Alessandro Melchiori
-    nick: amelchiori 
     role: Founder & Software Architect
     tags: 
       - BackEnd
@@ -26,7 +25,6 @@ team:
   - id: edelbono
     img: ema
     name: Emanuele Del Bono
-    nick: emadb 
     role: Founder & Software Architect
     tags: 
       - BackEnd
@@ -48,7 +46,6 @@ team:
       - label: Github
         link: https://github.com/emadb
   - id: vleonardi
-    nick: vleonardi
     name: Valeria Leonardi
     role: Developer
     description: >-
@@ -61,7 +58,7 @@ team:
         link: https://twitter.com/vleonardi
       - label: Linkedin
         link: http://www.linkedin.com/in/valerialeonardi
-      - label: Slideshare,
+      - label: Slideshare
         link: http://www.slideshare.net/ValeriaLeonardi
   - id: mgerminario
     name: Maddalena Germinario
@@ -130,7 +127,6 @@ team:
       - label: Linkedin
         link: https://www.linkedin.com/in/umberto-franchini-22707a25/
   - id: plaurenti
-    nick: paololaurenti
     name: Paolo Laurenti
     role: Developer
     description: >-
@@ -191,7 +187,6 @@ team:
       - label: Linkedin
         link: https://it.linkedin.com/in/alberto-fusar-712b1466
   - id: mpezzotti
-    nick: merissimissima
     role: Designer
     name: Mariachiara Pezzotti
     description: >-

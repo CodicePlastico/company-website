@@ -158,24 +158,15 @@ $prefix: cp-team;
       }
     }
   }
-}
-
-@media only screen and (min-width: $desktop-xl-min-width) {
-  &__spaceman{
-    background-image: url('/spaceman.jpg');
-    background-position: left;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 70% !important;
-  }
-}
-
-@media only screen and (min-width: $desktop-xxl-min-width) {
-  &__spaceman{
-    background-image: url('/spaceman.jpg');
-    background-position: left;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 70% !important;
+  @media only screen and (min-width: $desktop-xxl-min-width) {
+    .#{$prefix}{
+      &__spaceman{
+        background-image: url('/spaceman.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: 70%;
+      }
+    }
   }
 }

@@ -111,13 +111,6 @@ $prefix: cp-header;
         font-weight: 600;
       }
 
-      &--external{
-        &:hover{
-          color: $main-dark;
-          font-weight: 300;
-        }
-      }
-
       &:before {
         display: block;
         content: attr(title);

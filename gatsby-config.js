@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `CodicePlastico`,
+    title: `CodicePlastico - software house`,
     siteUrl: `https://www.codiceplastico.com`,
-    description: `CodicePlastico è un grande piccolo team di software engineer`,
-    author: `@gatsbyjs`,
+    description: `Creiamo sinergie tra aziende e tecnologia`,
+    author: `CodicePlastico`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

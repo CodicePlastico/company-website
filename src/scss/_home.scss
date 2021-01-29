@@ -21,6 +21,7 @@ $prefix: cp-home;
     & h1 {
 
       @include type-setting(3, 2, 1);
+      line-height: 3.1rem;
 
       @media only screen and (min-width: $desktop-min-width) {
         @include type-setting(4, 3, 2);
@@ -42,9 +43,11 @@ $prefix: cp-home;
     & p {
 
       @include type-setting(0, 1, 2);
+      font-size: 1.6rem;
+      line-height: 2.1rem;
 
       @media only screen and (min-width: $desktop-min-width) {
-        @include type-setting(0, 1, 2);
+        @include type-setting(1, 2, 2);
       }
 
       @media only screen and (min-width: $desktop-xl-min-width) {

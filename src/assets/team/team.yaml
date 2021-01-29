@@ -244,7 +244,7 @@ team:
     tags: 
       - FrontEnd
       - BackEnd
-     social: 
+    social: 
       - label: Linkedin
         link: https://www.linkedin.com/in/ilaria-crea-8b9630a5/
   - id: nroscino  
@@ -266,13 +266,12 @@ team:
     img: gianni
     tags: 
       - BackEnd
-     social: 
+    social: 
       - label: Twitter
         link: https://twitter.com/bossinigianni
       - label: Linkedin
         link: https://www.linkedin.com/in/giannibortolobossini/
       - label: GitHub
         link: https://www.linkedin.com/in/giannibortolobossini/
-       - label: Gitlab
+      - label: Gitlab
         link: https://github.com/GianniBortoloBossini
-           

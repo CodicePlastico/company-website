@@ -2,8 +2,7 @@ team:
   - id: amelchiori
     img: ale
     name: Alessandro Melchiori
-    nick: amelchiori 
-    role: Founder & Sofftware Architect
+    role: Founder & Software Architect
     tags: 
       - BackEnd
       - Management
@@ -26,8 +25,7 @@ team:
   - id: edelbono
     img: ema
     name: Emanuele Del Bono
-    nick: emadb 
-    role: Founder & Sofftware Architect
+    role: Founder & Software Architect
     tags: 
       - BackEnd
       - Management
@@ -47,10 +45,11 @@ team:
         link: https://www.slideshare.net/emadb
       - label: Github
         link: https://github.com/emadb
+      - label: Gitlab
+        link: https://gitlab.com/emadb
   - id: vleonardi
-    nick: vleonardi
     name: Valeria Leonardi
-    role: Developer
+    role: Software Developer
     description: >-
       Mamma geek appassionata di musica, ho iniziato a scrivere codice in C#, scoprendo la mia predilezione per lo sviluppo backend e per la realizzazione di App mobile. Un po' di musica in cuffia e il silenzio attorno sono il mio habitat naturale per programmare al meglio. Se durante il giorno confeziono insieme al team progetti su misura per i clienti, una volta a casa sostituisco il computer con la macchina da cucire, per dedicarmi all'hobby di taglio e cucito.
     img: vale
@@ -61,11 +60,15 @@ team:
         link: https://twitter.com/vleonardi
       - label: Linkedin
         link: http://www.linkedin.com/in/valerialeonardi
-      - label: Slideshare,
+      - label: Slideshare
         link: http://www.slideshare.net/ValeriaLeonardi
+      - label: Github
+        link: https://github.com/v4le
+      - label: Gitlab
+        link: https://gitlab.com/v4le
   - id: mgerminario
     name: Maddalena Germinario
-    role: Developer
+    role: Software Developer
     description: >-
       Quando mi chiedevano cosa avrei voluto fare da grande, rispondevo sempre l'ingegnere. La passione per le nuove tecnologie ha poi discriminato la strada da percorrere. Con sacrifici e perseveranza il sogno è diventato realtà e svolgo il lavoro di sviluppatore software dal 2011. Sono convinta che il meglio debba ancora venire ed è con lo spirito di migliorare sempre e la volontà di imparare cose nuove che affronto le sfide quotidiane del mio lavoro con l'aiuto indispensabile del team. Spento il computer, dedico il mio tempo alle mie grandi passioni: Totti e la AS Roma, lo shopping (sono una vera e propria fashion addicted) e i viaggi.
     img: madda
@@ -73,13 +76,11 @@ team:
       - BackEnd
       - FrontEnd
     social:
-      - label: Twitter
-        link: https://twitter.com/10Madda
       - label: Linkedin
         link: https://www.linkedin.com/in/maddalena-germinario/
   - id: pmartinelli 
     name: Pietro Martinelli
-    role: Developer
+    role: Software Engineer & Teacher
     description: >-
       Lavoro come ingegnere del software da circa $(expr $(date +%Y) - 2003) anni. Sono cresciuto professionalmente nel mondo Java e JEE ma, da parecchi anni, lavoro principalmente su piattaforma .Net. Ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo, forte della convinzione che le  competenze architetturali e metodologiche vadano al di là del contesto tecnologico e che la vera lingua comune consista nella passione per il "fare le cose bene" e per la condivisione continua di informazioni ed esperienze. Da neo-laureato ho iniziato un rapporto di collaborazione con l'Università di Brescia in veste di esercitatore di svariati corsi di taglio informatico; tale rapporto, che dura ancor'oggi, mi conferma continuamente che insegnare è il modo migliore e più sorprendente di imparare: ho quindi aggiunto con entusiasmo alla mia quotidianità lavorativa attività di formazione e consulenza, sia su temi squisitamente tecnici (Docker e Kubernetes, MongoDb, Java, C#, Git, ...) sia su argomenti più astratti (Principi di design, Best practice di testing, ...). Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono agli immancabili fumetti), ma la grande passione della mia vita sono "le mie donne": mia moglie Cristina e le nostre splendide bimbe.
     img: pietro
@@ -92,11 +93,13 @@ team:
         link: https://gitlab.com/pietrom
       - label: GitHub
         link: https://github.com/pietrom
-      - label: Twitter
-        link: https://twitter.com/amicofragile78
+      - label: Gitlab
+        link: https://gitlab.com/pietrom
+      - label: StackOverflow
+        link: https://stackoverflow.com/users/3745422/pietro-martinelli  
   - id: mbonera 
     name: Marco Bonera
-    role: Developer
+    role: Software Developer
     description: >-
       Vivere la vita con ottimismo e cuore. Mi sono avvicinato al mondo dello sviluppo per la mia voglia di scoprire, creare e divertimi giocando con la tecnologia. Fin dai primi passi con il Lego e il Meccano mi sono sempre divertito a smontare e rimontare. La mia voglia di concretezza mi spinge a portare caparbiamente a termine sempre i progetti iniziati con un attenzione alla praticità e alla bellezza. I miei attrezzi sono perlopiù C# WPF SQL ma non disdegno uno sguardo ai framework web React Angular NodeJs. Il mio tempo libero lo passo in montagna con la mia famiglia e il mio amato cane. 
     img: bonny
@@ -111,15 +114,18 @@ team:
         link: https://twitter.com/thebonnyweb
   - id: cghiselli
     name: Chiara Ghiselli
-    role: Amministrazione
+    role: Finance and Account
     description: >-
       La mia formazione è decisamente di impronta classica ma, messi da parte il dizionario di greco e i testi di pedagogia, un po' il caso e un po' le scelte mi hanno fatto approdare e familiarizzare con il mondo della segreteria e dell'amministrazione. La mia parola d'ordine è "ordine", mi piace trovare il posto giusto a ogni cosa e sono appassionata di organizzazione e sistemazione, tanto alla scrivania quanto tra le mura di casa. Nel tempo libero amo leggere e fare lunghe camminate.
     img: chiara
     tags: 
       - Management
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/chiara-ghiselli-2bb56a98/
   - id: ufranchini  
     name: Umberto Franchini
-    role: Developer
+    role: Software Developer
     description: >-
       Affascinato dai videogames degli anni 80' 90', ho intrapreso la strada della programmazione in giovane età. Ultimati gli studi universitari mi sono affacciato al mondo del lavoro come web developer. Prediligo lo sviluppo front-end, ma nel tempo ho allargato le mie competenze anche allo sviluppo back-end, diventando a tutti gli effetti un full-stack developer.  Amo gli aspetti del mio lavoro che hanno a che fare col risolvere problemi dando valore ai clienti finali, ma le mie passioni vanno al di là del lavoro:  quando non scrivo codice, mi piace praticare apnea nel lago di Garda, su cui vivo, e dedicarmi a mia moglie ed alle mie splendide figlie.
     img: umbi
@@ -130,9 +136,8 @@ team:
       - label: Linkedin
         link: https://www.linkedin.com/in/umberto-franchini-22707a25/
   - id: plaurenti
-    nick: paololaurenti
     name: Paolo Laurenti
-    role: Developer
+    role: Software Developer
     description: >-
       Sono uno sviluppatore software con numerose esperienze alle spalle.La mia passione per l’informatica credo sia nata la prima volta che vidi mio fratello maggiore giocare con il suo “Commodore 16”. Ero piccolo e non capivo nulla di “mettere e togliere cassette”, “load”, “return”, ecc… ma ne rimasi molto affascinato e sicuramente mi influenzò quando, qualche anno dopo, decisi che la mia strada sarebbe stata l’informatica. Attualmente creo soluzioni per lo più backend, mi interessano molto le problematiche di distribuzione e scalabilità del software. Lavoro da molti anni in C#, ma ultimamente mi sono appassionato a NodeJs e soprattutto a Erlang/Elixir. Ritengo che il confronto aperto e la condivisione della conoscenza siano il modo migliore per imparare dagli altri e crescere assieme perciò credo moltissimo nella partecipazione alle community. Infatti da qualche anno coordino le attività di XPug Bologna e partecipo all’organizzazione di alcune conferenze italiane. Per me non esiste solamente il mondo del software ma sono un grande appassionato di basket (a 360⁰), buon cibo, buon vino e camminate in montagna.
     img: paolo
@@ -145,6 +150,8 @@ team:
         link: https://www.linkedin.com/in/laurentipaolo/
       - label: GitHub
         link: https://github.com/paololaurenti
+      - label: Gitlab
+        link: https://gitlab.com/paololaurenti
   - id: dbrognoli
     name: Davide Brognoli
     role: Frontend Developer
@@ -162,7 +169,7 @@ team:
         link: http://github.com/davidebrognoli
   - id: cmarchiori  
     name: Claudio Marchiori
-    role: Developer
+    role: Frontend Developer
     description: >-
       Dopo i miei studi in grafica pubblicitaria mi sono avvicinato all'ambito tecnico e lì ho trovato il mio lavoro e la mia passione. Ho iniziato sviluppando interfacce web nei primi anni 2000 per poi arrivare alle moderne applicazioni web di oggi, avendo la possibilità di vivere in prima persona l'evoluzione di internet. Prevalentemente mi occupo ancora di sviluppo frontend, ma la mia curiosità mi porta ad interessarmi anche ad altri linguaggi con la convinzione che sia un modo per migliorarmi costantemente. Quando posso mi piace stare all'aria aperta correndo o facendo passeggiate in montagna.
     img: claudio
@@ -173,7 +180,7 @@ team:
         link: https://it.linkedin.com/in/claudiomarchiori
   - id: amaffi
     name: Alessandro Maffi
-    role: Developer
+    role: Software Developer
     description: >-
       Dopo gli studi ho prolungato la mia permanenza in Università per circa un anno, durante il quale ho partecipato a un progetto di ricerca che mi ha permesso di approfondire tematiche legate al machine learning. Da più di due anni mi occupo di programmazione full-stack e presto particolare attenzione a Test Driven Development, Continuous Integration e architetture a microservizi.
     img: ale-jr
@@ -181,7 +188,7 @@ team:
       - BackEnd
   - id: afusar
     name: Alberto Fusar
-    role: Developer
+    role: Software Developer
     description: >-
       Ho iniziato ad occuparmi dello sviluppo di applicazioni software una quindicina di anni fa, dopo aver ottenuto una laurea in ingegneria delle telecomunicazioni. Per molti anni ho partecipato a progetti legati al mondo dei contact center, ambito nel quale ho apprezzato la natura fortemente integrata e real-time delle soluzioni realizzate. Mi piace seguire tutte le fasi di un progetto, dall'esigenza iniziale del cliente fino al rilascio in produzione, e cercare le soluzioni ottimali attraverso il confronto e la selezione delle tecnologie più appropriate. Ho fatto la gavetta in linguaggio C/C++, passando successivamente alle tecnologie web utilizzando principalmente i linguaggi Java e C#. Nel tempo libero mi piace leggere, fare sport e viaggiare. Il ruolo di padre di famiglia ha ridotto il tempo che posso dedicare a queste attività, ma ne vale sempre la pena...
     img: alberto
@@ -191,7 +198,6 @@ team:
       - label: Linkedin
         link: https://it.linkedin.com/in/alberto-fusar-712b1466
   - id: mpezzotti
-    nick: merissimissima
     role: Designer
     name: Mariachiara Pezzotti
     description: >-
@@ -206,7 +212,7 @@ team:
         link: https://www.linkedin.com/in/mariachiarapezzotti
   - id: jwronski  
     name: Jacek Wronski
-    role: Developer
+    role: Software Developer
     description: >-
       Mi occupo principalmente dello sviluppo di applicazioni web in ASP.NET con qualche parantesi nel mondo mobile. Mi piace provare e sperimentare nuove tecnologie e linguaggi con particolare attenzione alle architetture e metodologie. DDD, TDD, Microservizi e molti altri sono gli argomenti che preferisco. Appena possibile partecipo ad eventi e meeting organizzati dalle community di sviluppatori e appassionati sul territorio italiano in quanto ritengo che in questo settore non ci si ferma mai e bisogna stare sempre al passo con i tempi con aggiornamenti costanti e scambio di conoscenze. Dopo una giornata davanti al monitor mi dedico all'insegnamento del kung fu diventato ormai parte integrante della mia vita. Il mio punto debole? Il buon cibo!
     img: jacek
@@ -217,7 +223,7 @@ team:
         link: https://www.linkedin.com/in/jacek-wronski-17b94bb7/
   - id: agadaldi    
     name: Andrea Gadaldi
-    role: Designer
+    role: UX / UI Designer
     description: >-
       Sono un designer che si occupa di interfacce e usabilità ma che si immerge ogni giorno di più nel mare dello sviluppo front-end: imparare per espandere il mio bagaglio di conoscenze, a prescindere che esse siano riferite ad ambiti creativi o tecnici, è il motivo per il quale ho scelto questo lavoro. Appassionato di fumetti, cinema, videogiochi e giochi in scatola, credo che la comunicazione e la condivisione di esperienze siano il modo migliore per progettare prodotti con e per le persone.
     img: andrea
@@ -227,28 +233,45 @@ team:
     social: 
       - label: Linkedin
         link: https://www.linkedin.com/in/andreagadaldi/
+      - label: Twitter
+        link: https://twitter.com/mrbeastcorp
   - id: icrea  
     name: Ilaria Crea
-    role: Developer
+    role: Software Developer
     description: >-
       Ingegnere Biomedico, mi sono avvicinata allo sviluppo software quasi per caso. La scoperta è avvenuta quando, dopo una lunga esperienza da Quality Engineer, si è presentata l'occasione di sperimentare il Software Testing. Testare software scritto da altri ha alimentato la mia curiosità per il mondo dello sviluppo: dai test, al front-end al back-end. Amo le sfide e passare al "lato oscuro dello sviluppo" lo è stato, ma la visione scientifica derivante dalla mia formazione è un prezioso strumento che mi supporta ogni giorno nel trovare soluzioni. Nel tempo libero mi diletto nella creazione di cosmetici home made e nella preparazione di ricette unendo la chimica alla cucina.
     img: ilaria
     tags: 
       - FrontEnd
       - BackEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/ilaria-crea-8b9630a5/
   - id: nroscino  
     name: Nicholas Roscino
-    role: Developer
+    role: Software Developer
     description: >-
       Sviluppatore, fotografo e musicista autodidatta. Mi sono avvicinato al mondo della programmazione all'età di 14 anni quando ricevetti il mio primo computer come regalo di Natale. Ero incuriosito dal mondo dei videogiochi e sognavo di poterne realizzare uno. Iniziai quindi a studiare per conto mio e una volta arrivato alle superiori, insieme ad un gruppo di compagni di classe realizzai il mio primo grande successo, un motore grafico in C++. Da sempre affascinato dall'imparare nuove tecnologie e nuovi linguaggi, attualmente mi occupo di sviluppo web sia front-end che back-end, mi piace avere una visione del progetto nella sua interezza senza focalizzarmi su uno dei due aspetti.
     img: nick
     tags: 
       - BackEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/nicholas-roscino-842404150/
   - id: gbossini  
     name: Gianni Bossini
-    role: Developer
+    role: Software Engineer
     description: >-
       Sviluppatore backend .net senior, appassionato di architetture software, attratto da tutte le possibili novità tecnologiche e costantemente alla ricerca di un pretesto per metterle in produzione. Da sempre stregato dal mondo API e dall’actor model, ho un pensiero fisso: perchè per tutte le ultime novità del mondo informatico c'è sempre una teoria, uno studio o un articolo di Martin Fowler che risale a qualche decina di anni prima?! Oltre agli aspetti tecnici mi interesso di altre tematiche quali product ownership, leadership e metodologie agili. Nel mio tempo libero svolgo con entusiasmo il ruolo di padre&marito-tifoso, cogliendo i frutti del mio impegno quotidiano quando le piccoline, spontaneamente, urlano nomi di calciatori della squadra della mia città. Nel restante (poco) tempo libero installo dispositivi spesso inutili per casa, leggo libri prevalentemente tecnici e sono un consumatore seriale di webinar e conferenze su Youtube. Credo molto nel concetto di community: non c'è niente di più bello che coinvolgere gli amici in conferenze e talk , condividere conoscenze e scambiarsi opinioni su quanto appreso.
     img: gianni
     tags: 
       - BackEnd
+    social: 
+      - label: Twitter
+        link: https://twitter.com/bossinigianni
+      - label: Linkedin
+        link: https://www.linkedin.com/in/giannibortolobossini/
+      - label: GitHub
+        link: https://www.linkedin.com/in/giannibortolobossini/
+      - label: Gitlab
+        link: https://github.com/GianniBortoloBossini

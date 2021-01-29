@@ -89,8 +89,6 @@ team:
     social: 
       - label: Linkedin
         link: https://it.linkedin.com/in/pietromartinelli
-      - label: Gitlab
-        link: https://gitlab.com/pietrom
       - label: GitHub
         link: https://github.com/pietrom
       - label: Gitlab

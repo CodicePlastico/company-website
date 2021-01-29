@@ -71,15 +71,15 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
   
         // Specify optional GTM environment details.
-        gtmAuth: "",
-        gtmPreview: "",
-        dataLayerName: "",
+        // gtmAuth: "",
+        // gtmPreview: "",
+        // dataLayerName: "",
   
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-        routeChangeEventName: "",
+        // routeChangeEventName: "gatsby-route-change",
       },
     },
     {

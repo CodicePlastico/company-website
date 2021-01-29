@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `./static/share.png`
+          content: `https://www.codiceplastico.com/static/share.jpg`
         },
       ].concat(meta)}
     />

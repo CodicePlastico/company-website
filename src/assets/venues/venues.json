@@ -7,6 +7,12 @@
       "size": 300
     },
     {
+      "id": "napoli",
+      "name": "Napoli",
+      "picture": "planet1",
+      "size": 200
+    },
+    {
       "id": "milano",
       "name": "Milano",
       "picture": "planet1",

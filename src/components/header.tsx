@@ -37,7 +37,14 @@ const Header = () => {
       href: '/contatti/',
       label: 'Contatti',
       internal: true
+    },
+    {
+      id: 'hiring',
+      href: '/hiring/',
+      label: 'Lavora con noi',
+      internal: true
     }
+
   ]
 
   const burgerClass = classNames('cp-header__burger', {

@@ -216,18 +216,6 @@ team:
         link: https://www.linkedin.com/in/andreagadaldi/
       - label: Twitter
         link: https://twitter.com/mrbeastcorp
-  - id: icrea  
-    name: Ilaria Crea
-    role: Software Developer
-    description: >-
-      Ingegnere Biomedico, mi sono avvicinata allo sviluppo software quasi per caso. La scoperta è avvenuta quando, dopo una lunga esperienza da Quality Engineer, si è presentata l'occasione di sperimentare il Software Testing. Testare software scritto da altri ha alimentato la mia curiosità per il mondo dello sviluppo: dai test, al front-end al back-end. Amo le sfide e passare al "lato oscuro dello sviluppo" lo è stato, ma la visione scientifica derivante dalla mia formazione è un prezioso strumento che mi supporta ogni giorno nel trovare soluzioni. Nel tempo libero mi diletto nella creazione di cosmetici home made e nella preparazione di ricette unendo la chimica alla cucina.
-    img: ilaria
-    tags: 
-      - FrontEnd
-      - BackEnd
-    social: 
-      - label: Linkedin
-        link: https://www.linkedin.com/in/ilaria-crea-8b9630a5/
   - id: nroscino  
     name: Nicholas Roscino
     role: Software Developer

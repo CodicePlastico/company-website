@@ -110,6 +110,22 @@ $prefix: cp-header;
         color: $main-color;
         font-weight: 600;
       }
+      &--emph{
+         border: 1px solid $main-color;
+         background: $main-color;
+         color:$main-light;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         letter-spacing: 1px;
+         line-height: 23px;
+         border-radius: 4px;
+         &:hover,
+         &--selected{
+           color: $main-light;
+           font-weight: 600;
+         }
+      }
+
 
       &:before {
         display: block;

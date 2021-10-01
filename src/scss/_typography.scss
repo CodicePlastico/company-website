@@ -114,6 +114,30 @@ p strong {
   font-weight: 600;
 }
 
+ul.bulletlist{
+  margin-bottom: 1em;
+}
+
+ul.bulletlist li {
+  @include type-setting(1, 2, -1);
+  @media only screen and (min-width: $desktop-min-width) {
+    @include type-setting(0, 1, -1);
+  }
+}
+
+ul.bulletlis li strong {
+  font-weight: 600;
+}
+
+ul.bulletlist li{
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1em;
+  
+}
+
+
+
 small {
   @include type-setting(-1, -1, -1);
 }

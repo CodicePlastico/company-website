@@ -39,10 +39,11 @@ const Header = () => {
       internal: true
     },
     {
-      id: 'hiring',
-      href: '/hiring/',
-      label: 'Lavora con noi',
-      internal: true
+      id: 'jobs',
+      href: '/jobs/',
+      label: 'Jobs',
+      internal: true, 
+      emph: true
     }
 
   ]
@@ -72,16 +73,19 @@ const Header = () => {
       </button>
       <nav className={menuClass}>
         <ul className="cp-header__menu-items">
-          {menuItems.map((m) => (
-              <li className="cp-header__menu-item" key={m.id}>
-                {m.internal 
-                  ? <Link className="cp-header__menu-link" activeClassName="cp-header__menu-link--selected" title={m.label} to={m.href}>{m.label}</Link>
-                  : <a className="cp-header__menu-link cp-header__menu-link--external" href={m.href} title={m.label} target="_blank">{m.label}</a>
+            {menuItems.map((m) => {
+                const linkClass = classNames('cp-header__menu-link', {
+                  'cp-header__menu-link--emph': m.emph
+                })
+                return (<li className="cp-header__menu-item" key={m.id}>
+                  {m.internal 
+                    ? <Link className={linkClass} activeClassName="cp-header__menu-link--selected" title={m.label} to={m.href}>{m.label}</Link>
+                    : <a className="cp-header__menu-link cp-header__menu-link--external" href={m.href} title={m.label} target="_blank">{m.label}</a>
+                  }
+                </li>)
                 }
-              </li>
-            )
-          )}
-        </ul>
+            )}
+          </ul>
       </nav>
     </header>
   )

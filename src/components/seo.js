@@ -69,11 +69,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: `https://www.codiceplastico.com/share.jpg`,
+          content: `https://codiceplastico.com/share.jpg`,
         },
         {
           property: `og:image`,
-          content: `https://www.codiceplastico.com/share.jpg`,
+          content: `https://codiceplastico.com/share.jpg`,
         },
       ].concat(meta)}
     />

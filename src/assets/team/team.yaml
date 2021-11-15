@@ -167,7 +167,6 @@ team:
     img: ale-jr
     tags: 
       - BackEnd
-  
   - id: mpezzotti
     role: Designer
     name: Mariachiara Pezzotti
@@ -234,7 +233,7 @@ team:
         link: https://www.linkedin.com/in/giannibortolobossini/
       - label: Gitlab
         link: https://github.com/GianniBortoloBossini
- - id: claudiol  
+  - id: clapertosa  
     name: Claudio Lapertosa 
     role: Software Developer
     description: >-
@@ -248,7 +247,7 @@ team:
         link: https://www.linkedin.com/in/clapertosa/
       - label: GitHub
         link: https://github.com/clapertosa
- - id: roberto  
+  - id: rzaniboni  
     name: Roberto Zaniboni
     role: Software Developer
     description: >-

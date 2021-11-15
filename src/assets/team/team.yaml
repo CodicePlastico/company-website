@@ -234,3 +234,31 @@ team:
         link: https://www.linkedin.com/in/giannibortolobossini/
       - label: Gitlab
         link: https://github.com/GianniBortoloBossini
+ - id: claudiol  
+    name: Claudio Lapertosa 
+    role: Software Developer
+    description: >-
+     Appassionato di computer e videogames, sono entrato nel mondo della programmazione per la necessità di automatizzare e gestire task impegnativi, e talvolta ripetitivi, con facilità. Il mio primo linguaggio di programmazione è stato Java, con cui ho creato semplici programmi, alcuni dei quali facevano scraping tramite Selenium e da qui ho deciso di approfondire lo sviluppo web, passando a lavorare principalmente con JavaScript, React e .NET. Nel tempo libero mi piace coltivare le mie passioni quali guardare film, serie tv, gaming e, tanto per dare un tocco di diversità, mi dedico allo sviluppo di bot o programmi per il mio Raspberry Pi. Con più tempo libero a disposizione, però, mi piacerebbe riprendere la lettura e lo sport.
+    img: claudio-l
+    tags: 
+      - BackEnd
+      - FrontEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/clapertosa/
+      - label: GitHub
+        link: https://github.com/clapertosa
+ - id: roberto  
+    name: Roberto Zaniboni
+    role: Software Developer
+    description: >-
+     Bolognese trapiantato a Napoli per amore, ho iniziato a sviluppare il software per la gestione delle commesse della falegnameria di famiglia, a metà degli anni '80, su un PS2 30 dell'IBM. Da qui la mia visione del mio lavoro come "artigiano del software". Dopo essermi laureato in informatica ed aver lavorato tanti anni sul backend, mi sono specializzato negli ultimi anni in frontend soprattutto con angular e react, grazie alla mia curiosità per le nuove tecnologie e alla mia passione per lo studio di cose nuove. Sono un appassionato di corsa, camminata e kitesurf a cui mi dedico nel mio tempo libero.
+    img: roberto
+    tags: 
+      - BackEnd
+      - FrontEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/roberto-zaniboni/
+      - label: Twitter
+        link: https://twitter.com/r_zani

@@ -17,7 +17,7 @@ const jobs: Jobs[] = [
 
 const Hiring = () => (
   <Layout>
-    <SEO title="Lavora con noi" cover="https://codiceplastico.com/share-jobs.jpg"/>
+    <SEO title="Lavora con noi" cover="https://codiceplastico.com/share-jobs.jpg" />
     <div className="cp-internal-page cp-hiring">
       <div className="cp-grid">
         <div className="cp-grid__container">

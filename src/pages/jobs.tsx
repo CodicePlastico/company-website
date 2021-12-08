@@ -85,6 +85,7 @@ const Hiring = () => (
             </ul>
             <br/>
             <p><a title="Invia una candidatura" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Iniva la tua candidatura!</span></a></p>
+            <p><strong>Vuoi conoscerci meglio?</strong> Puoi scoprire <a href="https://codiceplastico.com/">come lavoriamo</a>, conoscere il <a href="https://codiceplastico.com/team/">Team</a> e scoprire come è la vita in <a href="https://blog.codiceplastico.com/categories/vita-plastica">CodicePlastico</a>.</p>
           </div>
         </div>
       </div>    
@@ -118,6 +119,8 @@ const Hiring = () => (
             </ul>
             <br/>
             <p><a title="Invia una candidatura" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Iniva la tua candidatura!</span></a></p>
+            <p><strong>Vuoi conoscerci meglio?</strong> Puoi scoprire <a href="https://codiceplastico.com/">come lavoriamo</a>, conoscere il <a href="https://codiceplastico.com/team/">Team</a>, scoprire i nostri <a href="https://blog.codiceplastico.com/categories/tech">articoli tech</a> e gli <a href="https://blog.codiceplastico.com/events.html">eventi</a> a cui abbiamo partecipato come speaker.</p>
+          
           </div>
         </div>
       </div>    

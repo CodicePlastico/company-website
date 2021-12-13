@@ -84,7 +84,7 @@ const Hiring = () => (
               <li>Ogni persona del team dispone di un monte ore da dedicare alla <strong>formazione</strong> individuale e di un budget annuale da spendere in corsi, libri, conferenze o qualsiasi cosa possa portare a migliorare le proprie skill. Regolarmente, inoltre, vengono proposti talk interni, corsi o workshop.</li>
             </ul>
             <br/>
-            <p><a title="Invia una candidatura" id="jobs__junior" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Iniva la tua candidatura!</span></a></p>
+            <p><a title="Invia una candidatura" id="jobs__junior" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Invia la tua candidatura!</span></a></p>
             <p><strong>Vuoi conoscerci meglio?</strong> Puoi scoprire <a href="https://codiceplastico.com/">come lavoriamo</a>, conoscere il <a href="https://codiceplastico.com/team/">Team</a> e vedere come è la vita in <a href="https://blog.codiceplastico.com/categories/vita-plastica">CodicePlastico</a>.</p>
           </div>
         </div>
@@ -118,7 +118,7 @@ const Hiring = () => (
               <li>Ogni persona del team dispone di un monte ore da dedicare alla <strong>formazione</strong> individuale e di un budget annuale da spendere in corsi, libri, conferenze o qualsiasi cosa possa portare a migliorare le proprie skill. Regolarmente, inoltre, vengono proposti talk interni, corsi o workshop.</li>
             </ul>
             <br/>
-            <p><a title="Invia una candidatura" id="jobs__senior" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Iniva la tua candidatura!</span></a></p>
+            <p><a title="Invia una candidatura" id="jobs__senior" className="cp-about__button " href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico"> <span>Invia la tua candidatura!</span></a></p>
             <p><strong>Vuoi conoscerci meglio?</strong> Puoi scoprire <a href="https://codiceplastico.com/">come lavoriamo</a>, conoscere il <a href="https://codiceplastico.com/team/">Team</a>, leggere i nostri <a href="https://blog.codiceplastico.com/categories/tech">articoli tech</a> e rivivere gli <a href="https://blog.codiceplastico.com/events.html">eventi</a> a cui abbiamo partecipato come speaker.</p>
           
           </div>

@@ -68,26 +68,37 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-iubenda-cookie-footer',
       options: {
-        iubendaOptions: {
+        iubendaOptions: { 
+          "invalidateConsentWithoutLog": true,
           "whitelabel": false,
-          "lang": "it", 
-          "siteId": 2140395, 
-          "cookiePolicyId": 39068350, 
+          "lang": "it",
+          "siteId": 2140395,
+          "enableTcf": true,
+          "googleAdditionalConsentMode": true,
+          "perPurposeConsent": true,
+          "countryDetection": true,
+          "reloadOnConsent": true,
+          "consentOnContinuedBrowsing": false,
+          "cookiePolicyId": 39068350,
           "banner": { 
-              "brandBackgroundColor": "none", 
-              "brandTextColor": "black", 
-              "rejectButtonColor": "#ce0000", 
-              "rejectButtonCaptionColor": "white", 
-              "position": "float-top-center", 
-              "textColor": "black", 
-              "backgroundColor": "white", 
-              "acceptButtonDisplay": true, 
-              "acceptButtonColor": "#ce0000", 
-              "acceptButtonCaptionColor": "white", 
-              "customizeButtonDisplay": true,
-              "customizeButtonColor": "#DADADA",
-              "customizeButtonCaptionColor": "#4D4D4D" 
-          },
+            "brandBackgroundColor": "none",
+            "brandTextColor": "black",
+            "acceptButtonDisplay": true,
+            "customizeButtonDisplay": true,
+            "acceptButtonColor": "#ce0000",
+            "acceptButtonCaptionColor": "white",
+            "customizeButtonColor": "#DADADA",
+            "customizeButtonCaptionColor": "#4D4D4D",
+            "rejectButtonColor": "#ce0000",
+            "rejectButtonCaptionColor": "white",
+            "position": "float-top-center",
+            "textColor": "black",
+            "backgroundColor": "white",
+            "rejectButtonDisplay": true,
+            "explicitWithdrawal": true,
+            "listPurposes": true,
+            "closeButtonRejects": true 
+          } 
         },
         googleTagManagerOptions: true
       }

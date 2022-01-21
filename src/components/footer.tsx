@@ -47,6 +47,13 @@ const Footer = () => (
         <a className="cp-footer__company-phone" href="tel:+390306595241">
           Tel +39 030 6595241
         </a>
+        <span className="cp-footer__company-separator">-</span>
+        <a className="cp-footer__company-privacy" href="https://www.iubenda.com/privacy-policy/39068350" target="_blank" rel="noopener noreferrer">
+          Privacy
+        </a>&nbsp;&amp;&nbsp;
+        <a className="cp-footer__company-privacy" href="https://www.iubenda.com/privacy-policy/39068350/cookie-policy" target="_blank" rel="noopener noreferrer">
+          Cookie Policy 
+        </a>
       </div>
     </div>
     <ul className="cp-footer__social">

@@ -29,7 +29,8 @@ $prefix: cp-footer;
 
     &-address,
     &-mail,
-    &-phone{
+    &-phone,
+    &-privacy{
       text-decoration: none;
       color: $main-light;
     }

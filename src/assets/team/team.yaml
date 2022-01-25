@@ -261,3 +261,28 @@ team:
         link: https://www.linkedin.com/in/roberto-zaniboni/
       - label: Twitter
         link: https://twitter.com/r_zani
+  - id: mgentili  
+    name: Moreno Gentili
+    role: Software Developer
+    description: >-
+     È vero che di solito scrivo codice C# ma poi mi piace anche esercitare la mia vena creativa nel progettare e realizzare interfacce web usabili. Molto di quello che conosco lo devo alle persone che mettono a disposizione il proprio tempo per la community e, seguendo il loro esempio, provo anch'io a dare il mio contributo scrivendo articoli e registrando video. Essendo una persona curiosa+pragmatica, vado spesso a ricercare il perché delle cose per riuscire a distinguere cosa sia veramente essenziale. Nel tempo libero mi dedico al bricolage, ad ascoltare musica e, se magari non piove, a fare una passeggiata sulle colline marchigiane tappezzate di vigneti, con i Monti Azzurri sullo sfondo.
+    img: moreno
+    tags: 
+      - BackEnd
+      - FrontEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/morenogentili
+      - label: GitHub
+        link: https://github.com/BrightSoul
+  - id: fmacchetti  
+    name: Francesco Macchetti
+    role: BackEnd Developer
+    description: >-
+     Mi sono appassionato all'informatica quando, da piccolo, mio papà mi ha regalato il mio primo computer. Da quel momento ho capito che avrei voluto focalizzare i miei studi in quell'ambito. Dopo aver imparato a programmare con i linguaggi C e Java, ho rivolto la mia attenzione sul mondo web, soprattutto backend. Dopo una breve parentesi nel mondo del networking, sono tornato sullo sviluppo software, rivolgendo le mie attenzioni alla continua formazione in questo settore. Nel tempo libero mi piace lo sport: gioco in una squadra di pallavolo dalle scuole medie, faccio palestra, e sono un tifoso di calcio. Amo anche leggere romanzi e guardare film.
+    img: francesco
+    tags: 
+      - BackEnd
+    social: 
+      - label: Linkedin
+        link: https://www.linkedin.com/in/francesco-macchetti-49896218a/

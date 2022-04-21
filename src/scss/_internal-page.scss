@@ -26,7 +26,19 @@ $prefix: cp-internal-page;
         background-size: auto 400px;
         background-repeat: no-repeat;
         &--design {
-          background-image: url('/bgk_big-design.jpg');
+          background-image: url('/bgk_big-design.png');
+          background-position: top right;
+          background-size: auto 400px;
+          background-repeat: no-repeat;
+        }
+        &--cloud {
+          background-image: url('/bgk_big-cloud.png');
+          background-position: top right;
+          background-size: auto 400px;
+          background-repeat: no-repeat;
+        }
+        &--dev {
+          background-image: url('/bgk_big-dev.png');
           background-position: top right;
           background-size: auto 400px;
           background-repeat: no-repeat;

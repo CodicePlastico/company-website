@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import serviceSeparator from './design.jpg'
+import serviceSeparator from './design.png'
 
 const Design = () => (
   <Layout>

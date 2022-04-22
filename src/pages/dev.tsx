@@ -29,12 +29,16 @@ const Design = () => (
           <div className="cp-grid__content">
           <h4><span>Sviluppo applicazioni</span></h4>
           <p>
-            Realizziamo applicazioni esclusivamente su misura: non abbiamo prodotti software pronti da adattare, ma siamo specializzati nella costruzione di soluzioni da zero. Lavoriamo insieme al team di design per la definizione dei requisiti funzionali per poi passare all’analisi tecnica e di fattibilità del progetto. Adottiamo metodologie di sviluppo agile, prediligendo l’approccio a iterazioni.
+            Realizziamo <strong>applicazioni esclusivamente su misura</strong>: non abbiamo prodotti software pronti da adattare, ma siamo specializzati nella costruzione di soluzioni da zero. 
+            Lavoriamo insieme al team di design per la definizione dei requisiti funzionali per poi passare all’analisi tecnica e di fattibilità del progetto. 
+          </p>
+          <p>
+            Adottiamo metodologie di sviluppo <strong>agile</strong>, prediligendo l’approccio a iterazioni.
           </p> 
         
           <p>
               <br/>
-              <a href="/contatti/"  className="cp-service__button--bordered ">cta</a>
+              <a href="/contatti/"  className="cp-service__button--bordered ">Mi serve un'applicazione custom</a>
           </p>
          
           </div>
@@ -59,12 +63,12 @@ const Design = () => (
           <div className="cp-grid__content">
           <h4><span>Affiancamento altri team IT</span></h4>
           <p>
-            Affianchiamo i team IT dei nostri clienti per azioni di mentoring a medio lungo termine o per obiettivi specifici come il rilascio di funzionalità, refactoring dei processi, app modernization o il passaggio a nuove tecnologie. 
+            Affianchiamo i team IT dei nostri clienti per azioni di <strong>mentoring</strong> a medio lungo termine o per obiettivi specifici come il rilascio di funzionalità, refactoring dei processi, app modernization o il passaggio a nuove tecnologie. 
           </p> 
         
           <p>
               <br/>
-              <a href="/contatti/"  className="cp-service__button--bordered ">cta</a>
+              <a href="/contatti/"  className="cp-service__button--bordered ">Potete aiutare il mio team?</a>
           </p>
           
           </div>
@@ -78,7 +82,13 @@ const Design = () => (
           </div>
         </div>
       </div>
-      {/* <Customers /> */}
+      <div className="cp-grid cp-service__innermenu">
+        <div className="cp-grid__container">
+          <div className="cp-grid__content">
+          <p><a href="/about/"><strong>About</strong></a> - <a href="/design/">Design</a>  - <a href="/dev/">Dev</a> - <a href="/devops/">Devops & Cloud</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 )

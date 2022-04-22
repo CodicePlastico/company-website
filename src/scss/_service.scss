@@ -52,6 +52,26 @@ $prefix: cp-service;
     display: inline-block;
     background-color: none;
   }
+  ul{
+    margin: 1em 2em 1em 2em;
+    
+    li{ list-style-type: circle; margin-bottom: 0.8em;}
+  }
+  &__innermenu{
+
+    p{ 
+      padding-top: 1em;
+     letter-spacing: 1px;
+    }
+      a{ 
+    
+     
+      &:hover{
+      
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $desktop-min-width) {

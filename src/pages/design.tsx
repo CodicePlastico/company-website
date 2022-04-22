@@ -109,7 +109,13 @@ const Design = () => (
           </div>
         </div>
       </div>
-      {/* <Customers /> */}
+      <div className="cp-grid cp-service__innermenu">
+        <div className="cp-grid__container">
+          <div className="cp-grid__content">
+          <p><a href="/about/"><strong>About</strong></a> - <a href="/design/">Design</a>  - <a href="/dev/">Dev</a> - <a href="/devops/">Devops & Cloud</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 )

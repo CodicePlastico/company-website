@@ -3,7 +3,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import serviceSeparator from './devops.png'
+import serviceSeparator1 from './devops1.png'
+import serviceSeparator2 from './devops2.png'
 
 const Design = () => (
   <Layout>
@@ -60,7 +61,7 @@ const Design = () => (
         <div className="cp-grid__container">
           <div className="cp-grid__content">
           <p>      
-              <img className="" src={serviceSeparator} alt=""/>
+              <img className="" src={serviceSeparator1} alt=""/>
           </p>
           </div>
         </div>
@@ -91,7 +92,7 @@ const Design = () => (
         <div className="cp-grid__container">
           <div className="cp-grid__content">
           <p>      
-              <img className="" src={serviceSeparator} alt=""/>
+              <img className="" src={serviceSeparator2} alt=""/>
           </p>
           </div>
         </div>

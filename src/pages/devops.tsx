@@ -117,14 +117,6 @@ const Design = () => (
           
           </div>
         </div>
-      </div>                                          
-     
-      <div className="cp-grid cp-service__tools">
-        <div className="cp-grid__container">
-          <div className="cp-grid__content">
-          <p><strong>CHE STRUMENTI USIAMO?</strong>: HELP!</p>
-          </div>
-        </div>
       </div>
 
       <div className="cp-grid cp-service__innermenu">

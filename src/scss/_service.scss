@@ -1,0 +1,90 @@
+$prefix: cp-service;
+
+.#{$prefix}{
+
+  &__separator{
+ 
+    img{
+      padding-top: 2em; padding-bottom: 2em;
+    }
+  }
+  &__tools p{
+    background: $main-color;
+    color: $main-light;
+    padding: 1em;
+    margin: 2em 0;
+  } 
+
+  &__button {
+    background-color: $main-color;
+    text-decoration: none;
+    width: auto;
+    height: 70px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: $main-light;
+
+    &--bordered{
+      background-color: none;
+      border: 1px solid $main-color;
+      color: $main-color;
+      width: auto;
+      height: 70px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    &--white {
+      background-color: $main-dark;
+
+      & span {
+        color: $main-light;
+      }
+    }
+
+    & span {
+      color: $main-light;
+    }
+  }
+
+  h1 {
+    display: inline-block;
+    background-color: none;
+  }
+  ul{
+    margin: 1em 2em 1em 2em;
+    
+    li{ list-style-type: circle; margin-bottom: 0.8em;}
+  }
+  &__innermenu{
+
+    p{ 
+      padding-top: 1em;
+     letter-spacing: 1px;
+    }
+      a{ 
+    
+     
+      &:hover{
+      
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+  .#{$prefix}{
+ 
+
+    &__spaceship{
+      background-image: url('/spaceship.png');
+      background-size: 300px;
+      background-position: top left;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: vr(6);
+    }
+  }
+}

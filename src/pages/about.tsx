@@ -7,22 +7,35 @@ import Customers from '../components/customers'
 
 interface Skill {
   label: string
+  description: string
   items: string[]
+  cta: string
+  routing: string
 }
 
 const skills: Skill[] = [
   {
     label: 'Design',
-    items: ['Ux & Ui', 'Design Research', 'Test di usabilità']
+    description:'Dall’analisi dei requisiti alla realizzazione delle interfacce',
+    items: ['Ux & Ui', "Design Workshop", "Test e Analisi"],
+    cta: 'Ok ma cosa fate?',
+    routing: '/design/'
   },
   {
-    label: 'Dev & Sys',
-    items: ['Sviluppo', 'Functional programming', 'DevOps', 'Kubernetes', 'Docker', 'Azure', 'AWS']
+    label: 'Dev',
+    description: 'Progettiamo e sviluppiamo applicazioni web mobile e desktop.', 
+    items: ['Functional programming', '#C', 'Node.JS', 'Elixir'],
+    cta: 'Che tecnologie usate?',    
+    routing: '/dev/'
   },
   {
-    label: 'Processi',
-    items: ['App modernization', 'Analisi dei processi', 'Training e formazione']
-  }
+    label: 'DevOps & Sys',
+    description: 'Facciamo in modo che le applicazioni funzionino al meglio.',
+    items: [ 'Kubernetes', 'Docker', 'Azure', 'AWS'],
+    cta: 'Vorrei approfondire',    
+    routing: '/devops/'
+  },
+ 
 ]
 
 const AboutUs = () => (
@@ -34,9 +47,7 @@ const AboutUs = () => (
           <div className="cp-internal-page__content cp-grid__content">
             <h1><span>Chi</span> siamo</h1>
             <p className="cp-typography__main-text">
-              Siamo sviluppatori, analisti, designer: ci piace molto lavorare in squadra, 
-              ma diamo il massimo anche da soli, 
-              immersi nella nostra musica preferita
+            Siamo sviluppatori, analisti, designer e devops. Siamo organizzati in diversi team che fanno riferimento a tre aree principali di competenza:
             </p>
           </div>
         </div>
@@ -51,13 +62,16 @@ const AboutUs = () => (
               {skills.map((s, i) => (
                 <div className="cp-about__skills-column"  key={`skill-${i}`}>
                   <h3>{s.label}</h3>
-                  <ul className="cp-about__skills-items">
-                    {s.items.map((skill, index) => (
-                      <li className="cp-about__skills-item" key={`skill-${index}`}>{skill}</li>
-                    ))}
-                  </ul>
+                  <p dangerouslySetInnerHTML={{ __html: s.description }}/>
+                  {s.cta.trim() !== '' ? (
+                    <p><br/><a href={s.routing} className="cp-about__button ">{s.cta}</a></p>
+                  ) : (                   
+                    <br/>
+                  )}
+                 
                 </div>
               ))}
+              
             </div>
           </div>
         </div>
@@ -67,15 +81,22 @@ const AboutUs = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-            <h4><span>Formazione continua</span></h4>
-            <p>
-              Crediamo fortemente nella condivisione delle informazioni e la nostra giornata tipo inizia sempre con uno <strong>standup meeting di gruppo</strong>.
-            </p>
-            <p> 
-              La <strong>formazione</strong> è un altro elemento fondamentale della vita aziendale: dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software.
-            </p>
-            <p>
-              <a href="https://blog.codiceplastico.com/" target="_blank">Per conoscerci meglio, visita il nostro blog</a>
+          <p>
+            Siamo una software house specializzata in applicazioni <strong>tailor made</strong>: come un sarto che confeziona un abito su misura, il ciclo completo del nostro lavoro parte dall’idea e si completa con la distribuzione.
+          </p> 
+          <p>
+            Le nostre competenze verticali in design, sviluppo e sistemi ci consentono di <strong>supportare aziende o altri team IT</strong>s anche solo in uno di questi tre aspetti.
+          </p>
+          <h4><span>Formazione continua</span></h4>
+          <p>
+            La <strong>formazione</strong> è un altro elemento fondamentale della vita aziendale.  Dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software. 
+            Sul nostro <a href="https://blog.codiceplastico.com/" target="_blank">blog</a> troverai articoli tecnici, <a href="https://blog.codiceplastico.com/events.html" target="_blank">conferenze</a> in cui teniamo talk e storie di side project con i quali ci piace sporcarci le mani.
+          </p>
+          <p> 
+            Ci piace <strong>condividere la conoscenza</strong>, per questo organizziamo, esclusivamente su richiesta, sessioni di <strong>formazione di alto profilo</strong> su design, metodologie, sviluppo e devops. 
+          </p>
+            <p><br/>
+              <a href="mailto:info@codiceplastico.com?subject=Vorrei ricevere il vostro catalogo corsi" target="_blank" className="cp-about__button ">Richiedi il catalogo corsi</a>
             </p>
           </div>
         </div>

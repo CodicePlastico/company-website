@@ -30,7 +30,7 @@ const skills: Skill[] = [
   },
   {
     label: 'DevOps & Sys',
-    description: 'Facciamo in modo che le applicazioni web funzionino al meglio.',
+    description: 'Facciamo in modo che le applicazioni funzionino al meglio.',
     items: [ 'Kubernetes', 'Docker', 'Azure', 'AWS'],
     cta: 'Vorrei approfondire',    
     routing: '/devops/'

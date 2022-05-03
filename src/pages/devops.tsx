@@ -41,7 +41,7 @@ const Design = () => (
           <p>
             La consulenza di assessment si articola in tre fasi distinte:
             <ul>
-              <li>Una call di <strong>discovering</strong> in cui raccogliamo le informazioni generali dell’ambiente e delle applicazioni (documentazione, flussi, etc…)</li>
+              <li>Una call di <strong>discovering</strong> in cui raccogliamo le informazioni generali dell’ambiente e delle applicazioni (documentazione, flussi, etc…).</li>
               <li>La <strong>fase di verifica</strong> vera e propria: l’output di questa fase è il report di assessment ed eventuali altri documenti di mappatura.</li>
               <li>Una call di presentazione, nel quale l’analista presenta i risultati e spiega nel dettaglio il contenuto del report.</li>
             </ul>

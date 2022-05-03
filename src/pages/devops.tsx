@@ -107,7 +107,7 @@ const Design = () => (
           <h4><span>Devops e Sys</span></h4>
           <p>
           L’area devops e gestione dei sistemi è parte integrante del nostro processo di costruzione di soluzioni software complete. Sin dalle prime fasi dello sviluppo, ci occupiamo, infatti, di creare e gestire gli ambienti necessari, sia <strong>in cloud</strong> che <strong>on premise</strong>, affinché le applicazioni funzionino correttamente e con continuità.</p>
-          <p>Ogni cliente ha esigenze differenti, così come ogni progetto può doversi integrare con altre applicazioni o in ambienti già esistenti. Utilizziamo l’<strong>orchestratore</strong> Kubernetes (K8S) come strumento di deploy su <strong>cluster</strong> esistenti così come forniamo consulenza nel pacchettizzare applicazioni terze in modo che da rendere possibile il deploy su su <strong>cluster K8S</strong>. 
+          <p>Ogni cliente ha esigenze differenti, così come ogni progetto può doversi integrare con altre applicazioni o in ambienti già esistenti. Affianchiamo il team del cliente e forniamo consulenza su tutto il ciclo di sviluppo: dalla build al deploy automatico, su sitemi standalone e su cluster <strong>Kubernetes</strong>.
           </p> 
         
           <p>

@@ -302,3 +302,10 @@ team:
     tags: 
       - BackEnd
       - FrontEnd
+    social: 
+      - label: Behance
+        link: https://www.behance.net/Daniele-Gargiulo/projects
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/daniele-gargiulo/
+      - label: Github
+        link: https://github.com/sglmnaz

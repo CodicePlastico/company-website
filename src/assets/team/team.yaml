@@ -293,3 +293,12 @@ team:
     img: emilio
     tags: 
       - BackEnd
+  - id: dgargiulo  
+    name: Daniele Gargiulo
+    role: Fullstack Developer
+    description: >-
+     Sono un software developer intraprendente ed entusiasta, attualmente impegnato nello sviluppo di applicazioni web sia lato client che server. Sono stato sviluppatore iOS presso la Apple Developer Academy di Napoli, dove ho preso parte alla realizzazione di diversi progetti, sia personali che in team, come programmatore ed anche designer. Ho familiarità con principi e strumenti di grafica e prototyping ed ho lavorato alla creazione di icone, animazioni ed assets di vario genere. Ho iniziato a scrivere codice durante gli anni di scuola, quando spinto dalla mia passione per il game development, mi sono dedicato insieme ad alcuni amici allo sviluppo di giochi mobile attraverso l'engine Unity.
+    img: danieleg
+    tags: 
+      - BackEnd
+      - FrontEnd

@@ -230,9 +230,8 @@ team:
       - label: Linkedin
         link: https://www.linkedin.com/in/giannibortolobossini/
       - label: GitHub
-        link: https://www.linkedin.com/in/giannibortolobossini/
-      - label: Gitlab
         link: https://github.com/GianniBortoloBossini
+
   - id: clapertosa  
     name: Claudio Lapertosa 
     role: Software Developer

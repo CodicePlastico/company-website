@@ -309,3 +309,16 @@ team:
         link: https://www.linkedin.com/in/daniele-gargiulo/
       - label: Github
         link: https://github.com/sglmnaz
+  - id: dferrari  
+    name: Daniele Ferrari
+    role: Software Developer
+    description: >-
+     Videogiocatore incallito, appassionato di fumetti e musicista wanna-be. Credo fermamente che leggibilità e chiarezza del codice siano importanti almeno quanto ottimizzazione ed efficienza. Prediligo lo sviluppo back-end ma se devo sporcarmi le mani non mi tiro indietro e sono sempre pronto ad imparare ed affrontare nuove sfide. Ho un passato da sviluppatore Unity e continuo a coltivare questo interesse nel mio tempo libero, sviluppando videogiochi che (almeno per ora) tengo gelosamente sepolti nelle mie repo. Chissà, magari un giorno riuscirò a pubblicarne qualcuno con CodicePlastico!
+    img: danielef
+    tags: 
+      - BackEnd
+      - FrontEnd
+    social: 
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/daniele-ferrari-5ba37b105
+     

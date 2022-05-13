@@ -321,4 +321,14 @@ team:
     social: 
       - label: Linkedin    
         link: https://www.linkedin.com/in/daniele-ferrari-5ba37b105
-     
+  - id: ale3  
+    name: Alessandro Battini
+    role: Software Developer
+    description: >-
+     Technology enthusiast, tinkerer ma soprattutto programmatore, condivido casa con una moglie, due figlie e 4 gatti. Muovo i primi passi nel mondo dell'informatica imparando a programmare in basic dopo aver avuto in regalo il mio primo PC. Da quel momento ho trovato la mia strada: fare il programmatore. Nella mia carriera lavorativa ho avuto a che fare con diversi linguaggi di programmazione in ambiti diversi, per diversi anni ho programmato in C++ passando per python e atterrando poi al.NET/C#, che rimane il mio linguaggio preferito. Nel tempo libero mi piace giocare di ruolo, ai videogiochi, giochi di carte e boardgame, sono anche un lettore di libri Fantasy fumetti, insommma un NERD a tutto tondo.
+    img: ale3
+    tags: 
+      - BackEnd
+    social: 
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/alessandro-b-99a59a15/  

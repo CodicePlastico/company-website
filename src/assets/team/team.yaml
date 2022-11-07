@@ -205,17 +205,6 @@ team:
         link: https://www.linkedin.com/in/andreagadaldi/
       - label: Twitter
         link: https://twitter.com/mrbeastcorp
-  - id: nroscino  
-    name: Nicholas Roscino
-    role: Software Developer
-    description: >-
-      Sviluppatore, fotografo e musicista autodidatta. Mi sono avvicinato al mondo della programmazione all'età di 14 anni quando ricevetti il mio primo computer come regalo di Natale. Ero incuriosito dal mondo dei videogiochi e sognavo di poterne realizzare uno. Iniziai quindi a studiare per conto mio e una volta arrivato alle superiori, insieme ad un gruppo di compagni di classe realizzai il mio primo grande successo, un motore grafico in C++. Da sempre affascinato dall'imparare nuove tecnologie e nuovi linguaggi, attualmente mi occupo di sviluppo web sia front-end che back-end, mi piace avere una visione del progetto nella sua interezza senza focalizzarmi su uno dei due aspetti.
-    img: nick
-    tags: 
-      - BackEnd
-    social: 
-      - label: Linkedin
-        link: https://www.linkedin.com/in/nicholas-roscino-842404150/
   - id: gbossini  
     name: Gianni Bossini
     role: Software Engineer
@@ -231,21 +220,6 @@ team:
         link: https://www.linkedin.com/in/giannibortolobossini/
       - label: GitHub
         link: https://github.com/GianniBortoloBossini
-
-  - id: clapertosa  
-    name: Claudio Lapertosa 
-    role: Software Developer
-    description: >-
-     Appassionato di computer e videogames, sono entrato nel mondo della programmazione per la necessità di automatizzare e gestire task impegnativi, e talvolta ripetitivi, con facilità. Il mio primo linguaggio di programmazione è stato Java, con cui ho creato semplici programmi, alcuni dei quali facevano scraping tramite Selenium e da qui ho deciso di approfondire lo sviluppo web, passando a lavorare principalmente con JavaScript, React e .NET. Nel tempo libero mi piace coltivare le mie passioni quali guardare film, serie tv, gaming e, tanto per dare un tocco di diversità, mi dedico allo sviluppo di bot o programmi per il mio Raspberry Pi. Con più tempo libero a disposizione, però, mi piacerebbe riprendere la lettura e lo sport.
-    img: claudio-l
-    tags: 
-      - BackEnd
-      - FrontEnd
-    social: 
-      - label: Linkedin
-        link: https://www.linkedin.com/in/clapertosa/
-      - label: GitHub
-        link: https://github.com/clapertosa
   - id: rzaniboni  
     name: Roberto Zaniboni
     role: Software Developer

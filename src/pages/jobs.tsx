@@ -43,10 +43,10 @@ const Hiring = () => (
                 <div className="cp-about__skills-column"  key={`skill-${i}`}>
                   <h3>{s.label}</h3>
                   <ul className="cp-about__skills-items">
-                     <li className="cp-about__skills-item"><a href="#jr">Junior Software developer</a></li>
-                      <li className="cp-about__skills-item"><a href="#senior">Software developer <strong>.net</strong> (Mid o Senior)</a></li>
-                      <li className="cp-about__skills-item"><a href="#senior">Software developer <strong>node.js</strong> (Mid o Senior)</a></li>
-                  
+                    <li className="cp-about__skills-item"><a href="#designer">Junior UI/UX designer</a></li>
+                    <li className="cp-about__skills-item"><a href="#jr">Junior Software developer</a></li>
+                    <li className="cp-about__skills-item"><a href="#senior">Software developer <strong>.net</strong> (Mid o Senior)</a></li>
+                    <li className="cp-about__skills-item"><a href="#senior">Software developer <strong>node.js</strong> (Mid o Senior)</a></li>
                   </ul>
                 </div>
               ))}
@@ -56,6 +56,59 @@ const Hiring = () => (
           </div>
         </div>
       </div>
+
+      <div className="cp-grid cp-about__skills" id="designer">
+        <div className="cp-grid__left">
+        </div>
+        <div className="cp-grid__container">
+          <div className="cp-grid__content">
+          <h3><span>Junior</span> UI/UX Designer</h3> 
+          
+          <h4><span>Che cosa fa un designer in CodicePlastico?</span></h4>
+          <p>
+            Siamo una software house, che si occupa di progettare e realizzare piattaforme web 
+            fortemente personalizzate. Il nostro team di design affianca il team tecnico, 
+            composto da programmatori e devops, nell’intero ciclo di sviluppo del software, 
+            dall’analisi iniziale ai progetti evolutivi, progettando l’esperienza utente 
+            e le interfacce software correlate.
+          </p>
+          <p>Le attività comprendono quindi:</p>
+          <ul className="bulletlist">
+            <li>Organizzazione e gestione di workshop di co-design per la raccolta di requisiti</li>  
+            <li>Formalizzazione dei requisiti attraverso mappature e flowchart</li> 
+            <li>
+              Prototipazione a vari livelli di fedeltà (da wireframe a mockup) 
+              attraverso l’utilizzo sia di librerie di terzi, sia di design system interni.
+            </li> 
+          </ul>
+
+          <h4><span>Cosa serve per entrare nel Team di CodicePlastico?</span></h4> 
+       
+          <ul className="bulletlist">
+            <li>Almeno un anno di esperienza nella progettazione e Design di interfacce</li>  
+            <li>Uso di figma, post-it, pennarelli e voglia di imparare</li> 
+          </ul>
+          
+          <p><strong><span>Per noi è interessante sapere:</span></strong></p>
+          <ul className="bulletlist">
+            <li>Se partecipi attivamente alla vita di qualche Community IT;</li>
+            <li>Quali sono i tuoi side-project o se hai contribuito a qualche progetto Open Source;</li>
+           
+          </ul>
+          <h4><span>Cosa offriamo?</span></h4> 
+            <ul className="bulletlist">
+              <li><strong>Contratto a Tempo indeterminato</strong> con RAL 25-30k annui</li> 
+              <li><strong>Bonus annuale</strong>, proporzionale all'utile dell'Azienda. Crediamo molto nell'open governance e nella gestione collaborativa e trasparente. L'idea è, se si cresce, si cresce insieme;</li>
+              <li><strong>Remote working</strong>: la nostra sede principale è a Brescia, ma dal 2018 abbiamo adottato un modello di lavoro orientato al remoto, alternando liberamente giornate in presenza al lavoro da casa.</li>
+              <li>Ogni persona del team dispone di un monte ore da dedicare alla <strong>formazione</strong> individuale e di un budget annuale da spendere in corsi, libri, conferenze o qualsiasi cosa possa portare a migliorare le proprie skill. Regolarmente, inoltre, vengono proposti talk interni, corsi o workshop.</li>
+            </ul>
+            <br/>
+            <a title="Invia una candidatura" id="jobs__junior" className="cp-about__button" href="mailto:jobs@codiceplastico.com?subject=Candidatura%20DevTeam%20CodicePlastico">Invia la tua candidatura!</a>
+            <div className="cp-home__jobs-links"><p><strong>Vuoi conoscerci meglio?</strong> Puoi scoprire <a href="https://codiceplastico.com/">come lavoriamo</a>, conoscere il <a href="https://codiceplastico.com/team/">Team</a> e vedere come è la vita in <a href="https://blog.codiceplastico.com/categories/vita-plastica">CodicePlastico</a>.</p></div>
+          </div>
+        </div>
+      </div> 
+
       <div className="cp-grid cp-about__skills" id="jr">
         <div className="cp-grid__left">
         </div>

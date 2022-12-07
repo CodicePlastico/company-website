@@ -180,7 +180,7 @@ team:
         link: https://twitter.com/merissimissima
       - label: Linkedin
         link: https://www.linkedin.com/in/mariachiarapezzotti
-  - id: jwronski  
+  - id: jwronski
     name: Jacek Wronski
     role: Software Developer
     description: >-
@@ -191,19 +191,6 @@ team:
     social: 
       - label: Linkedin
         link: https://www.linkedin.com/in/jacek-wronski-17b94bb7/
-    name: Andrea Gadaldi
-    role: UX / UI Designer
-    description: >-
-      Sono un designer che si occupa di interfacce e usabilità ma che si immerge ogni giorno di più nel mare dello sviluppo front-end: imparare per espandere il mio bagaglio di conoscenze, a prescindere che esse siano riferite ad ambiti creativi o tecnici, è il motivo per il quale ho scelto questo lavoro. Appassionato di fumetti, cinema, videogiochi e giochi in scatola, credo che la comunicazione e la condivisione di esperienze siano il modo migliore per progettare prodotti con e per le persone.
-    img: andrea
-    tags: 
-      - FrontEnd
-      - Design
-    social: 
-      - label: Linkedin
-        link: https://www.linkedin.com/in/andreagadaldi/
-      - label: Twitter
-        link: https://twitter.com/mrbeastcorp
   - id: gbossini  
     name: Gianni Bossini
     role: Software Engineer
@@ -316,3 +303,37 @@ team:
     social: 
       - label: Linkedin    
         link: https://www.linkedin.com/in/stefano-petrilli-38378a12b/
+  - id: edegiovanni
+    name: Erica De Giovanni
+    role: Software Developer
+    description: >-
+     Fin da piccola sono stata molto appassionata di informatica e videogiochi, terminato il liceo linguistico ho intrapreso un percorso lavorativo che mi ha spinta a diventare Store Manager nell'ambito retail, esperienza lontana dalle mie vere passioni ma che mi ha permesso di crescere professionalmente e comprendere l'importanza del confronto e del lavoro di squadra. Nel tempo per curiosità ho deciso di studiare programmazione da autodidatta e di affidarmi alla guida di una community, ho poi iniziato a programmare principalmente in Python e C#, scoprendo un vero e proprio amore per lo sviluppo back-end. Adoro lavorare in questo ambito perché non si smette mai di imparare, mi piace sperimentare nuove tecnologie e superarmi ogni giorno. Nel mio tempo libero mi immergo nella creazione di progetti personali, pratico yoga o guardo serie tv.
+    img: ericadegiovanni
+    tags: 
+      - BackEnd
+    social: 
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/erica-de-giovanni-45403721b
+  - id: apianezzola
+    name: Antonio Pianezzola
+    role: Software Developer
+    description: >-
+     Con una laurea in Scienze del linguaggio, mi sono spostato da studiare le lingue germaniche antiche ai linguaggi informatici. Ho approcciato la programmazione con l'obiettivo di diventare scrittore di videogiochi, ma nel frattempo ho scoperto che anche la parte tecnica mi piace. Il colpo di fulmine l'ho avuto con Unity e C#, per poi seguire un corso di sviluppo per app multidevice in Dart/Flutter. Nel frattempo ho sempre qualche progetto musicale in corso, quando il mio cane mi lascia suonare.
+    img: antoniopianezzola
+    tags: 
+      - BackEnd
+    social: 
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/antonio-pianezzola
+  - id: ltorriani
+    name: Luca Torriani
+    role: Software Developer
+    description: >-
+     Fin da bambino ho sempre amato la tecnologia, probabilmente anche grazie alla mia passione per i videogiochi. Appena ne ho avuto l'opportunità ho deciso che avrei dedicato i miei  studi all'imparare ad interfacciarmi con i computer e dopo aver imparato le basi di C e Java a scuola, mi sono dedicato autonomamente al mondo web, e me ne sono innamorato. Al di fuori della programmazione, sono un appassionato di cinema e di fumetti.
+    img: lucatorriani
+    tags: 
+      - BackEnd
+      - FrontEnd
+    social: 
+      - label: Linkedin    
+        link: https://www.linkedin.com/in/luca-torriani

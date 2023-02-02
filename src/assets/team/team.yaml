@@ -86,9 +86,10 @@ team:
     img: pietro
     tags: 
       - BackEnd
+      - FrontEnd
     social: 
       - label: Linkedin
-        link: https://it.linkedin.com/in/pietromartinelli
+        link: https://www.linkedin.com/in/pietrom
       - label: GitHub
         link: https://github.com/pietrom
       - label: Gitlab

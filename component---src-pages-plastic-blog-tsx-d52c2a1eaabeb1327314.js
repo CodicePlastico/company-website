@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[652],{9985:function(e,t,l){l.r(t);var a=l(7294),n=l(1082),r=l(660),u=l(9376);t.default=function(){return a.createElement(r.Z,null,a.createElement(u.Z,{title:"Plastic Blog"}),a.createElement("h1",null,"Plastic Blog"),a.createElement(n.Link,{to:"/"},"Go to home")," ",a.createElement("br",null))}}}]);
+//# sourceMappingURL=component---src-pages-plastic-blog-tsx-d52c2a1eaabeb1327314.js.map

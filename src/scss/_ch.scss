@@ -1,0 +1,72 @@
+.cp-ch {
+    .intro{
+        margin-bottom: 2rem;
+    }
+    .cp-typography__main-text {
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+        font-weight: bold;
+
+    }
+
+    h5 {
+        font-weight: bold;
+        line-height: 1.2em;;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .cp-ch__row{
+        display: grid;
+        gap: 2rem;
+        padding: 1rem 0;
+        p{  margin: 0; margin-bottom: 0.5rem;}
+    }
+
+    &.cp-ch-finance{
+        @media only screen and (min-width: $desktop-min-width){
+            .cp-ch__row.r1{
+                grid-template-columns: 1fr 1fr;
+            }
+            .cp-ch__row.r2{
+                grid-template-columns: 4fr 2fr 1.5fr;
+            }
+        }
+       
+    }
+    .cp-ch__icon{
+        margin-bottom: 1rem;
+    }
+}
+
+.cp-bg-inverted__maincolor {
+    background-color: $main-color;
+    padding: 3.75rem 0;
+    color: $main-light;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li {
+        color: $main-light;
+    }
+    h2{ margin-bottom: 2rem;}
+    strong.inverted{ color: $main-dark;}
+}
+p.emph{
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+

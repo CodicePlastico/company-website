@@ -1,7 +1,8 @@
 .cp-ch {
-    .intro{
+    .intro {
         margin-bottom: 2rem;
     }
+
     .cp-typography__main-text {
         font-weight: bold;
     }
@@ -13,37 +14,126 @@
 
     }
 
-    h5 {
+    h4 {
         font-weight: bold;
-        line-height: 1.2em;;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        color: $main-color;
     }
 
-    p {
+    h5 {
+        font-weight: bold;
+        line-height: 1.2em;
+        ;
+    }
+
+    p,
+    li {
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
 
-    .cp-ch__row{
+    .cp-ch__row {
         display: grid;
         gap: 2rem;
         padding: 1rem 0;
-        p{  margin: 0; margin-bottom: 0.5rem;}
+
+        p {
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
     }
 
-    &.cp-ch-finance{
-        @media only screen and (min-width: $desktop-min-width){
-            .cp-ch__row.r1{
+    &.cp-ch-finance {
+        @media only screen and (min-width: $desktop-min-width) {
+            .cp-ch__row.r1 {
                 grid-template-columns: 1fr 1fr;
             }
-            .cp-ch__row.r2{
+
+            .cp-ch__row.r2 {
                 grid-template-columns: 4fr 2fr 1.5fr;
             }
         }
-       
+
     }
-    .cp-ch__icon{
+
+    .cp-ch__icon {
         margin-bottom: 1rem;
     }
+}
+
+
+
+
+.accordion input {
+    display: none;
+}
+
+.box {
+    position: relative;
+    transition: all .15s ease-in-out;
+    margin-bottom: 1.8rem;
+}
+
+
+.box-title {
+    cursor: pointer;
+    width: 100%;
+
+    h4 {
+        padding-left: 1.5rem;
+
+        &:hover {
+            color: $main-dark;
+        }
+    }
+
+}
+
+.box-content {
+    display: none;
+
+    margin-left: 1rem;
+}
+
+input:checked+.box {
+    height: auto;
+    transition: transform .15s ease-in-out;
+}
+
+input:checked+.box .box-title {}
+
+input:checked+.box .box-content,
+input:checked+.box .box-close {
+    display: block;
+}
+
+.arrows section .box-title {}
+
+.box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 2.3rem;
+    line-height: 1rem;
+    color: $main-color;
+    left: 0.5rem;
+
+
+    transition: transform .15s ease-in-out;
+
+}
+
+input:checked+.box .box-title:before {
+    transform: rotate(90deg);
+    color: $main-dark;
+
+}
+
+
+
+.cp-section {
+    padding: 3.75rem 0;
 }
 
 .cp-bg-inverted__maincolor {
@@ -61,12 +151,103 @@
     li {
         color: $main-light;
     }
-    h2{ margin-bottom: 2rem;}
-    strong.inverted{ color: $main-dark;}
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    strong.inverted {
+        color: $main-dark;
+    }
 }
-p.emph{
+
+p.emph {
     font-weight: 200;
     font-size: 1.4rem;
     line-height: 2rem;
 }
 
+.changes {
+    border-left: 6px solid $main-color;
+    padding-left: 1rem;
+
+    h5 {
+        text-transform: uppercase;
+        font-weight: 100;
+        color: $main-color;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+
+    }
+
+}
+
+.cp-ch__block {
+    padding-top: 1rem;
+    p,
+    li {
+        margin-bottom: 0.2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul li {
+        list-style-type: circle;
+        margin-left: 1.5rem;
+    }
+
+    img {
+        max-width: 45px;
+        height: auto;
+
+        @media only screen and (min-width: $desktop-min-width) {
+            max-width: none;
+        }
+    }
+
+    &.horizontal {
+        margin-bottom: 2.5rem;
+
+        @media only screen and (min-width: $desktop-min-width) {
+
+            display: grid;
+            grid-template-columns: auto 3.8fr 2.8fr;
+            gap: 1.5rem;
+            align-items: center;
+
+            .changes {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &.vertical {
+
+        .changes {
+            margin-top: 1.5rem;
+        }
+
+        margin-bottom: 2.5rem;
+
+    }
+
+}
+
+input:checked+.box #content-rating,
+input:checked+.box #content-raccolta-doc {
+    @media only screen and (min-width: $desktop-min-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    margin-bottom: 2.5rem;
+    
+}

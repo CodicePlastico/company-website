@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 
+const ChFinance = () => {
 
-const ChFinance = () => (
+  const [checked, setChecked] = useState('uno')
+  const handleChange = e => setChecked(e.target.value)
+
+  return (
   <Layout>
     <SEO title="Case History - Software per Intermediatori Finanziari" />
     <div className="cp-internal-page cp-ch cp-ch-finance ">
@@ -112,13 +116,13 @@ const ChFinance = () => (
         <div className="cp-grid__container">
           <div className='cp-grid__content'>
 
-            <h3><span>Le soluzioni</span></h3>
+            <h3><span>Le soluziosssni</span></h3>
             <p>Come CodicePlastico, siamo focalizzati sulla realizzazione di software completamente personalizzati. <strong>Creiamo applicazioni modulari da zero</strong> e  
             <strong> realizziamo integrazioni</strong> che permettono a sistemi diversi di scambiarsi informazioni.</p>
             <p>Ecco alcune soluzioni che abbiamo realizzato per le aziende del settore finanziario:</p>
 
             <nav className='accordion'>
-              <input type="checkbox" name="accordion" id="pratiche-finanziarie" />
+              <input type="checkbox" onChange={handleChange} name="accordion" id="pratiche-finanziarie" value="pratiche" checked={checked == 'pratiche'} />
               <section className="box">
                 <label className="box-title" htmlFor="pratiche-finanziarie" >
                   <h4>Gestione di Pratiche Finanziarie</h4>
@@ -195,7 +199,7 @@ const ChFinance = () => (
 
              
              
-              <input type="checkbox" name="accordion" id="rating" />
+              <input type="checkbox" onChange={handleChange} name="accordion" id="rating" value="rating" checked={checked == 'rating'} />
               <section className="box">
                 <label className="box-title" htmlFor="rating">
                   <h4>Applicazioni di Analisi di Bilancio e calcolo del Rating</h4>
@@ -241,7 +245,8 @@ const ChFinance = () => (
               
 
 
-              <input type="checkbox" name="accordion" id="rete-vendita" />
+              <input type="checkbox" onChange={handleChange} name="accordion" id="rete-vendita" value="rete-vendita" checked={checked == 'rete-vendita'} />
+              
               <section className="box">
                 <label className="box-title" htmlFor="rete-vendita">
                   <h4>Evoluzioni orizzontali con altri uffici: l'esempio della Rete Vendita</h4>
@@ -269,7 +274,8 @@ const ChFinance = () => (
                 </div>{/* Fine contenuto accordion */}
               </section>{/* Fine blocco accordion */}
 
-              <input type="checkbox" name="accordion" id="raccolta-doc" />
+              <input type="checkbox" onChange={handleChange} name="accordion" id="raccolta-doc" value="raccolta-doc" checked={checked == 'raccolta-doc'} />
+
               <section className="box" >
                 <label className="box-title" htmlFor="raccolta-doc">
                   <h4>Applicazioni per la raccolta documentale: conivolgere il Cliente finale</h4>
@@ -352,6 +358,7 @@ const ChFinance = () => (
       </div>
     </div>
   </Layout>
-)
+  )
+}
 
 export default ChFinance

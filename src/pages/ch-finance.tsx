@@ -6,8 +6,14 @@ import SEO from '../components/seo'
 
 const ChFinance = () => {
 
-  const [checked, setChecked] = useState('uno')
-  const handleChange = e => setChecked(e.target.value)
+  const [checked, setChecked] = useState('none')
+  const handleChange = e => {
+    if (checked === e.target.value) {
+      setChecked('none')
+    } else {
+      setChecked(e.target.value)
+    }
+  }
 
   return (
   <Layout>

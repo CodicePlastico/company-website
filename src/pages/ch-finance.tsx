@@ -485,9 +485,9 @@ const ChFinance = () => {
          
           <input data-autofill="false" type="hidden" id="field[13][]" name="field[13][]" value="~|" />
           <div className="_row _checkbox-radio">
-            <input id="field_13" type="checkbox"   />
+            <input id="field_13" type="checkbox" required   />
             <span>
-              <label htmlFor="field_13" className="small">
+              <label htmlFor="field_13" className="small" >
                 Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR.
               </label>
             </span>

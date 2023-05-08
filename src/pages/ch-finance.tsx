@@ -422,22 +422,13 @@ const ChFinance = () => {
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
 
-              <h3><span>Chi siamo</span></h3>
-              <p>Da più di dieci anni costruiamo software su misura: l’esperienza maturata in diversi settori ci ha permesso di crescere in maniera solida e indipendente.
-                Siamo innamorati della tecnologia: abbiamo scritto <a href="">libri</a> e spesso puoi incontrarci come <a href="">speaker in numerose conferenze</a> di livello nazionale.
-                Il tipo di relazione che proponiamo ai nostri clienti è un <strong>affiancamento orientato al miglioramento continuo</strong>: il focus non è lo sviluppo, ma come il vostro nuovo software, <strong>unico</strong>
-                e cucito sulle vostre necessità, vi permette di <strong>migliorare il vostro business</strong>.</p>
-              <p>Se hai un'idea o un processo aziendale da digitalizzare scrivici: <strong>saremo felici di capire come la tecnologia può migliorare le tue giornate</strong>.</p>
-              <p><a href="/about/"><strong>About:</strong></a> <a href="/design/">Design</a>  - <a href="/dev/">Dev</a> - <a href="/devops/">Devops & Cloud</a></p>
-            </div>{/* Fine content*/}
-          </div>{/* Fine container*/}
-        </div> {/* Fine grid*/}
-
-
-        <div className="cp-grid">
-          <div className="cp-grid__container">
-            <div className="cp-grid__content">
-
+              <h3><span>Contattaci</span></h3>
+              <p>Da più di dieci anni costruiamo software su misura: l’esperienza maturata in diversi settori ci ha permesso di <a href="https://www.ft.com/ft1000-2022" target="_blank" rel="noopener noreferrer">crescere in maniera solida e indipendente</a>.
+                Siamo innamorati della tecnologia: abbiamo scritto <a href="https://blog.codiceplastico.com/emanuele-delbono-libro-ddd"  target="_blank" rel="noopener noreferrer">libri</a> e spesso puoi incontrarci come <a href="https://blog.codiceplastico.com/events.html"  target="_blank" rel="noopener noreferrer">speaker in numerose conferenze</a> di livello nazionale.
+                Il tipo di relazione che proponiamo ai nostri clienti è un <strong>affiancamento orientato al miglioramento continuo</strong>: il focus non è lo sviluppo, ma come il vostro nuovo software, <strong>unico</strong> e cucito sulle vostre necessità, vi permette di <strong>migliorare il vostro business</strong>.</p>
+              <p>Se hai un'idea o un processo aziendale da digitalizzare scrivici: <strong>saremo felici di 
+                progettare come la tecnologia può aiutare la tua azienda</strong>.</p>
+              
 
             <form method="POST" action="https://codiceplastico.activehosted.com/proc.php" id="_form_11_" className="_form _form_11 _inline-form  _dark" noValidate>
     <input type="hidden" name="u" value="11" />
@@ -451,7 +442,7 @@ const ChFinance = () => {
     <div className="_form-content">
       <div className="_form_element _x37848981 _full_width " >
         <label htmlFor="firstname" className="_form-label">
-          Nome*
+          Nome <span className='ac_required'>[*]</span>
         </label>
         <div className="_field-wrapper">
           <input type="text" id="firstname" name="firstname" placeholder="Digita il nome" required/>
@@ -459,7 +450,7 @@ const ChFinance = () => {
       </div>
       <div className="_form_element _x86613550 _full_width " >
         <label htmlFor="lastname" className="_form-label">
-          Cognome*
+          Cognome <span className='ac_required'>[*]</span>
         </label>
         <div className="_field-wrapper">
           <input type="text" id="lastname" name="lastname" placeholder="Digita il cognome" required/>
@@ -483,7 +474,7 @@ const ChFinance = () => {
       </div>
       <div className="_form_element _x55460749 _full_width " >
         <label htmlFor="email" className="_form-label">
-          Email*
+          Email <span className='ac_required'>[*]</span>
         </label>
         <div className="_field-wrapper">
           <input type="text" id="email" name="email" placeholder="Digita l&#039;email" required/>
@@ -491,16 +482,12 @@ const ChFinance = () => {
       </div>
       <div className="_form_element _x73759755 _full_width " >
         <fieldset className="_form-fieldset">
-          <div className="_row">
-            <legend className="_form-label">
-              Privacy
-            </legend>
-          </div>
+         
           <input data-autofill="false" type="hidden" id="field[13][]" name="field[13][]" value="~|" />
           <div className="_row _checkbox-radio">
-            <input id="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." type="checkbox" name="field[13][]" value="Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR."   />
+            <input id="field_13" type="checkbox"   />
             <span>
-              <label htmlFor="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR.">
+              <label htmlFor="field_13" className="small">
                 Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR.
               </label>
             </span>
@@ -509,13 +496,13 @@ const ChFinance = () => {
       </div>
       <div className="_form_element _x43496746 _full_width _clear" >
         <div className="_html-code">
-          <p style={{fontSize: "11px"}}>
-            <a href="https://www.iubenda.com/privacy-policy/39068350/cookie-policy" style={{fontSize:"11px", color:"#111", textDecoration: "underline"}}>Leggi i termini sulla privacy</a>. Potrai cancellare i tuoi dati o chiederne una copia facendo esplicita richiesta a info@codiceplastico.com.
+          <p className='small'>
+            <a href="https://www.iubenda.com/privacy-policy/39068350/cookie-policy" style={{color:"#111", textDecoration: "underline"}}>Leggi i termini sulla privacy</a>. Potrai cancellare i tuoi dati o chiederne una copia facendo esplicita richiesta a info@codiceplastico.com.
           </p>
         </div>
       </div>
-      <div className="_button-wrapper _full_width">
-        <button id="_form_11_submit" className="_submit" type="submit">
+      <div className="_button-wrapper _full_width ">
+        <button id="_form_11_submit" className="_submit cp-about__button " type="submit">
           Invia
         </button>
       </div>
@@ -524,16 +511,7 @@ const ChFinance = () => {
     </div>
     <div className="_form-thank-you" style={{display: "none"}}>
     </div>
-    <div className="_form-branding">
-      <div className="_marketing-by">
-        Marketing a cura di
-      </div>
-      <a href="https://www.activecampaign.com/?utm_medium=referral&utm_campaign=acforms" className="_logo">
-        <span className="form-sr-only">
-          ActiveCampaign
-        </span>
-      </a>
-    </div>
+    
   </form>
 
 

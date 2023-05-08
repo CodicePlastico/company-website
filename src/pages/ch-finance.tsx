@@ -461,7 +461,7 @@ const ChFinance = () => {
           Azienda
         </label>
         <div className="_field-wrapper">
-          <input type="text" id="field[1]" name="field[1]" value="" placeholder="" />
+          <input type="text" id="field[1]" name="field[1]" placeholder="Inserisci la ragione sociale" />
         </div>
       </div>
       <div className="_form_element _x46141269 _full_width " >

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-
+import Slider from "react-slick"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
 
 const ChFinance = () => {
 
@@ -14,6 +13,14 @@ const ChFinance = () => {
       setChecked(e.target.value)
     }
   }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
 
   return (
     <Layout>
@@ -350,6 +357,33 @@ const ChFinance = () => {
         <div className='cp-grid cp-section cp-bg__n10'>
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
+            <Slider {...settings}>
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>
+            </div>{/* Fine content*/}
+          </div>{/* Fine container*/}
+        </div> {/* Fine grid*/}
+        
+        <div className='cp-grid cp-section'>
+          <div className="cp-grid__container">
+            <div className='cp-grid__content'>
               <h2>Fasi e organizzazione del progetto</h2>
               <p>La realizzazione di un software <em>custom</em> può sembrare un obiettivo insormontabile:
                 gli attori in gioco sono tanti e non sempre è facile quantificare i costi benefici.
@@ -487,9 +521,9 @@ const ChFinance = () => {
 
         <input data-autofill="false" type="hidden" id="field[13][]" name="field[13][]" value="~|" />
         <div className="_row _checkbox-radio">
-          <input id="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." type="checkbox" name="field[13][]" value="Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." class="any"  required />
+          <input id="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." type="checkbox" name="field[13][]" value="Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." className="any"  required />
           <span>
-            <label for="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." className='small'>
+            <label htmlFor="field_13Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR." className='small'>
               Ho letto l&#039;informativa privacy e acconsento alla memorizzazione dei miei dati nel vostro archivio secondo quanto stabilito dal regolamento europeo per la protezione dei dati personali, GDPR.
             </label>
           </span>

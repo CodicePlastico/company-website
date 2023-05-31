@@ -5,13 +5,10 @@ import SEO from '../components/seo'
 
 const ChFinance = () => {
 
-  const [checked, setChecked] = useState('none')
+  const [checked, setChecked] = useState({})
   const handleChange = e => {
-    if (checked === e.target.value) {
-      setChecked('none')
-    } else {
-      setChecked(e.target.value)
-    }
+    checked[e.target.value] = !checked[e.target.value]
+    setChecked(checked)
   }
 
   const settings = {
@@ -167,7 +164,7 @@ const ChFinance = () => {
               <p>Ecco alcune soluzioni che abbiamo realizzato per le aziende del settore finanziario:</p>
 
               <nav className='accordion'>
-                <input type="checkbox" onChange={handleChange} name="accordion" id="pratiche-finanziarie" value="pratiche" checked={checked == 'pratiche'} />
+                <input type="checkbox" onChange={handleChange} name="accordion" id="pratiche-finanziarie" value="pratiche" checked={checked['pratiche']} />
                 <section className="box">
                   <label className="box-title" htmlFor="pratiche-finanziarie" >
                     <h4>Gestione di Pratiche Finanziarie</h4>
@@ -244,7 +241,7 @@ const ChFinance = () => {
 
 
 
-                <input type="checkbox" onChange={handleChange} name="accordion" id="rating" value="rating" checked={checked == 'rating'} />
+                <input type="checkbox" onChange={handleChange} name="accordion" id="rating" value="rating" checked={checked['rating']} />
                 <section className="box">
                   <label className="box-title" htmlFor="rating">
                     <h4>Applicazioni di Analisi di Bilancio e calcolo del Rating</h4>
@@ -290,7 +287,7 @@ const ChFinance = () => {
 
 
 
-                <input type="checkbox" onChange={handleChange} name="accordion" id="rete-vendita" value="rete-vendita" checked={checked == 'rete-vendita'} />
+                <input type="checkbox" onChange={handleChange} name="accordion" id="rete-vendita" value="rete-vendita" checked={checked['rete-vendita']} />
 
                 <section className="box">
                   <label className="box-title" htmlFor="rete-vendita">
@@ -319,7 +316,7 @@ const ChFinance = () => {
                   </div>{/* Fine contenuto accordion */}
                 </section>{/* Fine blocco accordion */}
 
-                <input type="checkbox" onChange={handleChange} name="accordion" id="raccolta-doc" value="raccolta-doc" checked={checked == 'raccolta-doc'} />
+                <input type="checkbox" onChange={handleChange} name="accordion" id="raccolta-doc" value="raccolta-doc" checked={checked['raccolta-doc']} />
 
                 <section className="box" >
                   <label className="box-title" htmlFor="raccolta-doc">

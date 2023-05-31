@@ -18,8 +18,27 @@ const ChFinance = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 2,
+          slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -55,8 +74,23 @@ const ChFinance = () => {
               <p className='emph'>
                 In principio c’era la carta. Poi sono arrivate le email, i fogli Excel e i documenti in PDF.<br />In principio i team erano di poche persone in grado di organizzarsi. Poi l’azienda si è ingrandita in breve tempo.
               </p>
-              <p>Le aziende di servizi, soprattutto se operano in ambiti regolati, devono garantire alti standard di affidabilità e sicurezza. Non sempre, però, la crescita aziendale va di pari passo con l’evoluzione degli strumenti operativi. Questi sono i macro problemi che abbiamo raccolto nella nostra esperienza:</p>
-              <div className='cp-ch__row r1'>
+              <p>Le aziende di servizi, soprattutto se operano in ambiti regolati, devono 
+                garantire alti standard di affidabilità e sicurezza. Non sempre, però, la
+                 crescita aziendale va di pari passo con l’evoluzione degli strumenti operativi. 
+              </p>
+              
+
+             
+
+            </div>{/* fine content*/}
+          </div>{/* fine container*/}
+        </div>
+
+        <div className='cp-internal-page__content cp-grid cp-bg__n10 '>
+          <div className="cp-grid__container">
+            <div className='cp-grid__content'>
+              <h3><span>I macro problemi</span></h3>
+             <div className='cp-ch__row r1'>
 
                 {/* inizio block */}
                 <div className='cp-ch__block'>
@@ -122,8 +156,6 @@ const ChFinance = () => {
             </div>{/* fine content*/}
           </div>{/* fine container*/}
         </div>
-
-
 
         <div className='cp-grid cp-section'>
           <div className="cp-grid__container">
@@ -359,23 +391,19 @@ const ChFinance = () => {
             <div className='cp-grid__content'>
             <Slider {...settings}>
               <div>
-                <h3>1</h3>
+                <img src='/ch/finance/chf-demo1.jpg' alt="demo" />
               </div>
               <div>
-                <h3>2</h3>
+              <img src='/ch/finance/chf-demo2.jpg' alt="demo" />
               </div>
               <div>
-                <h3>3</h3>
+              <img src='/ch/finance/chf-demo3.jpg' alt="demo" />
               </div>
               <div>
-                <h3>4</h3>
+              <img src='/ch/finance/chf-demo4.jpg' alt="demo" />
               </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
-              </div>
+              
+             
             </Slider>
             </div>{/* Fine content*/}
           </div>{/* Fine container*/}
@@ -452,7 +480,7 @@ const ChFinance = () => {
           </div>{/* Fine container*/}
         </div> {/* Fine grid*/}
 
-        <div className='cp-grid cp-section'>
+        <div className='cp-grid cp-section cp-bg__n10'>
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
 

@@ -78,24 +78,6 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/maddalena-germinario/
-  - id: pmartinelli
-    name: Pietro Martinelli
-    role: Software Engineer & Teacher
-    description: >-
-      Lavoro come ingegnere del software da circa $(expr $(date +%Y) - 2003) anni. Sono cresciuto professionalmente nel mondo Java e JEE ma, da parecchi anni, lavoro principalmente su piattaforma .Net. Ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo, forte della convinzione che le  competenze architetturali e metodologiche vadano al di là del contesto tecnologico e che la vera lingua comune consista nella passione per il "fare le cose bene" e per la condivisione continua di informazioni ed esperienze. Da neo-laureato ho iniziato un rapporto di collaborazione con l'Università di Brescia in veste di esercitatore di svariati corsi di taglio informatico; tale rapporto, che dura ancor'oggi, mi conferma continuamente che insegnare è il modo migliore e più sorprendente di imparare: ho quindi aggiunto con entusiasmo alla mia quotidianità lavorativa attività di formazione e consulenza, sia su temi squisitamente tecnici (Docker e Kubernetes, MongoDb, Java, C#, Git, ...) sia su argomenti più astratti (Principi di design, Best practice di testing, ...). Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono agli immancabili fumetti), ma la grande passione della mia vita sono "le mie donne": mia moglie Cristina e le nostre splendide bimbe.
-    img: pietro
-    tags:
-      - BackEnd
-      - FrontEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/pietrom
-      - label: GitHub
-        link: https://github.com/pietrom
-      - label: Gitlab
-        link: https://gitlab.com/pietrom
-      - label: StackOverflow
-        link: https://stackoverflow.com/users/3745422/pietro-martinelli
   - id: mbonera
     name: Marco Bonera
     role: Software Developer
@@ -360,3 +342,14 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/isabella-bonora-39a0a4194/
+  - id: fcinelli
+    name: Federico Cinelli
+    role: Developer
+    description: >-
+      Fin da piccolo mi incuriosiva tutto ciò che era tecnologico e che aveva dei bottoni, dalle prime console ai computer. Il primo approccio con questo mondo è stato con un Commodore 64 e successivamente con un Commodore 128. Ho sempre avuto la curiosità di capire come funzionavano e vedere come erano fatti all'interno. Terminati i cinque anni all'istituto Tecnico, ho voluto seguire l'altra mia grande passione, le lingue straniere; mi sono iscritto a lingue e letterature straniere ma dopo un anno, per varie vicissitudini , ho cominciato una nuova avventura lavorativa in un ufficio commerciale. Un lavoro che mi ha fatto capire che mi piace lavorare in un gruppo e sviluppare idee. Ma dopo un lungo periodo ho deciso di tuffarmi nel mondo che ho sempre amato: la programmazione, soprattutto lato frontend. È un lavoro che mi soddisfa e che mi permette di imparare cose nuove ogni giorno. Nel tempo libero faccio il papà e mi diletto nel costruire piccole cose utilizzando dei vecchi componenti di pc.    
+    img: federicocinelli
+    tags:
+      - FrontEnd
+    social:
+      - label: Linkedin
+        link: #

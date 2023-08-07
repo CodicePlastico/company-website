@@ -169,8 +169,7 @@ const Team = () => {
                 conoscere la tecnologia così bene da saperla governare, essere recettivi ai cambiamenti, non smettere mai di studiare sono il nostro potere più grande. <br/>
                 <strong>E sì, anche noi possiamo rendere il mondo un posto migliore.</strong>
               </p>
-              <p> Se anche tu credi che la tecnologia renda il mondo un posto migliore e vuoi entrare nella nostra squadra, controlla le <a href="/jobs" title="Posizioni aperte">posizioni aperte</a> nella sezione Jobs
-               </p>
+              
             </div>
           </div>
         </div>

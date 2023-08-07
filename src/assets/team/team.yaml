@@ -353,3 +353,18 @@ team:
     social:
       - label: Linkedin
         link: #
+  - id: mbernardi
+    name: Massimo Bernardi
+    role: Developer
+    description: >-
+      Sono un back-end developer con una grande passione per l'informatica, il mare e l'elettronica. Ho iniziato il mio percorso lavorativo come sviluppatore web presso una piccola web agency, dove ho avuto l'opportunità di affinare le mie competenze nel creare soluzioni per piccoli progetti. Successivamente, ho deciso di intraprendere una nuova sfida e ho lavorato per diversi anni presso una grande azienda multinazionale nel campo MES IT, specializzandomi nella tecnologia .NET. Durante questo periodo, ho avuto l'opportunità di lavorare su progetti più complessi. Attualmente, ho il privilegio di essere un back-end developer presso CodicePlastico, qui metto a frutto la mia esperienza nella tecnologia .NET per sviluppare soluzioni software che soddisfano le esigenze dei nostri clienti. Oltre alla mia carriera nell'informatica, sono un appassionato di mare, in particolare mi piace andare a vela e trascorrere il tempo libero a pescare. Inoltre, sono affascinato dall'elettronica pratica e teorica, esplorando le nuove tecnologie che si sviluppano in questo campo in continua evoluzione.
+    img: massimobernardi
+    tags:
+      - BackEnd
+    social:
+      - label: Instagram
+        link: https://www.instagram.com/alemassimo00/
+      - label: Twitter
+        link: https://twitter.com/alemassimo00
+      - label: Linkedin
+        link: https://www.linkedin.com/in/massimo-bernardi-61b7b3123/

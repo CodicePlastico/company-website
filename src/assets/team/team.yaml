@@ -275,17 +275,6 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/alessandro-b-99a59a15/
-  - id: spetrilli
-    name: Stefano Petrilli
-    role: Software Developer
-    description: >-
-      Ho iniziato a scrivere codice da autodidatta, spinto dalla curiosità di voler comprendere come funzionano i computer. Scrivendo i primi programmi la mia curiosità verso questo ambito non ha fatto che aumentare. Questo mi ha spinto poi a improntare la mia formazione su questa materia. Dapprima ho frequentato un ITIS a indirizzo informatico e in seguito un corso di laurea triennale in informatica. Sono cambiate molte cose da quando mi sono avvicinato alla programmazione per la prima volta, adesso scrivere codice è diventata la mia professione, quello che non è cambiato è la curiosità che resta sempre forte come il giorno in cui ho scritto il primo Hello World. Quando non sono al computer mi piace imparare lingue e mettere alla prova i miei limiti negli sport.
-    img: stefanop
-    tags:
-      - BackEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/stefano-petrilli-38378a12b/
   - id: edegiovanni
     name: Erica De Giovanni
     role: Software Developer
@@ -368,3 +357,13 @@ team:
         link: https://twitter.com/alemassimo00
       - label: Linkedin
         link: https://www.linkedin.com/in/massimo-bernardi-61b7b3123/
+  - id: pietro
+    name: Pietro Martinelli
+    role: Developer
+    description: >-
+      Lavoro come ingegnere del software da circa $(expr $(date +%Y) - 2003) anni. Sono cresciuto professionalmente nel mondo Java e JEE ma, da parecchi anni, lavoro principalmente su piattaforma .Net. Ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo, forte della convinzione che le competenze architetturali e metodologiche vadano al di là del contesto tecnologico e che la vera lingua comune consista nella passione per il "fare le cose bene" e per la condivisione continua di informazioni ed esperienze. Da neo-laureato ho iniziato un rapporto di collaborazione con l'Università di Brescia in veste di esercitatore di svariati corsi di taglio informatico; tale rapporto, che dura ancor'oggi, mi conferma continuamente che insegnare è il modo migliore e più sorprendente di imparare: ho quindi aggiunto con entusiasmo alla mia quotidianità lavorativa attività di formazione e consulenza, sia su temi squisitamente tecnici (Docker e Kubernetes, MongoDb, Java, C#, Git, ...) sia su argomenti più astratti (Principi di design, Best practice di testing, ...). Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono agli immancabili fumetti), ma la grande passione della mia vita sono "le mie donne": mia moglie Cristina e le nostre splendide bimbe.    img: massimobernardi
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/pietrom/

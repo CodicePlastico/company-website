@@ -309,17 +309,6 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/luca-torriani
-  - id: lzubani
-    name: Lorenzo Zubani
-    role: Software Developer
-    description: >-
-      Frontend developer con la passione per il calcio. Fin da piccolo sono sempre stato una persona più creativa che logica ma la mia voglia di nuove sfide mi ha portato qua. Ho approcciato la programmazione a scuola con Java e c++ e successivamente, dopo un periodo da autodidatta, ho seguito un corso frontend. Nel tempo libero mi piace viaggiare, guardare serie tv e andare allo stadio!
-    img: lorenzozubani
-    tags:
-      - FrontEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/lorenzo-zubani
   - id: ibonora
     name: Isabella Bonora
     role: Designer

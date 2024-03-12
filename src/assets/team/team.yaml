@@ -357,3 +357,16 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/pietrom/
+  - id: nicola
+    name: Nicola Lilla
+    role: Developer
+    description: >-
+      La prima volta che vidi un videogame per me fu come vedere una magia. Decisi quindi che l'informatica sarebbe stata la mia strada. La possibilita' di affrontare ogni giorno nuove sfide e di imparare sempre qualcosa di nuovo rendono questo lavoro davvero magico. Amo sviluppare soluzioni graficamente intuitive e funzionali, supportate da una logica pulita ed efficace. Quando non scrivo codice mi piace videogiocare(GDR e strategici sono la mia passione) e armeggiare con ogni piattaforma hardware che ho sotto mano.  
+    img: nicola-lilla
+    tags:
+      - BackEnd
+      - FrontEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/nicola-lilla/
+

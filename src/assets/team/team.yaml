@@ -369,4 +369,15 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/nicola-lilla/
+  - id: gianluca
+    name: Gianluca Roscigno
+    role: Developer
+    description: >-
+      Appassionato di computer fin dalla tenera età, l'interesse per la tecnologia è cresciuto insieme a me fino a diventare una vera e propria passione. Ciò che è iniziato come un gioco, si è trasformato in un percorso di studi ed è diventato infine il mio lavoro. Lo sviluppo software mi incuriosisce in tutte le sue sfaccettature, dalla scrittura del codice agli aspetti più infrastrutturali. Nel tempo libero talvolta preparo dolci... ma sono molto più bravo a mangiarli!  
+    img: gianluca-roscigno
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/gianluca-roscigno
 

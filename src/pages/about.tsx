@@ -1,9 +1,40 @@
 import React from 'react'
-
+import Slider from "react-slick"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Customers from '../components/customers'
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+ 
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        autoplay: true
+      }
+    },
+    
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
 
 interface Skill {
   label: string
@@ -135,8 +166,66 @@ const AboutUs = () => (
                 </div>
             </div>
             <h5>Ok, ma per chi avete lavorato?</h5>
+
             <p>Spesso lavorare a progetti IT di altri richiede una buona dose di <strong>riservatezza</strong>. Se vuoi conoscere i nostri lavori, <a href="mailto:info@codicelplastico.com">scrivici</a>: ti invieremo un portfolio che ti aiuterà a misurare la nostra esperienza, nel rispetto della privacy dei progetti sui quali abbiamo lavorato.</p>
-            <a title="toApple" className="cp-about__button " href="/contatti"><span>Contattaci!</span></a>
+         
+
+            <div className='cp-slider'>
+
+           
+<Slider {...settings}>
+
+<div>
+<a href="https://www.antgroup.it" target="_blank">
+<img src='/loghi/antgroup.png' alt="ANT Group" />
+</a>
+</div>
+<div>
+<a href="https://avanscoperta.it" target="_blank">
+<img src='/loghi/avanscoperta.png' alt="avanscoperta" />
+</a>
+</div>
+<div>
+<a href="https://www.cheopeonline.it/it" target="_blank">
+<img src='/loghi/cheope.png' alt="Cheope" />
+</a>
+</div>
+<div>
+<a href="http://www.collicelli.com/" target="_blank">
+<img src='/loghi/collicelli.png' alt="Collicelli" />
+</a>
+</div>
+<div>
+<a href="https://www.csmt.it/it" target="_blank">
+<img src='/loghi/csmt.png' alt="CSMT" />
+</a>
+</div>
+<div>
+<a href="https://esgeo.eu" target="_blank">
+<img src='/loghi/esgeo.png' alt="ESGEO" />
+</a>
+</div>
+<div>
+<a href="https://giallocobalto.it" target="_blank">
+<img src='/loghi/giallocobalto.png' alt="giallocobalto" />
+</a>
+</div>
+<div>
+<a href="https://www.sappgroup.com/x" target="_blank">
+<img src='/loghi/sapp.png' alt="SAPP" />
+</a>
+</div>
+<div>
+<a href="https://zerozerotoner.it" target="_blank">
+<img src='/loghi/zerozerotoner.png' alt="ZEROZEROTONER" />
+</a>
+</div>
+
+ 
+  
+ 
+</Slider>
+</div>
           </div>
         </div>
       </div>

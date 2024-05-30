@@ -380,4 +380,26 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/gianluca-roscigno
+  - id: tommaso
+    name: Tommaso Tabarelli
+    role: Developer
+    description: >-
+      L'informatica mi ha sempre appassionato perché permette di "dare ordini alle macchine" e questo mi affascina. Sono sempre stato una persona molto curiosa. Al liceo scientifico mi piacevano tutte le materie e mi sarebbe piaciuto approfondirle tutte, ma alla fine ho scelto la fisica. Durante gli studi mi divertivo a modellizzare semplici giochi di grattacapi per risolverli tramite algoritmi brute force in C++ o Python. In magistrale ho colto l'occasione di approfondire le tematiche di big data e machine learning grazie ad un nuovo percorso di studi. Ho poi iniziato a lavorare come consulente e sviluppatore utilizzando diversi linguaggi, ho trascorso due anni in Irlanda e ora sono fiero di essere tornato in Italia e contento di lavorare in ambito .NET. Nel tempo libero pratico attività fisica, gioco a giochi da tavolo e videogame, e sazio la mia curiosità leggendo libri di tutti i tipi, da psicologia a libri tecnici, da storia a narrativa.    
+    img: tommaso-tabarelli
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://it.linkedin.com/in/tommaso-tabarelli1
+  - id: marcobaresi
+    name: Marco Baresi
+    role: Developer
+    description: >-
+      Appassionato di tecnologia e innovazione fin da giovane, ho iniziato la mia carriera lavorativa durante il percorso universitario, lavorando come docente e frontend developer. Con una forte inclinazione a “creare qualcosa” sin dall’infanzia, ho trovato nella programmazione una delle mie prime passioni. Dopo aver esplorato il mondo dello sviluppo frontend (principalmente in ambito mobile) e del Cloud, ora sono pronto a immergermi nel backend, spinto dalla curiosità e dalla voglia di comprendere a fondo le infrastrutture che rendono possibile il funzionamento dei sistemi complessi. Amo affrontare nuove sfide ogni giorno, imparando continuamente e migliorando le mie competenze tecniche. Nel mio tempo libero, mi dedico alla creazione di progetti personali, sperimentando nuove tecnologie e metodologie di sviluppo. Quando non sono immerso nel codice, mi piace leggere, viaggiare e “socializzare”.
+    img: marco-baresi
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/marco-baresi-240a21220/
 

@@ -196,6 +196,7 @@ p.emph {
 }
 
 .cp-ch__block {
+   
     padding-top: 1rem;
     p,
     li {
@@ -232,6 +233,21 @@ p.emph {
 
             .changes {
                 margin-left: 1rem;
+            }
+        }
+        &.c2{
+            .cp-ch__icon{ margin-bottom: 0;}
+            @media only screen and (min-width: $desktop-min-width) {
+
+                display: grid;
+                grid-template-columns: 60px auto;
+                gap: 1.5rem;
+                align-items: center;
+    
+                .changes {
+                    margin-left: 1rem;
+                }
+
             }
         }
     }

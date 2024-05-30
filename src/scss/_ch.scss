@@ -156,7 +156,8 @@ input:checked+.box .box-title:before {
     h2 {
         margin-bottom: 2rem;
     }
-
+       a{ color: $main-color}
+        a.inverted,
     strong.inverted {
         color: $main-dark;
     }

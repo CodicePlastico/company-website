@@ -86,15 +86,9 @@ const ChFinance = () => {
             <div className='cp-grid__content'>
               <h2>Che cos'è CityEye</h2>
 
-              <p className='emph'>CityEye è un portale disponibile su <a href="http://www.cityeye.it">www.cityeye.it</a>, attraverso il quale gli utenti possono cercare su una mappa i sensori IOT presenti sul territorio, aggiungere sensori propri, configurarli e, se il tipo di sensore lo supporta, controllarli attraverso il portale.</p>
+              <p className='emph'>CityEye è un portale disponibile su <a href="http://www.cityeye.it" className='inverted' target='_blank'>www.cityeye.it</a>, attraverso il quale gli utenti possono cercare su una mappa i sensori IOT presenti sul territorio, aggiungere sensori propri, configurarli e, se il tipo di sensore lo supporta, controllarli attraverso il portale.</p>
     
-              <p>Le aziende di servizi, soprattutto se operano in ambiti regolati, devono 
-                garantire alti standard di affidabilità e sicurezza. Non sempre, però, la
-                 crescita aziendale va di pari passo con l’evoluzione degli strumenti operativi. 
-              </p>
-              
-         
-
+           
                 {/* inizio block */}
                 <div className='cp-ch__block horizontal c2'>
                   <div className='cp-ch__icon'>
@@ -124,7 +118,7 @@ const ChFinance = () => {
           </div>{/* fine container*/}
         </div>
 
-        <div className='cp-internal-page__content cp-grid  '>
+        <div className='cp-grid cp-section  '>
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
               <h3><span>Quale è stato il nostro ruolo</span></h3>

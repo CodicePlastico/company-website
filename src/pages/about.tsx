@@ -213,7 +213,7 @@ const AboutUs = () => (
 
 <div>
 <a href="https://fraternitasistemi.it/" target="_blank">
-<img src='/loghi/fraterninta.png' alt="fraternità sistemi" />
+<img src='/loghi/fraternita.png' alt="fraternità sistemi" />
 </a>
 </div>
 

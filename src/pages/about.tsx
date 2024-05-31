@@ -210,6 +210,13 @@ const AboutUs = () => (
 <img src='/loghi/giallocobalto.png' alt="giallocobalto" />
 </a>
 </div>
+
+<div>
+<a href="https://fraternitasistemi.it/" target="_blank">
+<img src='/loghi/fraterninta.png' alt="fraternità sistemi" />
+</a>
+</div>
+
 <div>
 <a href="https://www.sappgroup.com/x" target="_blank">
 <img src='/loghi/sapp.png' alt="SAPP" />

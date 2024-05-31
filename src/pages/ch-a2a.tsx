@@ -160,7 +160,7 @@ const ChFinance = () => {
         <div className='cp-grid cp-section'>
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
-              <h2>Perchè funziona</h2>
+              <h2>Perché funziona</h2>
               <p className='emph'>Come per tutti i progetti in affiancamento, la chiave del successo è la <strong>sinergia</strong>: il cliente stabilisce la road map del progetto a lungo termine, ma si progettano insieme le soluzioni le strategie con cui raggiungere gli obiettivi. Il continuo scambio di competenze tra i team e la <strong>contaminazione delle idee</strong> consentono di arricchire il progetto, apportando innovazione e garantendo una crescita professionale reciproca.</p>
     
 

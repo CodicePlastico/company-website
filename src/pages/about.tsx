@@ -205,9 +205,22 @@ const AboutUs = () => (
 <img src='/loghi/esgeo.png' alt="ESGEO" />
 </a>
 </div>
+
+<div>
+<a href="https://geo-badge.com/" target="_blank">
+<img src='/loghi/geobadge.png' alt="geobadge" />
+</a>
+</div>
+
 <div>
 <a href="https://giallocobalto.it" target="_blank">
 <img src='/loghi/giallocobalto.png' alt="giallocobalto" />
+</a>
+</div>
+
+<div>
+<a href="https://www.info-bit.com/" target="_blank">
+<img src='/loghi/infobit.png' alt="geobadge" />
 </a>
 </div>
 
@@ -228,7 +241,9 @@ const AboutUs = () => (
 </a>
 </div>
 
- 
+
+
+
   
  
 </Slider>

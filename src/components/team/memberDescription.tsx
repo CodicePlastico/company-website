@@ -12,6 +12,20 @@ interface MemberDescriptionProps {
   toggleDescription: () => void
 }
 
+const applyDescriptionParams = (member: MemberCanvas | FullMember): string => {
+  let ret = member.description
+
+  if (member.descriptionParams) {
+    for (const [key, value] of Object.entries(member.descriptionParams)) {
+      if (value.yearsFrom) {
+        const now = new Date()
+        ret = ret.replace(`{${key}}`, `${now.getFullYear() - value.yearsFrom}`)  
+      }
+    }
+  }
+  return ret
+}
+
 const MemberDescription = (props: MemberDescriptionProps) => {
   const { visible, right, memberStyle, member, handleClick, toggleDescription } = props
   const descriptionClass = classNames('cp-member__description', {'cp-member__description--visible': visible}, {'cp-member__description--right': right})
@@ -25,7 +39,7 @@ const MemberDescription = (props: MemberDescriptionProps) => {
           <p className="cp-member__description-extras"><strong>{member.nick && <>@{member.nick} - </>}{member.role}</strong></p>
         </div>
         <p className="cp-member__description-text">
-          {member.description}
+          {applyDescriptionParams(member)}
         </p>
         {member.social && member.social.length > 0 && <ul className="cp-member__social">
           {member.social.map(s => (  

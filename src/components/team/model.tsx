@@ -3,6 +3,10 @@ export interface Channel {
   link: string
 }
 
+export interface DescriptionParamsFunction {
+  yearsFrom: number
+}
+
 export interface MemberModel {
   id: string
   img: string
@@ -10,6 +14,7 @@ export interface MemberModel {
   nick: string 
   role: string
   description: string
+  descriptionParams: Record<string, DescriptionParamsFunction>
   social: Channel[],
   tags: string[]
 }

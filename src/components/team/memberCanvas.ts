@@ -1,5 +1,5 @@
 import p5Types from 'p5'
-import { Coordinates, Channel } from './model'
+import { Coordinates, Channel, DescriptionParamsFunction } from './model'
 
 class MemberCanvas {
   id: string
@@ -10,6 +10,7 @@ class MemberCanvas {
   tags: string[]
   nick: string
   description: string
+  descriptionParams: Record<string,DescriptionParamsFunction>
   role: string
   social: Channel[]
 
@@ -23,6 +24,7 @@ class MemberCanvas {
     tags: string[],
     nick: string,
     description: string,
+    descriptionParams: Record<string,DescriptionParamsFunction>,
     role: string,
     social: Channel[]
   ) {
@@ -34,6 +36,7 @@ class MemberCanvas {
     this.tags = tags
     this.nick = nick
     this.description = description
+    this.descriptionParams = descriptionParams
     this.role = role 
     this.social = social
   }

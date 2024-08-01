@@ -99,6 +99,7 @@ const TeamRelations = (props: TeamMembers) => {
         m.tags,
         m.nick, 
         m.description,
+        m.descriptionParams,
         m.role,
         m.social)
     })
@@ -265,7 +266,7 @@ const TeamRelations = (props: TeamMembers) => {
     return member
   }
 
-  const rightActiveMember = activeMember && (activeMember.coordinates.x > (Math.floor(canvas.width / 2)))
+  const rightActiveMember: boolean = activeMember && (activeMember.coordinates.x > (Math.floor(canvas.width / 2))) || false
 
   const getMemberStyle = (right: boolean) => {
     if (activeMember) {

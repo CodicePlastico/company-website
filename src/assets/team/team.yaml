@@ -383,4 +383,17 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/marco-baresi-240a21220/
-
+  - id: emanueleliardo
+    name: Emanuele Liardo
+    role: Developer
+    description: >-
+      Sono un amante del codice con un superpotere: risolvere problemi, uno stack alla volta! Tra un "Hello World" e un "404", mi diverto a scrivere in linguaggi come JavaScript, TypeScript, C# e a usare tecnologie come React, .NET e Node.js. Ogni progetto è una sfida, e mi piace affrontarla con un sorriso (anche quando il debug sembra una maratona). Il mio motto? "Se non riesci a risolvere il problema, cambialo in una feature!". Quando non scrivo codice, il mio tempo libero si divide tra corsa, camminate e lettura di libri di ogni genere.
+    img: emanuele-liardo
+    tags:
+      - BackEnd
+      - FrontEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/emanuele-liardo/
+      - label: Github
+        link: https://github.com/odrail

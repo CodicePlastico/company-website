@@ -82,7 +82,7 @@ const Design = () => (
             Anche in questa fase l’approccio può essere <strong>partecipativo</strong> con sessioni di 
             rapid prototyping che, successivamente, vengono normalizzate e ridisegnate dal nostro team di design.
           </p>
-          <h5>Realizzazione prototipi: gradi di fedeltà e interazioni</h5>
+          <h3>Realizzazione prototipi: gradi di fedeltà e interazioni</h3>
           <p>Per grado di fedeltà di un prototipo si intende quanto il prototipo assomiglia al 
               prodotto finito. Realizziamo sia prototipi a <strong>bassa fedeltà</strong> (es. wireframe) 
               che consentono di testare flussi e interazioni di alto livello, 

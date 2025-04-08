@@ -70,17 +70,17 @@ const Member = (props: MemberProps) => {
   }
 
   return (
-    <div className="cp-member" ref={imgCallBack}>
+    <article className="cp-member" ref={imgCallBack}>
       <div className="cp-member__content">
         <img className="cp-member__img" src={member.img} alt={member.name} />
         <div className="cp-member__info">
-          <h4 className="cp-member__title"><span>{member.name}</span></h4>
+          <h2 className="cp-member__title"><span>{member.name}</span></h2>
           <p>{member.nick && <>@{member.nick}</>} {member.nick && member.role && <>-</>} {member.role}</p>
         </div>
         <button className={plusClass} onClick={toggleDescription}>+</button>
       </div>
       <MemberDescription visible={open} right={right} memberStyle={descriptionStyle} member={member} toggleDescription={toggleDescription} />
-    </div>
+    </article>
   )
 }
 

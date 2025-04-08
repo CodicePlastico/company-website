@@ -1,5 +1,6 @@
 $prefix: cp-member;
 
+
 .#{$prefix}{
   margin-bottom: vr(2);
   &__content{
@@ -79,6 +80,7 @@ $prefix: cp-member;
       color: $main-dark;
       text-transform: uppercase;
       margin: 0 5px;
+      padding: 6px 0;
     }
   }
 }
@@ -143,6 +145,7 @@ $prefix: cp-member;
       &-title{
         color: $main-light;
         text-transform: uppercase;
+        @include type-setting(1, 1, -1);
       }
 
       &-extras{

@@ -10,7 +10,7 @@
       "id": "napoli",
       "name": "Napoli",
       "picture": "planet1",
-      "size": 200
+      "size": 168
     },
     {
       "id": "milano",
@@ -22,19 +22,38 @@
       "id": "cremona",
       "name": "Cremona",
       "picture": "planet2",
-      "size": 100
+      "size": 55
     },
     {
       "id": "piacenza",
       "name": "Piacenza",
       "picture": "planet2",
-      "size": 100
+      "size": 57
     },
     {
       "id": "tenerife",
       "name": "Tenerife",
       "picture": "planet2",
-      "size": 100
+      "size": 110
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "picture": "planet1",
+      "size": 113
+    },
+    {
+      "id": "pavia",
+      "name": "Pavia",
+      "picture": "planet2",
+      "size": 55
+    },
+    {
+      "id": "matelica",
+      "name": "Matelica",
+      "picture": "planet2",
+      "size": 50
     }
+    
   ] 
 }

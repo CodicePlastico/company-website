@@ -155,7 +155,7 @@ const Team = () => {
           <div className="cp-grid__left cp-team__spaceman"></div>
           <div className="cp-grid__container">
             <div className="cp-grid__content cp-team__content">  
-              <h3>Perchè i Supereroi e Navicelle?</h3>
+              <h2>Perchè i Supereroi e Navicelle?</h2>
               <p>
                 La metafora dei supereroi accompagna l’identità di CodicePlastico da anni.<br/> 
                 In prima battuta è un aspetto rappresentativo del nostro carattere "amabilmente nerd"... del resto, chi non desidererebbe identificarsi con un eroe mascherato?

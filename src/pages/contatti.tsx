@@ -45,7 +45,7 @@ const Contatti = ({data}) => (
       <div className="cp-grid">
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-            <h4><span>Cultura remote</span></h4>
+            <h2><span>Cultura remote</span></h2>
             <p>
               Siamo un’azienda remote-oriented: alla grande sede aziendale abbiamo preferito un <strong>piccolo quartier generale</strong> all'interno del polo tecnologico CSMT di Brescia. 
               Questo ci permette di essere più <strong>flessibili</strong> e di potere espandere il nostri team, <strong>senza vincoli geografici</strong>.

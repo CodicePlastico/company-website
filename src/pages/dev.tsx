@@ -27,7 +27,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>Sviluppo applicazioni</span></h4>
+          <h2><span>Sviluppo applicazioni</span></h2>
           <p>
             Realizziamo <strong>applicazioni esclusivamente su misura</strong>: non abbiamo prodotti software pronti da adattare, ma siamo specializzati nella costruzione di soluzioni da zero. 
             Lavoriamo insieme al team di design per la definizione dei requisiti funzionali per poi passare all’analisi tecnica e di fattibilità del progetto. 
@@ -61,7 +61,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>Affiancamento altri team IT</span></h4>
+          <h2><span>Affiancamento altri team IT</span></h2>
           <p>
             Affianchiamo i team IT dei nostri clienti per azioni di <strong>mentoring</strong> a medio lungo termine o per obiettivi specifici come il rilascio di funzionalità, refactoring dei processi, app modernization o il passaggio a nuove tecnologie. 
           </p> 

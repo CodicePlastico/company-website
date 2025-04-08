@@ -46,9 +46,9 @@ const Header = () => {
     }*/
   ]
 
-  const burgerClass = classNames('cp-header__burger', {
+ const burgerClass = classNames('cp-header__burger', {
     'cp-header__burger--open': open,
-  })
+  }) 
 
   const menuClass = classNames('cp-header__menu', {
     'cp-header__menu--open': open,
@@ -64,11 +64,18 @@ const Header = () => {
           <Brand />
         </div>
       </Link>
-      <button className={burgerClass} onClick={click}>
-        <span className="cp-header__burger-bar"></span>
-        <span className="cp-header__burger-bar"></span>
-        <span className="cp-header__burger-bar"></span>
+      <button 
+        className={burgerClass} 
+        onClick={click}
+        aria-label="Apri il menu di navigazione"
+        aria-controls="main-menu"
+        aria-expanded={open}
+        >
+        <span className="cp-header__burger-bar" aria-hidden="true"></span>
+        <span className="cp-header__burger-bar" aria-hidden="true"></span>
+        <span className="cp-header__burger-bar" aria-hidden="true"></span>
       </button>
+      
       <nav className={menuClass}>
         <ul className="cp-header__menu-items">
           {menuItems.map(m => {

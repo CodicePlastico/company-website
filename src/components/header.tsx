@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <header className="cp-header">
-      <Link to="/" className="cp-header__logo">
+      <Link to="/" className="cp-header__logo" aria-label='Link alla home'>
         <div className="cp-header__logo-image">
           <Logo />
         </div>

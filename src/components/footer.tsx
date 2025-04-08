@@ -56,6 +56,7 @@ const Footer = () => (
       <li className="cp-footer__social-item">
         <a
           className="cp-footer__social-link"
+          aria-label="Link al profilo twitter"
           href="https://twitter.com/codiceplastico"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,6 +67,7 @@ const Footer = () => (
       <li className="cp-footer__social-item">
         <a
           className="cp-footer__social-link"
+          aria-label="Link al profilo linkedin"
           href="https://www.linkedin.com/company/codiceplastico/"
           target="_blank"
           rel="noopener noreferrer"
@@ -76,6 +78,7 @@ const Footer = () => (
       <li className="cp-footer__social-item">
         <a
           className="cp-footer__social-link"
+           aria-label="Link al profilo instagram"
           href="https://www.instagram.com/codice_plastico/"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,6 +89,7 @@ const Footer = () => (
       <li className="cp-footer__social-item">
         <a
           className="cp-footer__social-link"
+           aria-label="Link al profilo facebook"
           href="https://www.facebook.com/CodicePlastico/"
           target="_blank"
           rel="noopener noreferrer"

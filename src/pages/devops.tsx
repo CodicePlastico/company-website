@@ -31,7 +31,7 @@ const Design = () => (
           <div className="cp-grid__content">
           <p>I vantaggi sono evidenti: <strong>scalabilità</strong>, gestione delle risorse, potenza di calcolo virtualmente    infinita. Tuttavia, allo stesso modo un <strong>sistema Cloud fuori controllo</strong> può essere causa di <strong>vulnerabilità</strong> e <strong>costi più alti del necessario</strong>. Basta poco per sostenere spese inutili o facilitare accessi indesiderati: una distrazione, fornitori diversi che accedono allo stesso sistema, un’istanza di test dimenticata.</p>
 
-          <h4><span>Azure Assessment</span></h4>
+          <h2><span>Azure Assessment</span></h2>
           <p>
           Effettuiamo assessment di ambienti <strong>Azure</strong> esistenti. L’obiettivo è quello di verificare risorse e configurazioni in ottica di <strong>ottimizzazione di costi e sicurezza</strong>.
           </p>
@@ -76,7 +76,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>Cloud design e Governance</span></h4>
+          <h2><span>Cloud design e Governance</span></h2>
           <p>
           Forniamo consulenza a tutte quelle aziende che vogliono portare le proprie applicazioni su Azure. Offriamo inoltre un servizio di <strong>Governance</strong> per la gestione e il mantenimento delle subscription. Questo tipo di consulenza è particolarmente indicata per tutte quelle aziende che lavorano con diversi fornitori IT e consente di vigilare costantemente sulla corretta configurazione delle risorse e sul controllo dei costi.</p>
           <p>Con il servizio di <strong>Governance</strong>, un team dedicato è a supporto del cliente in modo proattivo: per ogni progetto andrà ad identificare la configurazione migliore dell’infrastruttura e a vigilare sul corretto utilizzo delle risorse. Il team si occupa inoltre di definire il codice di infrastruttura (con Terraform o Bicep) in puro stile IaC (Infrastructure as Code) e, grazie al versionamento, si garantiscono riproducibilità ed evoluzione strutturata dell’environment. </p>
@@ -104,7 +104,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>Devops e Sys</span></h4>
+          <h2><span>Devops e Sys</span></h2>
           <p>
           L’area devops e gestione dei sistemi è parte integrante del nostro processo di costruzione di soluzioni software complete. Sin dalle prime fasi dello sviluppo, ci occupiamo, infatti, di creare e gestire gli ambienti necessari, sia <strong>in cloud</strong> che <strong>on premise</strong>, affinché le applicazioni funzionino correttamente e con continuità.</p>
           <p>Ogni cliente ha esigenze differenti, così come ogni progetto può doversi integrare con altre applicazioni o in ambienti già esistenti. Affianchiamo il team del cliente e forniamo consulenza su tutto il ciclo di sviluppo: dalla build al deploy automatico, su sitemi standalone e su cluster <strong>Kubernetes</strong>.

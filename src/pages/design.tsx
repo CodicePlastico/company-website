@@ -27,7 +27,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>Ricerca e analisi</span></h4>
+          <h2><span>Ricerca e analisi</span></h2>
           <p>
             Organizziamo <strong>workshop partecipativi</strong> per l’analisi di processi esistenti 
             o per la creazione di nuove applicazioni. Attraverso queste attività diamo forma alle 
@@ -72,7 +72,7 @@ const Design = () => (
         </div>
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-          <h4><span>UX & UI</span></h4>
+          <h2><span>UX & UI</span></h2>
           <p>
             Una volta definite le necessità ci occupiamo della <strong>progettazione</strong> dell’interfaccia. 
             Il risultato è un artefatto che consente ai nostri clienti di <strong>valutare</strong> aspetto, 

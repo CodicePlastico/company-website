@@ -92,10 +92,10 @@ const AboutUs = () => (
             <div className="cp-about__skills-columns">
               {skills.map((s, i) => (
                 <div className="cp-about__skills-column"  key={`skill-${i}`}>
-                  <h3>{s.label}</h3>
+                  <h2>{s.label}</h2>
                   <p dangerouslySetInnerHTML={{ __html: s.description }}/>
                   {s.cta.trim() !== '' ? (
-                    <p><br/><a href={s.routing} className="cp-about__button ">{s.cta}</a></p>
+                    <p><a href={s.routing} className="cp-about__button ">{s.cta}</a></p>
                   ) : (                   
                     <br/>
                   )}
@@ -118,7 +118,7 @@ const AboutUs = () => (
           <p>
             Le nostre competenze verticali in design, sviluppo e sistemi ci consentono di <strong>supportare aziende o altri team IT</strong>s anche solo in uno di questi tre aspetti.
           </p>
-          <h4><span>Formazione continua</span></h4>
+          <h3><span>Formazione continua</span></h3>
           <p>
             La <strong>formazione</strong> è un altro elemento fondamentale della vita aziendale.  Dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software. 
             Sul nostro <a href="https://blog.codiceplastico.com/" target="_blank">blog</a> troverai articoli tecnici, <a href="https://blog.codiceplastico.com/events.html" target="_blank">conferenze</a> in cui teniamo talk e storie di side project con i quali ci piace sporcarci le mani.
@@ -142,30 +142,30 @@ const AboutUs = () => (
       <div className="cp-grid cp-about__skills cp-about__skills--metrics">
         <div className="cp-grid__container">
           <div className="cp-grid__content">
-            <h4 className=""><span>Progetti e Sinergie</span></h4>
+            <h3 className=""><span>Progetti e Sinergie</span></h3>
             <p className="cp-typography__main-text">In questi anni abbiamo lavorato a numerosi <strong>progetti</strong>, affiancato  <strong>Reparti IT interni</strong> ad Aziende e prodotto migliaia di slide in  <strong>corsi</strong> privati e talk pubblici.</p>
             
             <div className="cp-about__skills-columns cp-about__skills-columns--metrics">
                 <div className="cp-about__skills-column" >
-                  <ul className="cp-about__skills-items">
-                    <li className="cp-about__skills-item" >Più di...</li>
-                  </ul>
-                  <h3>60 progetti</h3>
+                  <dl className="cp-about__skills-items">
+                    <dt className="cp-about__skills-item" >Più di...</dt>
+                    <dd className="cp-about__skills-number">60 progetti</dd>
+                  </dl>
                 </div>
                 <div className="cp-about__skills-column" >
-                  <ul className="cp-about__skills-items">
-                    <li className="cp-about__skills-item" >Più di...</li>
-                  </ul>
-                  <h3>100 clienti</h3>
+                  <dl className="cp-about__skills-items">
+                    <dt className="cp-about__skills-item" >Più di...</dt>
+                    <dd className="cp-about__skills-number">100 clienti</dd>
+                  </dl>
                 </div>
                 <div className="cp-about__skills-column" >
-                  <ul className="cp-about__skills-items">
-                    <li className="cp-about__skills-item" >Formazione erogata: più di...</li>
-                  </ul>
-                  <h3>4.000 ore</h3>
+                  <dl className="cp-about__skills-items">
+                    <dt className="cp-about__skills-item" >Formazione erogata: più di...</dt>
+                    <dd className="cp-about__skills-number">4.000 ore</dd>
+                  </dl>
                 </div>
             </div>
-            <h5>Ok, ma per chi avete lavorato?</h5>
+            <h4>Ok, ma per chi avete lavorato?</h4>
 
             <p>Spesso lavorare a progetti IT di altri richiede una buona dose di <strong>riservatezza</strong>. Se vuoi conoscere i nostri lavori, <a href="mailto:info@codicelplastico.com">scrivici</a>: ti invieremo un portfolio che ti aiuterà a misurare la nostra esperienza, nel rispetto della privacy dei progetti sui quali abbiamo lavorato.</p>
          

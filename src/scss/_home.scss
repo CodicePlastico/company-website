@@ -12,9 +12,10 @@ $prefix: cp-home;
 
     &--red {
       background-color: #DA2222;
+      & h1, p{ color: $main-light; }
 
       & span {
-        color: $main-light;
+        color: $main-dark;
       }
     }
 

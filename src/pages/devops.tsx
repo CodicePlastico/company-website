@@ -109,7 +109,8 @@ const Design = () => (
           L’area devops e gestione dei sistemi è parte integrante del nostro processo di costruzione di soluzioni software complete. Sin dalle prime fasi dello sviluppo, ci occupiamo, infatti, di creare e gestire gli ambienti necessari, sia <strong>in cloud</strong> che <strong>on premise</strong>, affinché le applicazioni funzionino correttamente e con continuità.</p>
           <p>Ogni cliente ha esigenze differenti, così come ogni progetto può doversi integrare con altre applicazioni o in ambienti già esistenti. Affianchiamo il team del cliente e forniamo consulenza su tutto il ciclo di sviluppo: dalla build al deploy automatico, su sitemi standalone e su cluster <strong>Kubernetes</strong>.
           </p> 
-        
+          Dove appropriato, utilizziamo strumenti basati su <strong>Intelligenza Artificiale</strong> per supportare il monitoraggio dei sistemi, l'analisi predittiva di anomalie e l’ottimizzazione delle performance.<br/>
+          Anche in questo ambito, la supervisione tecnica del nostro team rimane centrale per garantire la qualità e l'affidabilità delle soluzioni.
           <p>
               <br/>
               <a href="/contatti/"  className="cp-service__button--bordered ">Voglio andare più veloce!</a>

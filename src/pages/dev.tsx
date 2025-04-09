@@ -65,7 +65,10 @@ const Design = () => (
           <p>
             Affianchiamo i team IT dei nostri clienti per azioni di <strong>mentoring</strong> a medio lungo termine o per obiettivi specifici come il rilascio di funzionalità, refactoring dei processi, app modernization o il passaggio a nuove tecnologie. 
           </p> 
-        
+        <p>
+        In alcuni contesti, integriamo strumenti basati su <strong>Intelligenza Artificiale</strong> per supportare attività come code review, refactoring e supporto allo sviluppo. <br/>
+        L'adozione di questi strumenti avviene sempre sotto la supervisione del nostro team, per garantire che la qualità tecnica rimanga al centro del processo.
+        </p>
           <p>
               <br/>
               <a href="/contatti/"  className="cp-service__button--bordered ">Potete aiutare il mio team?</a>

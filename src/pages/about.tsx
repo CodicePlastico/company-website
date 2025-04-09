@@ -118,9 +118,15 @@ const AboutUs = () => (
           <p>
             Le nostre competenze verticali in design, sviluppo e sistemi ci consentono di <strong>supportare aziende o altri team IT</strong>s anche solo in uno di questi tre aspetti.
           </p>
+          <p>
+            Nell’evoluzione continua dei nostri strumenti, integriamo anche tecnologie basate su <strong>Intelligenza Artificiale</strong>, adottandole in modo mirato, sia nelle soluzioni che progettiamo, sia per migliorare i processi di design, sviluppo e gestione dei sistemi. Sempre con l'obiettivo di mantenere alta la qualità tecnica e l'affidabilità delle soluzioni.
+          </p>
           <h3><span>Formazione continua</span></h3>
           <p>
-            La <strong>formazione</strong> è un altro elemento fondamentale della vita aziendale.  Dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software. 
+            La <strong>formazione</strong> è un altro elemento fondamentale della vita aziendale.  Dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software.
+            Tra i temi in continuo approfondimento ci sono anche i modelli e gli strumenti basati su Intelligenza Artificiale, per comprenderne le potenzialità e integrarli consapevolmente dove creano valore reale.
+          </p>
+          <p>
             Sul nostro <a href="https://blog.codiceplastico.com/" target="_blank">blog</a> troverai articoli tecnici, <a href="https://blog.codiceplastico.com/events.html" target="_blank">conferenze</a> in cui teniamo talk e storie di side project con i quali ci piace sporcarci le mani.
           </p>
           <p> 

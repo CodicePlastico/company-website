@@ -94,6 +94,9 @@ const Design = () => (
              l’utilizzo del prototipo in un ambiente di simulazione (pc, tablet o smartphone). 
              Questo tipo di servizio è particolarmente indicato sia per <strong>testare funzionalità specifiche</strong> con gli utenti, sia per <strong>presentazioni</strong> di alto profilo.
           </p>
+          <p>
+            Quando utile, supportiamo le fasi di ricerca e prototipazione anche con strumenti basati su <strong>Intelligenza Artificiale</strong>, ad esempio per esplorare più alternative di design o analizzare pattern di comportamento e ricerca.
+            L'utilizzo di questi strumenti rimane sempre guidato dall'esperienza del nostro team e orientato alla qualità delle soluzioni.</p>
           <p><br/>
               <a href="/contatti/"  className="cp-service__button--bordered ">Inizia a progettare con noi</a>
           </p>

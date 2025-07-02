@@ -1,9 +1,18 @@
 import React from 'react'
-import Slider from "react-slick"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'; // Swiper v9+
+import { Swiper as SwiperCore } from 'swiper';
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import 'swiper/scss/a11y'
+import 'swiper/scss/autoplay'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Customers from '../components/customers'
+
+SwiperCore.use([Navigation, Pagination, Autoplay, A11y]);
 
 const settings = {
   dots: true,
@@ -178,81 +187,101 @@ const AboutUs = () => (
 
             <div className='cp-slider'>
 
-           
-<Slider {...settings}>
 
-<div>
-<a href="https://www.antgroup.it" target="_blank">
-<img src='/loghi/antgroup.png' alt="ANT Group" />
-</a>
-</div>
-<div>
-<a href="https://avanscoperta.it" target="_blank">
-<img src='/loghi/avanscoperta.png' alt="avanscoperta" />
-</a>
-</div>
-<div>
-<a href="https://www.cheopeonline.it/it" target="_blank">
-<img src='/loghi/cheope.png' alt="Cheope" />
-</a>
-</div>
-<div>
-<a href="http://www.collicelli.com/" target="_blank">
-<img src='/loghi/collicelli.png' alt="Collicelli" />
-</a>
-</div>
-<div>
-<a href="https://www.csmt.it/it" target="_blank">
-<img src='/loghi/csmt.png' alt="CSMT" />
-</a>
-</div>
-<div>
-<a href="https://esgeo.eu" target="_blank">
-<img src='/loghi/esgeo.png' alt="ESGEO" />
-</a>
-</div>
-
-<div>
-<a href="https://geo-badge.com/" target="_blank">
-<img src='/loghi/geobadge.png' alt="geobadge" />
-</a>
-</div>
-
-<div>
-<a href="https://giallocobalto.it" target="_blank">
-<img src='/loghi/giallocobalto.png' alt="giallocobalto" />
-</a>
-</div>
-
-<div>
-<a href="https://www.info-bit.com/" target="_blank">
-<img src='/loghi/infobit.png' alt="geobadge" />
-</a>
-</div>
-
-<div>
-<a href="https://fraternitasistemi.it/" target="_blank">
-<img src='/loghi/fraternita.png' alt="fraternità sistemi" />
-</a>
-</div>
-
-<div>
-<a href="https://www.sappgroup.com/x" target="_blank">
-<img src='/loghi/sapp.png' alt="SAPP" />
-</a>
-</div>
-<div>
-<a href="https://zerozerotoner.it" target="_blank">
-<img src='/loghi/zerozerotoner.png' alt="ZEROZEROTONER" />
-</a>
-</div>
-
-
-
-
-  
- 
-</Slider>
+    <Swiper
+      spaceBetween={10}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+      a11y={{ enabled: true }}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}>
+      <SwiperSlide>
+        <div>
+          <a href="https://www.antgroup.it" target="_blank">
+            <img src='/loghi/antgroup.png' alt="ANT Group" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://avanscoperta.it" target="_blank">
+            <img src='/loghi/avanscoperta.png' alt="avanscoperta" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://www.cheopeonline.it/it" target="_blank">
+            <img src='/loghi/cheope.png' alt="Cheope" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="http://www.collicelli.com/" target="_blank">
+            <img src='/loghi/collicelli.png' alt="Collicelli" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://www.csmt.it/it" target="_blank">
+            <img src='/loghi/csmt.png' alt="CSMT" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://esgeo.eu" target="_blank">
+            <img src='/loghi/esgeo.png' alt="ESGEO" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://geo-badge.com/" target="_blank">
+            <img src='/loghi/geobadge.png' alt="geobadge" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://giallocobalto.it" target="_blank">
+            <img src='/loghi/giallocobalto.png' alt="giallocobalto" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://www.info-bit.com/" target="_blank">
+            <img src='/loghi/infobit.png' alt="geobadge" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://fraternitasistemi.it/" target="_blank">
+            <img src='/loghi/fraternita.png' alt="fraternità sistemi" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://www.sappgroup.com/x" target="_blank">
+            <img src='/loghi/sapp.png' alt="SAPP" />
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <a href="https://zerozerotoner.it" target="_blank">
+            <img src='/loghi/zerozerotoner.png' alt="ZEROZEROTONER" />
+          </a>
+        </div>
+      </SwiperSlide>
+    </Swiper>
 </div>
           </div>
         </div>

@@ -1,0 +1,59 @@
+.swiper-pagination-bullet {
+    background-color: transparent;
+}
+
+.swiper-pagination-bullet::before {
+    content: '';
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    display: block;
+    background-color: $grey-dark;
+    margin-left: 0.4em;
+    margin-top: 0.4em;
+}
+
+.swiper-pagination-bullet-active::before {
+    background-color: $main-color;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+    top: 6em;
+}
+
+.swiper-wrapper {
+    padding-bottom: 4em;
+}
+
+.swiper-slide {
+    padding: 0 1.7em;
+    box-sizing: border-box;
+}
+
+.swiper-pagination-bullet {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1em;
+    margin-left: 0.4em;
+    margin-top: 0.4em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: $main-color;
+    height: 8em;
+    top: 0;
+    padding: 0.2em;
+    background: white;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+    
+    
+    

@@ -189,10 +189,12 @@ const AboutUs = () => (
 
 
     <Swiper
-      spaceBetween={10}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      spaceBetween={20}
+      slidesPerView={1}
+      breakpoints={{
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 }
+      }}
       a11y={{ enabled: true }}
       navigation
       pagination={{ clickable: true }}

@@ -1,7 +1,16 @@
 import React, { useState } from 'react'
-import Slider from "react-slick"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'; // Swiper v9+
+import { Swiper as SwiperCore } from 'swiper';
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import 'swiper/scss/a11y'
+import 'swiper/scss/autoplay'
+
+SwiperCore.use([Navigation, Pagination, Autoplay, A11y]);
 
 const ChFinance = () => {
 
@@ -139,20 +148,34 @@ const ChFinance = () => {
         <div className='cp-grid cp-section cp-bg__n10'>
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
-            <Slider {...settings}>
-              <div>
-                <img src='/ch/a2a/a2a-smarticty-1.jpg' alt="demo" />
-              </div>
-              <div>
-              <img src='/ch/a2a/a2a-smarticty-2.jpg' alt="demo" />
-              </div>
-              <div>
-              <img src='/ch/a2a/a2a-smarticty-3.jpg' alt="demo" />
-              </div>
-
-              
-             
-            </Slider>
+              <div className="cp-slider-large">
+                <Swiper
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  breakpoints={{
+                      400: { slidesPerView: 2 }
+                  }}
+                  a11y={{ enabled: true }}
+                  navigation
+                  pagination={{ clickable: true }}
+                  autoplay={{ delay: 3000, disableOnInteraction: false }}>
+                <SwiperSlide>
+                  <div>
+                    <img src='/ch/a2a/a2a-smarticty-1.jpg' alt="demo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src='/ch/a2a/a2a-smarticty-2.jpg' alt="demo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div>
+                    <img src='/ch/a2a/a2a-smarticty-3.jpg' alt="demo" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+              </div>{/* Fine cp-slider*/}
             </div>{/* Fine content*/}
           </div>{/* Fine container*/}
         </div> {/* Fine grid*/}

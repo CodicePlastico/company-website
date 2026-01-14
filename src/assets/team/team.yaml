@@ -197,7 +197,7 @@ team:
       - label: Linkedin
         link: https://www.linkedin.com/in/morenogentili
       - label: GitHub
-        link: https://github.com/BrightSoul
+        link: https://github.com/Moreno-Gentili
   - id: fmacchetti
     name: Francesco Macchetti
     role: BackEnd Developer
@@ -209,14 +209,6 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/francesco-macchetti-49896218a/
-  - id: epalmerini
-    name: Emilio Palmerini
-    role: BackEnd Developer
-    description: >-
-      Filosofo per educazione, ho scoperto la programmazione al penultimo anno di università e me ne sono innamorato. Ho imparato da autodidatta a programmare e addestrare intelligenze artificiali e algoritmi di machine learning per poi passare -dopo la laurea in filosofia- a un corso sullo sviluppo di applicazioni web. C# e .Net sono diventati l'inizio della mia carriera nel mondo IT ma Tensorflow e Python rimangono la mia passione. Di notte faccio lo sceneggiatore di fumetti e il podcaster o gioco a Dungeons&Dragons ...e ogni tanto mi capita ancora di discutere di filosofia.
-    img: emilio
-    tags:
-      - BackEnd
   - id: dgargiulo
     name: Daniele Gargiulo
     role: Fullstack Developer
@@ -267,17 +259,44 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/erica-de-giovanni-45403721b
-  - id: apianezzola
-    name: Antonio Pianezzola
-    role: Software Developer
+  - id: aturelli
+    name: Alberto Turelli
+    role: Developer
     description: >-
-      Con una laurea in Scienze del linguaggio, mi sono spostato da studiare le lingue germaniche antiche ai linguaggi informatici. Ho approcciato la programmazione con l'obiettivo di diventare scrittore di videogiochi, ma nel frattempo ho scoperto che anche la parte tecnica mi piace. Il colpo di fulmine l'ho avuto con Unity e C#, per poi seguire un corso di sviluppo per app multidevice in Dart/Flutter. Nel frattempo ho sempre qualche progetto musicale in corso, quando il mio cane mi lascia suonare.
-    img: antoniopianezzola
+      Il primo ricordo che ho di come l'astrazione di concetti pratici possa portare a capire meglio le richieste del "cliente" risale alla terza elementare. La maestra, per farci occupare il tempo tra la fine della lezione e la campanella, ci disse di fare esercizio sulle moltiplicazioni in colonna tra numeri a due cifre, imparate da qualche giorno, sommando i risultati di due moltiplicazioni più semplici. Ricordo distintamente (anche perché ho poi avuto modo di riparlarne con la maestra qualche anno dopo) che le chiesi se per moltiplicare numeri a tre cifre avessi dovuto sommare una terza moltiplicazione, e così via per numeri a quattro o cinque cifre. Da lì in poi ho sempre avuto il pallino di trovare un metodo per risolvere i problemi, "appoggiare il cervello" e applicare il metodo, sicuro di arrivare al risultato. Lo stesso procedimento mi ha portato dallo studio dell'elettronica alla matematica, all'informatica, alla gestione dei database e alla Business Intelligence in generale, e mi trovo ad applicarlo anche nelle attività a cui mi dedico nel tempo libero: la falegnameria e la produzione di birra artigianale.
+    img: alberto-turelli
+    tags:
+      - BackEnd
+      - BI
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/albertoturelli
+      - label: GitHub
+        link: https://github.com/bibe74
+  - id: lbasoc
+    name: Lorenzo Basoc
+    role: Developer
+    description: >-
+      Lavoro principalmente con .NET e C#, sviluppando soluzioni backend affidabili e manutenibili. Mi è capitato di lavorare anche con Blazor e, quando serve, non ho problemi a interfacciarmi con il frontend o ad approfondire nuove tecnologie legate all’interfaccia utente. Preferisco soluzioni semplici e ben strutturate, con attenzione alla leggibilità, alla separazione delle responsabilità e alla testabilità. Mi interessa la qualità del codice nel lungo periodo, con particolare cura per la chiarezza, la coerenza interna e la facilità di manutenzione. Nel tempo libero mi interesso di agentic AI e tecnologie emergenti, e cerco equilibrio camminando in montagna o affrontando cammini a tappe.
+    img: lorenzo-basoc
     tags:
       - BackEnd
     social:
       - label: Linkedin
-        link: https://www.linkedin.com/in/antonio-pianezzola
+        link: https://www.linkedin.com/in/lorenzo-basoc
+      - label: GitHub
+        link: https://github.com/lorenzobasoc
+  - id: sfalbo
+    name: Salvatore Falbo
+    role: Developer
+    description: >-
+      Amo la poesia e la magia, ed ho trovato la loro naturale coniugazione nell'informatica: che sia in C#, in TypeScript, o in uno dei tanti altri linguaggi che mi appassionano, quando scrivo del codice il mio obiettivo è quello di renderlo elegante come un ottimo componimento, ed efficace come se fosse magico. Nel tempo libero sono un grande appassionato di videogiochi e della cultura nerd in generale, dalla quale traggo molta ispirazione e motivazione.
+    img: salvatore-falbo
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/salvatore-falbo
   - id: ltorriani
     name: Luca Torriani
     role: Software Developer
@@ -361,17 +380,6 @@ team:
     social:
       - label: Linkedin
         link: https://www.linkedin.com/in/gianluca-roscigno
-  - id: marcobaresi
-    name: Marco Baresi
-    role: Developer
-    description: >-
-      Appassionato di tecnologia e innovazione fin da giovane, ho iniziato la mia carriera lavorativa durante il percorso universitario, lavorando come docente e frontend developer. Con una forte inclinazione a “creare qualcosa” sin dall’infanzia, ho trovato nella programmazione una delle mie prime passioni. Dopo aver esplorato il mondo dello sviluppo frontend (principalmente in ambito mobile) e del Cloud, ora sono pronto a immergermi nel backend, spinto dalla curiosità e dalla voglia di comprendere a fondo le infrastrutture che rendono possibile il funzionamento dei sistemi complessi. Amo affrontare nuove sfide ogni giorno, imparando continuamente e migliorando le mie competenze tecniche. Nel mio tempo libero, mi dedico alla creazione di progetti personali, sperimentando nuove tecnologie e metodologie di sviluppo. Quando non sono immerso nel codice, mi piace leggere, viaggiare e “socializzare”.
-    img: marco-baresi
-    tags:
-      - BackEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/marco-baresi-240a21220/
   - id: emanueleliardo
     name: Emanuele Liardo
     role: Developer

@@ -124,22 +124,22 @@ $prefix: cp-team;
       &-title{
         text-transform: uppercase;
         color: $main-light;
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
 
       &-button{
         background-color: transparent;
         border: 1px solid $main-light;
         height: 32px;
-        width: 105px;
-        margin-right: 20px;
-        margin-top: 20px;
+        width: 70px;
+        margin-right: 0;
+        margin-top: 0;
         cursor: pointer;
         color: $main-light;
 
         .#{$prefix}__filters-right &{
           margin-right: 0;
-          margin-left: 20px;
+          margin-left: 0;
         }
 
         &:last-child{
@@ -155,6 +155,16 @@ $prefix: cp-team;
           background-color: $main-light;
           border-color: $main-light;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-med-width) {
+  .#{$prefix}{
+    &__filters{
+      &-button{
+        width: 90px;
       }
     }
   }

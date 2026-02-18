@@ -24,7 +24,7 @@
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
     "gsap": "^3.11.3",
-    "node-sass": "^8.0.0",
+    "sass": "^1.97.3",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-cookie-consent": "^8.0.1",

@@ -1,14 +1,5 @@
-export interface ImageSharp {
-  fluid: {
-    src: string
-    presentationHeight: number
-    presentationWidth: number
-  }
-}
-
 export interface VenueImageNode {
-  base: string
-  childImageSharp: ImageSharp
+  publicURL: string
 }
 
 export interface Coordinates {

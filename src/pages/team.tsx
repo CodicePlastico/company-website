@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import classNames from 'classnames'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -9,9 +9,7 @@ import TeamGrid from '../components/team/teamGrid'
 
 import data from '../assets/team/team.yaml'
 
-import loadable from '@loadable/component'
-
-const TeamRelations = loadable(() => import('../components/team/teamRelations'))
+const TeamRelations = lazy(() => import('../components/team/teamRelations'))
 
 const Team = () => {
 
@@ -23,11 +21,7 @@ const Team = () => {
       allFile(filter: {relativeDirectory: {eq: "team"}, ext: {eq: ".png"}}) {
         nodes {
           name
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
+          publicURL
         }
       }
     }`
@@ -35,7 +29,7 @@ const Team = () => {
 
   const teamMembers = data.team.map(m => {
     const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
-    const img = nodeImg ? nodeImg.childImageSharp.fluid.src : ''
+    const img = nodeImg ? nodeImg.publicURL : ''
     return Object.assign({}, m, {img})
   })
 
@@ -83,7 +77,6 @@ const Team = () => {
 
   return (
     <Layout>
-      <SEO title="Team" />
       <div className="cp-internal-page cp-team">
         <div className="cp-internal-page__bg"></div>
         <div className="cp-internal-page__content cp-internal-page__content--bg cp-grid">  
@@ -141,7 +134,9 @@ const Team = () => {
             </div>
           </div>
           <div className={relationClass} >
-            <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
+            <Suspense fallback={null}>
+              <TeamRelations team={visibleMembers} categories={teamFilters} currentCategory={activeFilter} />
+            </Suspense>
           </div>
         </div>
 
@@ -179,3 +174,4 @@ const Team = () => {
 }
 
 export default Team
+export const Head = () => <SEO title="Team" />

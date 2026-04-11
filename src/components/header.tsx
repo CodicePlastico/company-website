@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
 
-import Logo from '../assets/icons/logo.svg'
-import Brand from '../assets/icons/brand.svg'
+import Logo from '../assets/icons/logo'
+import Brand from '../assets/icons/brand'
 
 const Header = () => {
   const [open, setOpen] = useState(false)

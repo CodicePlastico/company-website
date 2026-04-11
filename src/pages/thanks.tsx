@@ -17,7 +17,6 @@ const ChFinance = () => {
 
   return (
     <Layout>
-      <SEO title="Grazie per averci contattato" />
       <div className="cp-internal-page cp-thanks">
         <div className="cp-internal-page__bg"></div>
 
@@ -60,3 +59,4 @@ const ChFinance = () => {
 }
 
 export default ChFinance
+export const Head = () => <SEO title="Grazie per averci contattato" />

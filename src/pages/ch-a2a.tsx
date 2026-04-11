@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'; // Swiper v9+
-import { Swiper as SwiperCore } from 'swiper';
-import 'swiper/scss'
-import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
-import 'swiper/scss/a11y'
-import 'swiper/scss/autoplay'
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/a11y'
+import 'swiper/css/autoplay'
 
-SwiperCore.use([Navigation, Pagination, Autoplay, A11y]);
 
 const ChFinance = () => {
 
@@ -49,7 +47,6 @@ const ChFinance = () => {
 
   return (
     <Layout>
-      <SEO title="Case History - Software per Intermediatori Finanziari" />
       <div className="cp-internal-page cp-ch cp-ch-finance ">
         <div className="cp-internal-page__bg"></div>
 
@@ -149,7 +146,9 @@ const ChFinance = () => {
           <div className="cp-grid__container">
             <div className='cp-grid__content'>
               <div className="cp-slider-large">
+                {typeof window !== 'undefined' && (
                 <Swiper
+                  modules={[Navigation, Pagination, Autoplay, A11y]}
                   spaceBetween={20}
                   slidesPerView={1}
                   breakpoints={{
@@ -175,6 +174,7 @@ const ChFinance = () => {
                   </div>
                 </SwiperSlide>
               </Swiper>
+                )}
               </div>{/* Fine cp-slider*/}
             </div>{/* Fine content*/}
           </div>{/* Fine container*/}
@@ -711,5 +711,6 @@ const ChFinance = () => {
 }
 
 export default ChFinance
+export const Head = () => <SEO title="Case History - A2A Smart City" />
 
 

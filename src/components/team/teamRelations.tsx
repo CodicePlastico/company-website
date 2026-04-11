@@ -298,13 +298,13 @@ const TeamRelations = (props: TeamMembers) => {
 
   return (
     <div className="cp-team__list">
-      <Sketch 
+      {typeof window !== 'undefined' && <Sketch 
         preload={preload} 
         draw={draw} 
         setup={setup} 
         mouseDragged={mouseDragged} 
         mouseReleased={mouseReleased} 
-        mouseClicked={mouseClicked} />
+        mouseClicked={mouseClicked} />}
       {activeMember && <MemberDescription visible={!!activeMember} right={rightActiveMember} memberStyle={memberStyle}
           member={activeMember} handleClick={handleClick} toggleDescription={toggleDescription} />}
     </div>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-
 $prefix: cp-typography;
 
 //Font-family
@@ -29,7 +28,7 @@ $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.25;
 
 $value: (
-  -1: $base-line-height / 2,
+  -1: calc($base-line-height / 2),
   0: 0,
   1: $base-line-height,
   2: $base-line-height * 2,
@@ -67,7 +66,16 @@ body {
 }
 
 //Headings, p, small, a
-h1, h2, h3, h4, h5, p, small, a, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+small,
+a,
+ul,
+li {
   font-weight: 300;
   color: $main-dark;
 
@@ -75,7 +83,6 @@ h1, h2, h3, h4, h5, p, small, a, ul, li {
     color: $main-color;
   }
 }
-
 
 h1 {
   @include type-setting(5, 4, 2);
@@ -118,7 +125,7 @@ p strong {
   font-weight: 600;
 }
 
-ul.bulletlist{
+ul.bulletlist {
   margin-bottom: 1em;
 }
 
@@ -133,14 +140,11 @@ ul.bulletlis li strong {
   font-weight: 600;
 }
 
-ul.bulletlist li{
+ul.bulletlist li {
   list-style-type: disc;
   list-style-position: outside;
   margin-left: 1em;
-  
 }
-
-
 
 small {
   @include type-setting(-1, -1, -1);
@@ -156,10 +160,13 @@ button {
 }
 
 .#{$prefix} {
-  &__main-text{
+  &__main-text {
     @include type-setting(2, 2, 2);
   }
 }
-dd, dt, dl{
-  margin:0; padding: 0;
+dd,
+dt,
+dl {
+  margin: 0;
+  padding: 0;
 }

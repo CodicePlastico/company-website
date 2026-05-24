@@ -153,7 +153,15 @@ const TeamRelations = (props: TeamMembers) => {
       if(m){
         const center = m.getCenter()
         p5.ellipse(center.x, center.y, m.size + 2)
+        const ctx = canvasEl.drawingContext
+        const radius = m.size / 2
+        ctx.save()
+        ctx.beginPath()
+        ctx.arc(center.x, center.y, radius, 0, Math.PI * 2)
+        ctx.closePath()
+        ctx.clip()
         p5.image(m.img, m.coordinates.x, m.coordinates.y, m.size, m.size)
+        ctx.restore()
       }
     })
   } 

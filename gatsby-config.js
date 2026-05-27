@@ -1,4 +1,4 @@
-const path = require('path'); 
+const path = require('path')
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +8,7 @@ module.exports = {
     author: `CodicePlastico`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,10 +23,10 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`),
       },
     },
-    
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-   /* {
+    /* {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -38,12 +38,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },*/
-    `gatsby-plugin-sass`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: `gatsby-plugin-sass`,
       options: {
-        rule: {
-          include: /assets/,
+        sassOptions: {
+          silenceDeprecations: [
+            'legacy-js-api',
+            'import',
+            'global-builtin',
+            'slash-div',
+          ],
         },
       },
     },
@@ -51,59 +55,59 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -100
-      }
+        offset: -100,
+      },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: "GTM-KZ49XNH",
+        id: 'GTM-KZ49XNH',
 
         includeInDevelopment: false,
 
-        defaultDataLayer: { platform: "gatsby" },
+        defaultDataLayer: { platform: 'gatsby' },
       },
     },
     {
       resolve: 'gatsby-plugin-iubenda-cookie-footer',
       options: {
-        iubendaOptions: { 
-          "invalidateConsentWithoutLog": true,
-          "whitelabel": false,
-          "lang": "it",
-          "siteId": 2140395,
-          "enableTcf": true,
-          "googleAdditionalConsentMode": true,
-          "perPurposeConsent": true,
-          "countryDetection": true,
-          "reloadOnConsent": true,
-          "consentOnContinuedBrowsing": false,
-          "cookiePolicyId": 39068350,
-          "banner": { 
-            "brandBackgroundColor": "none",
-            "brandTextColor": "black",
-            "acceptButtonDisplay": true,
-            "customizeButtonDisplay": true,
-            "acceptButtonColor": "#ce0000",
-            "acceptButtonCaptionColor": "white",
-            "customizeButtonColor": "#DADADA",
-            "customizeButtonCaptionColor": "#4D4D4D",
-            "rejectButtonColor": "#ce0000",
-            "rejectButtonCaptionColor": "white",
-            "position": "float-top-center",
-            "textColor": "black",
-            "backgroundColor": "white",
-            "rejectButtonDisplay": true,
-            "explicitWithdrawal": true,
-            "listPurposes": true,
-            "closeButtonRejects": true 
-          } 
+        iubendaOptions: {
+          invalidateConsentWithoutLog: true,
+          whitelabel: false,
+          lang: 'it',
+          siteId: 2140395,
+          enableTcf: true,
+          googleAdditionalConsentMode: true,
+          perPurposeConsent: true,
+          countryDetection: true,
+          reloadOnConsent: true,
+          consentOnContinuedBrowsing: false,
+          cookiePolicyId: 39068350,
+          banner: {
+            brandBackgroundColor: 'none',
+            brandTextColor: 'black',
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            acceptButtonColor: '#ce0000',
+            acceptButtonCaptionColor: 'white',
+            customizeButtonColor: '#DADADA',
+            customizeButtonCaptionColor: '#4D4D4D',
+            rejectButtonColor: '#ce0000',
+            rejectButtonCaptionColor: 'white',
+            position: 'float-top-center',
+            textColor: 'black',
+            backgroundColor: 'white',
+            rejectButtonDisplay: true,
+            explicitWithdrawal: true,
+            listPurposes: true,
+            closeButtonRejects: true,
+          },
         },
-        googleTagManagerOptions: true
-      }
+        googleTagManagerOptions: true,
+      },
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
   ],
 }

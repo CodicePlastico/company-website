@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import loadable from '@loadable/component'
+const Venues = lazy(() => import('../components/venues/venues'))
 
-const Venues = loadable(() => import('../components/venues/venues'))
+const Contatti = ({data}) => {
+  const files = useStaticQuery(graphql`
+    query VenueImagesQuery {
+      headquarter: file(relativePath: { eq: "venues/cpship.png" }) {
+        publicURL
+      }
+      planet1: file(relativePath: { eq: "venues/planet1.png" }) {
+        publicURL
+      }
+      planet2: file(relativePath: { eq: "venues/planet2.png" }) {
+        publicURL
+      }
+    }`
+  )
 
-const Contatti = ({data}) => (
+  return (
   <Layout>
-    <SEO title="Contatti" />
     <div className="cp-internal-page cp-contatti">
       <div className="cp-internal-page__bg"></div>
       <div className="cp-internal-page__content cp-internal-page__content--bg cp-grid">
@@ -40,7 +53,9 @@ const Contatti = ({data}) => (
         </div>
       </div>
       <div className="cp-contatti__venues">
-        <Venues />
+        <Suspense fallback={null}>
+          <Venues files={files} />
+        </Suspense>
       </div>
       <div className="cp-grid">
         <div className="cp-grid__container">
@@ -55,6 +70,8 @@ const Contatti = ({data}) => (
       </div>
     </div>
   </Layout>
-)
+  )
+}
 
 export default Contatti
+export const Head = () => <SEO title="Contatti" />

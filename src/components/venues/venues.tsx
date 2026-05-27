@@ -6,11 +6,18 @@ import data from '../../assets/venues/venues.json'
 
 import fontFile from '../../assets/venues/barlow_condensed.ttf'
 
-import { useStaticQuery, graphql } from 'gatsby'
 import Planet from './planet'
 import Universe from './universe'
 
-const Venues: React.FC<{}> = () => {
+interface VenueFiles {
+  headquarter: { publicURL: string }
+  planet1: { publicURL: string }
+  planet2: { publicURL: string }
+}
+
+const Venues: React.FC<{ files: VenueFiles }> = ({ files }) => {
+  if (typeof window === 'undefined') return null
+
   let universe: Universe
   let planets: Planet[] = []
   const mobile = window.innerWidth < 769
@@ -19,41 +26,6 @@ const Venues: React.FC<{}> = () => {
   const fontBgWidth = mobile ? 60 : 100
   const fontBgHeight = mobile ? 22 : 26
   let font
-
-  const files = useStaticQuery(graphql`
-    query MyQuery {
-      headquarter: file(relativePath: { eq: "venues/cpship.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-      planet1: file(relativePath: { eq: "venues/planet1.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-      planet2: file(relativePath: { eq: "venues/planet2.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            presentationHeight
-            presentationWidth
-          }
-        }
-      },
-      font: file(relativePath: { eq: "venues/barlow_condensed.ttf" }) {
-        publicURL
-      }
-    }`
-  )
 
   const calculateBezierCoords = (first: Planet, second: Planet) => {
     const firstCenter = first.getCenter()
@@ -85,8 +57,7 @@ const Venues: React.FC<{}> = () => {
     planets = venues.reduce((acc, v) => {
       const queryImg = files[v.picture]
       if (queryImg){
-        const fluidImg = queryImg.childImageSharp.fluid.src
-        const img = p5.loadImage(fluidImg)
+        const img = p5.loadImage(queryImg.publicURL)
         const size = Math.floor(v.size / sizeProportion)
         const startY = p5.random(0, universeHeight - size)
         const planet = new Planet(v.id, v.name, startX, startY, size, img)

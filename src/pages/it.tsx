@@ -9,10 +9,10 @@ const It = () => {
 
   return (
     <Layout>
-        <SEO title="Home" />
         <Home/>
     </Layout>
   )
 }
 
 export default It
+export const Head = () => <SEO title="Home" />

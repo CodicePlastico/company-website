@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Logo from '../assets/icons/logo.svg'
-import Brand from '../assets/icons/brand.svg'
-import Facebook from '../assets/icons/facebook.svg'
-import Instagram from '../assets/icons/instagram.svg'
-import Linkedin from '../assets/icons/linkedin.svg'
-import Twitter from '../assets/icons/twitter.svg'
+import Logo from '../assets/icons/logo'
+import Brand from '../assets/icons/brand'
+import Facebook from '../assets/icons/facebook'
+import Instagram from '../assets/icons/instagram'
+import Linkedin from '../assets/icons/linkedin'
+import Twitter from '../assets/icons/twitter'
 
 const Footer = () => (
   <footer className="cp-footer">

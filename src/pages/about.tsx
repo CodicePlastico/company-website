@@ -1,18 +1,11 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'; // Swiper v9+
-import { Swiper as SwiperCore } from 'swiper';
-import 'swiper/scss'
-import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
-import 'swiper/scss/a11y'
-import 'swiper/scss/autoplay'
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Customers from '../components/customers'
 
-SwiperCore.use([Navigation, Pagination, Autoplay, A11y]);
 
 const settings = {
   dots: true,
@@ -80,7 +73,6 @@ const skills: Skill[] = [
 
 const AboutUs = () => (
   <Layout>
-    <SEO title="Chi siamo" />
     <div className="cp-internal-page cp-about">
       <div className="cp-grid">
         <div className="cp-grid__container">
@@ -188,7 +180,9 @@ const AboutUs = () => (
             <div className='cp-slider'>
 
 
+    {typeof window !== 'undefined' && (
     <Swiper
+      modules={[Navigation, Pagination, Autoplay, A11y]}
       spaceBetween={20}
       slidesPerView={1}
       breakpoints={{
@@ -284,6 +278,7 @@ const AboutUs = () => (
         </div>
       </SwiperSlide>
     </Swiper>
+    )}
 </div>
           </div>
         </div>
@@ -294,3 +289,4 @@ const AboutUs = () => (
 )
 
 export default AboutUs
+export const Head = () => <SEO title="Chi siamo" />

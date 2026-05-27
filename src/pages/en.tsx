@@ -9,10 +9,10 @@ const En = () => {
 
   return (
     <Layout>
-        <SEO title="Home" />
         <Home/>
     </Layout>
   )
 }
 
 export default En
+export const Head = () => <SEO title="Home" />

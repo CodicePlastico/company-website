@@ -4,4 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// Swiper CSS - imported globally to ensure consistent load order
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/a11y'
+import 'swiper/css/autoplay'

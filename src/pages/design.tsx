@@ -7,7 +7,6 @@ import serviceSeparator from './design.png'
 
 const Design = () => (
   <Layout>
-    <SEO title="Design - UI - Ux" />
     <div className="cp-internal-page cp-service ">
       <div className="cp-internal-page__bg"></div>
       <div className="cp-internal-page__content cp-internal-page__content--bg--design cp-grid">
@@ -124,3 +123,4 @@ const Design = () => (
 )
 
 export default Design
+export const Head = () => <SEO title="Design - UI - Ux" />

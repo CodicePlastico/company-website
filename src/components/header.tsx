@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
 
-import Logo from '../assets/icons/logo.svg'
-import Brand from '../assets/icons/brand.svg'
+import SkipLink from './skiplink'
+import Logo from '../assets/icons/logo'
+import Brand from '../assets/icons/brand'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -56,14 +57,17 @@ const Header = () => {
 
   return (
     <header className="cp-header">
-      <Link to="/" className="cp-header__logo" aria-label='Link alla home'>
-        <div className="cp-header__logo-image">
-          <Logo />
-        </div>
-        <div className="cp-header__logo-brand">
-          <Brand />
-        </div>
-      </Link>
+      <div className="cp-header__links">
+        <SkipLink />
+        <Link to="/" className="cp-header__logo" aria-label='Link alla home'>
+          <div className="cp-header__logo-image">
+            <Logo />
+          </div>
+          <div className="cp-header__logo-brand">
+            <Brand />
+          </div>
+        </Link>
+      </div>
       <button 
         className={burgerClass} 
         onClick={click}

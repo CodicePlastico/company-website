@@ -1,6 +1,6 @@
 team:
   - id: amelchiori
-    img: ale
+    img: alessandro-melchiori
     name: Alessandro Melchiori
     role: Founder & Software Architect
     tags:
@@ -23,7 +23,7 @@ team:
       - label: Github
         link: https://github.com/melkio
   - id: edelbono
-    img: ema
+    img: emanuele-delbono
     name: Emanuele Del Bono
     role: Founder & Software Architect
     tags:
@@ -52,7 +52,7 @@ team:
     role: Software Developer
     description: >-
       Quando mi chiedevano cosa avrei voluto fare da grande, rispondevo sempre l'ingegnere. La passione per le nuove tecnologie ha poi discriminato la strada da percorrere. Con sacrifici e perseveranza il sogno è diventato realtà e svolgo il lavoro di sviluppatore software dal 2011. Sono convinta che il meglio debba ancora venire ed è con lo spirito di migliorare sempre e la volontà di imparare cose nuove che affronto le sfide quotidiane del mio lavoro con l'aiuto indispensabile del team. Spento il computer, dedico il mio tempo alle mie grandi passioni: Totti e la AS Roma, lo shopping (sono una vera e propria fashion addicted) e i viaggi.
-    img: madda
+    img: maddalena-germinario
     tags:
       - BackEnd
       - FrontEnd
@@ -64,7 +64,7 @@ team:
     role: Software Developer
     description: >-
       Vivere la vita con ottimismo e cuore. Mi sono avvicinato al mondo dello sviluppo per la mia voglia di scoprire, creare e divertimi giocando con la tecnologia. Fin dai primi passi con il Lego e il Meccano mi sono sempre divertito a smontare e rimontare. La mia voglia di concretezza mi spinge a portare caparbiamente a termine sempre i progetti iniziati con un attenzione alla praticità e alla bellezza. I miei attrezzi sono perlopiù C# WPF SQL ma non disdegno uno sguardo ai framework web React Angular NodeJs. Il mio tempo libero lo passo in montagna con la mia famiglia e il mio amato cane.
-    img: bonny
+    img: marco-bonera
     tags:
       - BackEnd
     social:
@@ -79,7 +79,7 @@ team:
     role: Finance and Account
     description: >-
       La mia formazione è decisamente di impronta classica ma, messi da parte il dizionario di greco e i testi di pedagogia, un po' il caso e un po' le scelte mi hanno fatto approdare e familiarizzare con il mondo della segreteria e dell'amministrazione. La mia parola d'ordine è "ordine", mi piace trovare il posto giusto a ogni cosa e sono appassionata di organizzazione e sistemazione, tanto alla scrivania quanto tra le mura di casa. Nel tempo libero amo leggere e fare lunghe camminate.
-    img: chiara
+    img: chiara-ghiselli
     tags:
       - Management
     social:
@@ -90,7 +90,7 @@ team:
     role: Software Developer
     description: >-
       Affascinato dai videogames degli anni 80' 90', ho intrapreso la strada della programmazione in giovane età. Ultimati gli studi universitari mi sono affacciato al mondo del lavoro come web developer. Prediligo lo sviluppo front-end, ma nel tempo ho allargato le mie competenze anche allo sviluppo back-end, diventando a tutti gli effetti un full-stack developer.  Amo gli aspetti del mio lavoro che hanno a che fare col risolvere problemi dando valore ai clienti finali, ma le mie passioni vanno al di là del lavoro:  quando non scrivo codice, mi piace praticare apnea nel lago di Garda, su cui vivo, e dedicarmi a mia moglie ed alle mie splendide figlie.
-    img: umbi
+    img: umberto-franchini
     tags:
       - BackEnd
       - FrontEnd
@@ -102,7 +102,7 @@ team:
     role: Frontend Developer
     description: >-
       Da oltre dieci anni lavoro come programmatore e negli ultimi anni ho deciso di concentrare i miei sforzi sullo sviluppo frontend. Svolgo attività di sviluppo, consulenza e formazione:  HTML, CSS, JS sono le tecnologie con cui mi scontro ogni giorno e che cerco di approfondire per poter essere sempre aggiornato sugli ultimi trend di sviluppo. Membro attivo della community WEBdeBS credo fermamente nell'importanza della condivisione delle conoscenze.
-    img: davide
+    img: davide-brognoli
     tags:
       - FrontEnd
     social:
@@ -117,7 +117,7 @@ team:
     role: Frontend Developer
     description: >-
       Dopo i miei studi in grafica pubblicitaria mi sono avvicinato all'ambito tecnico e lì ho trovato il mio lavoro e la mia passione. Ho iniziato sviluppando interfacce web nei primi anni 2000 per poi arrivare alle moderne applicazioni web di oggi, avendo la possibilità di vivere in prima persona l'evoluzione di internet. Prevalentemente mi occupo ancora di sviluppo frontend, ma la mia curiosità mi porta ad interessarmi anche ad altri linguaggi con la convinzione che sia un modo per migliorarmi costantemente. Quando posso mi piace stare all'aria aperta correndo o facendo passeggiate in montagna.
-    img: claudio
+    img: claudio-marchiori
     tags:
       - FrontEnd
     social:
@@ -128,7 +128,7 @@ team:
     role: Software Developer
     description: >-
       Dopo gli studi ho prolungato la mia permanenza in Università per circa un anno, durante il quale ho partecipato a un progetto di ricerca che mi ha permesso di approfondire tematiche legate al machine learning. Da più di due anni mi occupo di programmazione full-stack e presto particolare attenzione a Test Driven Development, Continuous Integration e architetture a microservizi.
-    img: ale-jr
+    img: alessandro-maffi
     tags:
       - BackEnd
   - id: mpezzotti
@@ -136,7 +136,7 @@ team:
     name: Mariachiara Pezzotti
     description: >-
       Sono Designer e mi occupo di progettare e disegnare tutto quello che c'è tra gli "umani" e la tecnologia. Credo che il buon design si costruisca, prima che dalla scelta del colore o del font perfetto, mettendosi nei panni degli utenti: conoscere il loro mondo, capire di cosa hanno bisogno e studiare soluzioni che possano, in concreto, migliorare la loro esperienza. Mi piace insegnare: è un modo bellissimo per tenersi aggiornati e mettersi alla prova. Lontano dal computer, la mia più grande passione è la musica: canto in coro gospel e da qualche anno (per la gioia dei vicini) tento di suonare l'ukulele.
-    img: mery
+    img: mariachiara-pezzotti
     tags:
       - Design
     social:
@@ -149,7 +149,7 @@ team:
     role: Software Developer
     description: >-
       Mi occupo principalmente dello sviluppo di applicazioni web in ASP.NET con qualche parantesi nel mondo mobile. Mi piace provare e sperimentare nuove tecnologie e linguaggi con particolare attenzione alle architetture e metodologie. DDD, TDD, Microservizi e molti altri sono gli argomenti che preferisco. Appena possibile partecipo ad eventi e meeting organizzati dalle community di sviluppatori e appassionati sul territorio italiano in quanto ritengo che in questo settore non ci si ferma mai e bisogna stare sempre al passo con i tempi con aggiornamenti costanti e scambio di conoscenze. Dopo una giornata davanti al monitor mi dedico all'insegnamento del kung fu diventato ormai parte integrante della mia vita. Il mio punto debole? Il buon cibo!
-    img: jacek
+    img: jacek-wronski
     tags:
       - BackEnd
     social:
@@ -160,7 +160,7 @@ team:
     role: Software Engineer
     description: >-
       Sviluppatore backend .net senior, appassionato di architetture software, attratto da tutte le possibili novità tecnologiche e costantemente alla ricerca di un pretesto per metterle in produzione. Da sempre stregato dal mondo API e dall’actor model, ho un pensiero fisso: perchè per tutte le ultime novità del mondo informatico c'è sempre una teoria, uno studio o un articolo di Martin Fowler che risale a qualche decina di anni prima?! Oltre agli aspetti tecnici mi interesso di altre tematiche quali product ownership, leadership e metodologie agili. Nel mio tempo libero svolgo con entusiasmo il ruolo di padre&marito-tifoso, cogliendo i frutti del mio impegno quotidiano quando le piccoline, spontaneamente, urlano nomi di calciatori della squadra della mia città. Nel restante (poco) tempo libero installo dispositivi spesso inutili per casa, leggo libri prevalentemente tecnici e sono un consumatore seriale di webinar e conferenze su Youtube. Credo molto nel concetto di community: non c'è niente di più bello che coinvolgere gli amici in conferenze e talk , condividere conoscenze e scambiarsi opinioni su quanto appreso.
-    img: gianni
+    img: gianni-bossini
     tags:
       - BackEnd
     social:
@@ -175,7 +175,7 @@ team:
     role: Software Developer
     description: >-
       Bolognese trapiantato a Napoli per amore, ho iniziato a sviluppare il software per la gestione delle commesse della falegnameria di famiglia, a metà degli anni '80, su un PS2 30 dell'IBM. Da qui la mia visione del mio lavoro come "artigiano del software". Dopo essermi laureato in informatica ed aver lavorato tanti anni sul backend, mi sono specializzato negli ultimi anni in frontend soprattutto con angular e react, grazie alla mia curiosità per le nuove tecnologie e alla mia passione per lo studio di cose nuove. Sono un appassionato di corsa, camminata e kitesurf a cui mi dedico nel mio tempo libero.
-    img: roberto
+    img: roberto-zaniboni
     tags:
       - BackEnd
       - FrontEnd
@@ -189,7 +189,7 @@ team:
     role: Software Developer
     description: >-
       È vero che di solito scrivo codice C# ma poi mi piace anche esercitare la mia vena creativa nel progettare e realizzare interfacce web usabili. Molto di quello che conosco lo devo alle persone che mettono a disposizione il proprio tempo per la community e, seguendo il loro esempio, provo anch'io a dare il mio contributo scrivendo articoli e registrando video. Essendo una persona curiosa+pragmatica, vado spesso a ricercare il perché delle cose per riuscire a distinguere cosa sia veramente essenziale. Nel tempo libero mi dedico al bricolage, ad ascoltare musica e, se magari non piove, a fare una passeggiata sulle colline marchigiane tappezzate di vigneti, con i Monti Azzurri sullo sfondo.
-    img: moreno
+    img: moreno-gentili
     tags:
       - BackEnd
       - FrontEnd
@@ -203,7 +203,7 @@ team:
     role: BackEnd Developer
     description: >-
       Mi sono appassionato all'informatica quando, da piccolo, mio papà mi ha regalato il mio primo computer. Da quel momento ho capito che avrei voluto focalizzare i miei studi in quell'ambito. Dopo aver imparato a programmare con i linguaggi C e Java, ho rivolto la mia attenzione sul mondo web, soprattutto backend. Dopo una breve parentesi nel mondo del networking, sono tornato sullo sviluppo software, rivolgendo le mie attenzioni alla continua formazione in questo settore. Nel tempo libero mi piace lo sport: gioco in una squadra di pallavolo dalle scuole medie, faccio palestra, e sono un tifoso di calcio. Amo anche leggere romanzi e guardare film.
-    img: francesco
+    img: francesco-macchetti
     tags:
       - BackEnd
     social:
@@ -214,7 +214,7 @@ team:
     role: Fullstack Developer
     description: >-
       Sono un software developer intraprendente ed entusiasta, attualmente impegnato nello sviluppo di applicazioni web sia lato client che server. Sono stato sviluppatore iOS presso la Apple Developer Academy di Napoli, dove ho preso parte alla realizzazione di diversi progetti, sia personali che in team, come programmatore ed anche designer. Ho familiarità con principi e strumenti di grafica e prototyping ed ho lavorato alla creazione di icone, animazioni ed assets di vario genere. Ho iniziato a scrivere codice durante gli anni di scuola, quando spinto dalla mia passione per il game development, mi sono dedicato insieme ad alcuni amici allo sviluppo di giochi mobile attraverso l'engine Unity.
-    img: danieleg
+    img: daniele-gargiulo
     tags:
       - BackEnd
       - FrontEnd
@@ -230,7 +230,7 @@ team:
     role: Software Developer
     description: >-
       Videogiocatore incallito, appassionato di fumetti e musicista wanna-be. Credo fermamente che leggibilità e chiarezza del codice siano importanti almeno quanto ottimizzazione ed efficienza. Prediligo lo sviluppo back-end ma se devo sporcarmi le mani non mi tiro indietro e sono sempre pronto ad imparare ed affrontare nuove sfide. Ho un passato da sviluppatore Unity e continuo a coltivare questo interesse nel mio tempo libero, sviluppando videogiochi che (almeno per ora) tengo gelosamente sepolti nelle mie repo. Chissà, magari un giorno riuscirò a pubblicarne qualcuno con CodicePlastico!
-    img: danielef
+    img: daniele-ferrari
     tags:
       - BackEnd
       - FrontEnd
@@ -242,7 +242,7 @@ team:
     role: Software Developer
     description: >-
       Technology enthusiast, tinkerer ma soprattutto programmatore, condivido casa con una moglie, due figlie e 4 gatti. Muovo i primi passi nel mondo dell'informatica imparando a programmare in basic dopo aver avuto in regalo il mio primo PC. Da quel momento ho trovato la mia strada: fare il programmatore. Nella mia carriera lavorativa ho avuto a che fare con diversi linguaggi di programmazione in ambiti diversi, per diversi anni ho programmato in C++ passando per python e atterrando poi al.NET/C#, che rimane il mio linguaggio preferito. Nel tempo libero mi piace giocare di ruolo, ai videogiochi, giochi di carte e boardgame, sono anche un lettore di libri Fantasy fumetti, insommma un NERD a tutto tondo.
-    img: ale3
+    img: alessandro-battini
     tags:
       - BackEnd
     social:
@@ -253,7 +253,7 @@ team:
     role: Software Developer
     description: >-
       Fin da piccola sono stata molto appassionata di informatica e videogiochi, terminato il liceo linguistico ho intrapreso un percorso lavorativo che mi ha spinta a diventare Store Manager nell'ambito retail, esperienza lontana dalle mie vere passioni ma che mi ha permesso di crescere professionalmente e comprendere l'importanza del confronto e del lavoro di squadra. Nel tempo per curiosità ho deciso di studiare programmazione da autodidatta e di affidarmi alla guida di una community, ho poi iniziato a programmare principalmente in Python e C#, scoprendo un vero e proprio amore per lo sviluppo back-end. Adoro lavorare in questo ambito perché non si smette mai di imparare, mi piace sperimentare nuove tecnologie e superarmi ogni giorno. Nel mio tempo libero mi immergo nella creazione di progetti personali, pratico yoga o guardo serie tv.
-    img: ericadegiovanni
+    img: erica-de-giovanni
     tags:
       - BackEnd
     social:
@@ -302,7 +302,7 @@ team:
     role: Software Developer
     description: >-
       Fin da bambino ho sempre amato la tecnologia, probabilmente anche grazie alla mia passione per i videogiochi. Appena ne ho avuto l'opportunità ho deciso che avrei dedicato i miei  studi all'imparare ad interfacciarmi con i computer e dopo aver imparato le basi di C e Java a scuola, mi sono dedicato autonomamente al mondo web, e me ne sono innamorato. Al di fuori della programmazione, sono un appassionato di cinema e di fumetti.
-    img: lucatorriani
+    img: luca-torriani
     tags:
       - BackEnd
       - FrontEnd
@@ -314,7 +314,7 @@ team:
     role: Designer
     description: >-
       Ho scoperto il mondo del Design un po’ per caso, tra progetti personali e idee di startup. Ho un background manageriale, legato a innovazione e imprenditorialità, ma le esperienze che ho avuto nella progettazione di piattaforme e i numerosi errori mi hanno portata ad esplorare il concetto di User Experience, che ho deciso di approfondire e mettere al centro del mio lavoro. Penso che la multidisciplinarietà sia un punto di forza: può contribuire a rendere unica una persona. Amo esplorare e vivere nuove avventure, anche molto diverse tra di loro. Mi piace iniziare, ma anche portare a termine. Mi piace pensare che ogni cosa sia connessa e cerco sempre di unire i puntini, per comprendere ciò che ancora non conosco. Mi piace il silenzio, ma anche farmi trascinare dalle melodie che mi trasmettono qualcosa. Amo svegliarmi e andare a correre la mattina presto (quando riesco) e viaggiare, soprattutto in posti isolati e immersi nella natura.
-    img: isabellabonora
+    img: isabella-bonora
     tags:
       - Design
     social:
@@ -324,8 +324,8 @@ team:
     name: Federico Cinelli
     role: Developer
     description: >-
-      Fin da piccolo mi incuriosiva tutto ciò che era tecnologico e che aveva dei bottoni, dalle prime console ai computer. Il primo approccio con questo mondo è stato con un Commodore 64 e successivamente con un Commodore 128. Ho sempre avuto la curiosità di capire come funzionavano e vedere come erano fatti all'interno. Terminati i cinque anni all'istituto Tecnico, ho voluto seguire l'altra mia grande passione, le lingue straniere; mi sono iscritto a lingue e letterature straniere ma dopo un anno, per varie vicissitudini , ho cominciato una nuova avventura lavorativa in un ufficio commerciale. Un lavoro che mi ha fatto capire che mi piace lavorare in un gruppo e sviluppare idee. Ma dopo un lungo periodo ho deciso di tuffarmi nel mondo che ho sempre amato: la programmazione, soprattutto lato frontend. È un lavoro che mi soddisfa e che mi permette di imparare cose nuove ogni giorno. Nel tempo libero faccio il papà e mi diletto nel costruire piccole cose utilizzando dei vecchi componenti di pc.    
-    img: federicocinelli
+      Fin da piccolo mi incuriosiva tutto ciò che era tecnologico e che aveva dei bottoni, dalle prime console ai computer. Il primo approccio con questo mondo è stato con un Commodore 64 e successivamente con un Commodore 128. Ho sempre avuto la curiosità di capire come funzionavano e vedere come erano fatti all'interno. Terminati i cinque anni all'istituto Tecnico, ho voluto seguire l'altra mia grande passione, le lingue straniere; mi sono iscritto a lingue e letterature straniere ma dopo un anno, per varie vicissitudini , ho cominciato una nuova avventura lavorativa in un ufficio commerciale. Un lavoro che mi ha fatto capire che mi piace lavorare in un gruppo e sviluppare idee. Ma dopo un lungo periodo ho deciso di tuffarmi nel mondo che ho sempre amato: la programmazione, soprattutto lato frontend. È un lavoro che mi soddisfa e che mi permette di imparare cose nuove ogni giorno. Nel tempo libero faccio il papà e mi diletto nel costruire piccole cose utilizzando dei vecchi componenti di pc.
+    img: federico-cinelli
     tags:
       - FrontEnd
     social:
@@ -336,7 +336,7 @@ team:
     role: Developer
     description: >-
       Sono un back-end developer con una grande passione per l'informatica, il mare e l'elettronica. Ho iniziato il mio percorso lavorativo come sviluppatore web presso una piccola web agency, dove ho avuto l'opportunità di affinare le mie competenze nel creare soluzioni per piccoli progetti. Successivamente, ho deciso di intraprendere una nuova sfida e ho lavorato per diversi anni presso una grande azienda multinazionale nel campo MES IT, specializzandomi nella tecnologia .NET. Durante questo periodo, ho avuto l'opportunità di lavorare su progetti più complessi. Attualmente, ho il privilegio di essere un back-end developer presso CodicePlastico, qui metto a frutto la mia esperienza nella tecnologia .NET per sviluppare soluzioni software che soddisfano le esigenze dei nostri clienti. Oltre alla mia carriera nell'informatica, sono un appassionato di mare, in particolare mi piace andare a vela e trascorrere il tempo libero a pescare. Inoltre, sono affascinato dall'elettronica pratica e teorica, esplorando le nuove tecnologie che si sviluppano in questo campo in continua evoluzione.
-    img: massimobernardi
+    img: massimo-bernardi
     tags:
       - BackEnd
     social:
@@ -350,8 +350,8 @@ team:
     name: Pietro Martinelli
     role: Developer
     description: >-
-      Lavoro come ingegnere del software da circa $(expr $(date +%Y) - 2003) anni. Sono cresciuto professionalmente nel mondo Java e JEE ma, da parecchi anni, lavoro principalmente su piattaforma .Net. Ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo, forte della convinzione che le competenze architetturali e metodologiche vadano al di là del contesto tecnologico e che la vera lingua comune consista nella passione per il "fare le cose bene" e per la condivisione continua di informazioni ed esperienze. Da neo-laureato ho iniziato un rapporto di collaborazione con l'Università di Brescia in veste di esercitatore di svariati corsi di taglio informatico; tale rapporto, che dura ancor'oggi, mi conferma continuamente che insegnare è il modo migliore e più sorprendente di imparare: ho quindi aggiunto con entusiasmo alla mia quotidianità lavorativa attività di formazione e consulenza, sia su temi squisitamente tecnici (Docker e Kubernetes, MongoDb, Java, C#, Git, ...) sia su argomenti più astratti (Principi di design, Best practice di testing, ...). Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono agli immancabili fumetti), ma la grande passione della mia vita sono "le mie donne": mia moglie Cristina e le nostre splendide bimbe.   
-    img: pietro
+      Lavoro come ingegnere del software da circa $(expr $(date +%Y) - 2003) anni. Sono cresciuto professionalmente nel mondo Java e JEE ma, da parecchi anni, lavoro principalmente su piattaforma .Net. Ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo, forte della convinzione che le competenze architetturali e metodologiche vadano al di là del contesto tecnologico e che la vera lingua comune consista nella passione per il "fare le cose bene" e per la condivisione continua di informazioni ed esperienze. Da neo-laureato ho iniziato un rapporto di collaborazione con l'Università di Brescia in veste di esercitatore di svariati corsi di taglio informatico; tale rapporto, che dura ancor'oggi, mi conferma continuamente che insegnare è il modo migliore e più sorprendente di imparare: ho quindi aggiunto con entusiasmo alla mia quotidianità lavorativa attività di formazione e consulenza, sia su temi squisitamente tecnici (Docker e Kubernetes, MongoDb, Java, C#, Git, ...) sia su argomenti più astratti (Principi di design, Best practice di testing, ...). Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono agli immancabili fumetti), ma la grande passione della mia vita sono "le mie donne": mia moglie Cristina e le nostre splendide bimbe.
+    img: pietro-martinelli
     tags:
       - BackEnd
     social:
@@ -361,7 +361,7 @@ team:
     name: Nicola Lilla
     role: Developer
     description: >-
-      La prima volta che vidi un videogame per me fu come vedere una magia. Decisi quindi che l'informatica sarebbe stata la mia strada. La possibilita' di affrontare ogni giorno nuove sfide e di imparare sempre qualcosa di nuovo rendono questo lavoro davvero magico. Amo sviluppare soluzioni graficamente intuitive e funzionali, supportate da una logica pulita ed efficace. Quando non scrivo codice mi piace videogiocare(GDR e strategici sono la mia passione) e armeggiare con ogni piattaforma hardware che ho sotto mano.  
+      La prima volta che vidi un videogame per me fu come vedere una magia. Decisi quindi che l'informatica sarebbe stata la mia strada. La possibilita' di affrontare ogni giorno nuove sfide e di imparare sempre qualcosa di nuovo rendono questo lavoro davvero magico. Amo sviluppare soluzioni graficamente intuitive e funzionali, supportate da una logica pulita ed efficace. Quando non scrivo codice mi piace videogiocare(GDR e strategici sono la mia passione) e armeggiare con ogni piattaforma hardware che ho sotto mano.
     img: nicola-lilla
     tags:
       - BackEnd
@@ -373,7 +373,7 @@ team:
     name: Gianluca Roscigno
     role: Developer
     description: >-
-      Appassionato di computer fin dalla tenera età, l'interesse per la tecnologia è cresciuto insieme a me fino a diventare una vera e propria passione. Ciò che è iniziato come un gioco, si è trasformato in un percorso di studi ed è diventato infine il mio lavoro. Lo sviluppo software mi incuriosisce in tutte le sue sfaccettature, dalla scrittura del codice agli aspetti più infrastrutturali. Nel tempo libero talvolta preparo dolci... ma sono molto più bravo a mangiarli!  
+      Appassionato di computer fin dalla tenera età, l'interesse per la tecnologia è cresciuto insieme a me fino a diventare una vera e propria passione. Ciò che è iniziato come un gioco, si è trasformato in un percorso di studi ed è diventato infine il mio lavoro. Lo sviluppo software mi incuriosisce in tutte le sue sfaccettature, dalla scrittura del codice agli aspetti più infrastrutturali. Nel tempo libero talvolta preparo dolci... ma sono molto più bravo a mangiarli!
     img: gianluca-roscigno
     tags:
       - BackEnd

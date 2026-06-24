@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from 'react'
+import React, { useRef, useState, lazy, Suspense } from 'react'
 import classNames from 'classnames'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -16,6 +16,7 @@ const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
   const [layout, setLayout] = useState('Griglia')
+  const teamMembersRef = useRef<HTMLDivElement>(null)
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -52,7 +53,7 @@ const Team = () => {
     return activeFilter === 'Tutti' || (t.tags && t.tags.includes(activeFilter))
   })
 
-  const visibilityFilters = ['Relazioni', 'Griglia']
+  const visibilityFilters = ['Griglia', 'Relazioni']
 
   const gridClass = classNames('cp-team__members-grid', {
     'cp-team__members-grid--active': layout === 'Griglia'
@@ -69,8 +70,13 @@ const Team = () => {
     }, 0)
   }
 
+  const scrollToTeamMembers = () => {
+    teamMembersRef.current?.scrollIntoView({ block: 'start' })
+  }
+
   const changeLayout = (layout) => {
     setLayout(layout);
+    requestAnimationFrame(scrollToTeamMembers)
     setTimeout(() => {
       window.dispatchEvent(new Event('resize'));
     }, 0)
@@ -98,7 +104,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-        <div className="cp-team__members">
+        <div className="cp-team__members" ref={teamMembersRef}>
           <div className="cp-grid">
             <div className="cp-grid__container">
               <div className="cp-grid__content">

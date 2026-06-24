@@ -5,6 +5,10 @@
 @import './responsive';
 @import './mixins';
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import './grid';
 @import './header';
 @import './menu';

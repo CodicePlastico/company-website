@@ -1,36 +1,37 @@
 $prefix: cp-team;
 
-.#{$prefix}{
-
-  &__content{
+.#{$prefix} {
+  &__content {
     margin-top: vr(3);
   }
 
-  &__main-text{
+  &__main-text {
     margin-top: vr(4);
   }
 
-  &__filters{
+  &__filters {
     display: none;
     -webkit-user-drag: none;
     user-drag: none;
   }
 
-  &__members{
-    &-grid{
+  &__members {
+    scroll-margin-top: vr(4);
+
+    &-grid {
       display: block;
-      
-      &--active{
+
+      &--active {
         display: block;
       }
     }
 
-    &-relation{
-      display: none;  
+    &-relation {
+      display: none;
       grid-column-start: 1;
       grid-column-end: 4;
-      
-      &--active{
+
+      &--active {
         display: none;
       }
     }
@@ -43,15 +44,15 @@ $prefix: cp-team;
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-  .#{$prefix}{
-    &__rocket{
+  .#{$prefix} {
+    &__rocket {
       background-image: url('/rocket.jpg');
       background-position: bottom right;
       background-repeat: no-repeat;
       width: 100%;
     }
 
-    &__spaceman{
+    &__spaceman {
       background-image: url('/spaceman.jpg');
       background-position: center right;
       background-repeat: no-repeat;
@@ -59,45 +60,45 @@ $prefix: cp-team;
       width: 100%;
     }
 
-    &__intro{
+    &__intro {
       max-width: 600px;
     }
 
-    &__members{
+    &__members {
       padding: vr(2) 0 0;
       background-color: $main-color;
       margin-top: vr(2);
 
-      &-grid, 
-      &-relation{
+      &-grid,
+      &-relation {
         display: none;
 
-        &--active{
+        &--active {
           display: block;
         }
       }
 
-      &-relation{
+      &-relation {
         text-align: center;
       }
     }
 
-    &__grid{
+    &__grid {
       display: flex;
       flex-wrap: wrap;
       margin-left: -10px;
       margin-right: -10px;
 
-      &-item{
+      &-item {
         margin: 0 10px;
       }
     }
 
-    &__list{
+    &__list {
       position: relative;
       display: inline-block;
 
-      .react-p5{
+      .react-p5 {
         display: inline-block;
       }
 
@@ -107,27 +108,27 @@ $prefix: cp-team;
       }
     }
 
-    &__filters{
+    &__filters {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin: 0 0 vr(3) 0;
-      
-      &-left{
+
+      &-left {
         margin-right: 20px;
       }
 
-      &-right{
+      &-right {
         text-align: right;
       }
 
-      &-title{
+      &-title {
         text-transform: uppercase;
         color: $main-light;
         margin-bottom: 20px;
       }
 
-      &-button{
+      &-button {
         background-color: transparent;
         border: 1px solid $main-light;
         height: 32px;
@@ -137,20 +138,20 @@ $prefix: cp-team;
         cursor: pointer;
         color: $main-light;
 
-        .#{$prefix}__filters-right &{
+        .#{$prefix}__filters-right & {
           margin-right: 0;
           margin-left: 0;
         }
 
-        &:last-child{
+        &:last-child {
           margin-right: 0;
         }
 
-        &:focus{
+        &:focus {
           outline: none;
         }
 
-        &--selected{
+        &--selected {
           color: $main-dark;
           background-color: $main-light;
           border-color: $main-light;
@@ -161,9 +162,9 @@ $prefix: cp-team;
 }
 
 @media only screen and (min-width: $desktop-med-width) {
-  .#{$prefix}{
-    &__filters{
-      &-button{
+  .#{$prefix} {
+    &__filters {
+      &-button {
         width: 90px;
       }
     }
@@ -171,8 +172,8 @@ $prefix: cp-team;
 }
 
 @media only screen and (min-width: $desktop-xxl-min-width) {
-  .#{$prefix}{
-    &__spaceman{
+  .#{$prefix} {
+    &__spaceman {
       background-image: url('/spaceman.jpg');
       background-position: left;
       background-repeat: no-repeat;

@@ -12,9 +12,9 @@ interface MemberProps {
 const Member = (props: MemberProps) => {
   const [right, setRight] = useState(false);
   const [width, setWidth] = useState<number | 'auto'>(0);
-  const [nodeImg, setNodeImg] = useState({node: null, boundingClientRect: null});
+  const nodeImgRef = useRef(null)
 
-  const { member, openId, toggleOpen } = props 
+  const { member, openId, toggleOpen } = props
   const open = openId === member.id
 
   const rightSide = (img) => {
@@ -23,12 +23,12 @@ const Member = (props: MemberProps) => {
     return center > halfWindowWidth
   }
 
-  const availableSpace = (img, right) => {
+  const availableSpace = (img, isRight) => {
     if (window.innerWidth > 768) {
       const space = 30
-      if (!right) {
+      if (!isRight) {
         return window.innerWidth - img.x - img.width - space
-      } 
+      }
       return img.x - space
     }
     return 'auto';
@@ -42,37 +42,42 @@ const Member = (props: MemberProps) => {
 
   const imgCallBack = useCallback(node => {
     if (node !== null) {
+      nodeImgRef.current = node
       setDescriptionStyle(node.getBoundingClientRect())
-      setNodeImg({node: node, boundingClientRect: node.getBoundingClientRect()})
     }
   }, []);
 
   const handleResize = () => {
-    if (nodeImg) {
-      setDescriptionStyle(nodeImg.node.getBoundingClientRect());
+    if (nodeImgRef.current) {
+      setDescriptionStyle(nodeImgRef.current.getBoundingClientRect())
     }
   }
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
-    return () => { window.removeEventListener('resize', handleResize)}
+    return () => { window.removeEventListener('resize', handleResize) }
   })
 
+  const plusClass = classNames('cp-member__plus', { 'cp-member__plus--hidden': open })
+  const contentClass = classNames('cp-member__content', { 'cp-member__content--open': open })
 
-  const plusClass = classNames('cp-member__plus', {'cp-member__plus--hidden': open})
-  
   const descriptionStyle = {
     width: width
   }
 
   const toggleDescription = () => {
-    toggleOpen(member.id);
+    toggleOpen(member.id)
   }
 
   return (
     <article className="cp-member" ref={imgCallBack}>
-      <div className="cp-member__content">
-        <img className="cp-member__img" src={member.img} alt={member.name} />
+      <div className={contentClass}>
+        <div className="cp-member__image">
+          <img className="cp-member__img cp-member__img--default" src={member.img} alt={member.name} />
+          {member.imgHover && (
+            <img className="cp-member__img cp-member__img--hover" src={member.imgHover} alt="" aria-hidden="true" />
+          )}
+        </div>
         <div className="cp-member__info">
           <h2 className="cp-member__title"><span>{member.name}</span></h2>
           <p>{member.nick && <>@{member.nick}</>} {member.nick && member.role && <>-</>} {member.role}</p>

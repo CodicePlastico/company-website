@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from 'react'
+import React, { useRef, useState, lazy, Suspense } from 'react'
 import classNames from 'classnames'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -6,15 +6,17 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import TeamGrid from '../components/team/teamGrid'
-
-import data from '../assets/team/team.yaml'
+import { FullMember } from '../components/team/model'
 
 const TeamRelations = lazy(() => import('../components/team/teamRelations'))
+
+const data = require('../assets/team/team.yaml')
 
 const Team = () => {
 
   const [activeFilter, setActiveFilter] = useState('Tutti')
   const [layout, setLayout] = useState('Griglia')
+  const teamMembersRef = useRef<HTMLDivElement>(null)
 
   const files = useStaticQuery(graphql`
     query TeamQuery {
@@ -27,10 +29,12 @@ const Team = () => {
     }`
   )
 
-  const teamMembers = data.team.map(m => {
+  const teamMembers = data.team.map((m): FullMember => {
     const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
+    const nodeImgHover = files.allFile.nodes.find(f => f.name === `${m.img}-hover`)
     const img = nodeImg ? nodeImg.publicURL : ''
-    return Object.assign({}, m, {img})
+    const imgHover = nodeImgHover ? nodeImgHover.publicURL : undefined
+    return Object.assign({}, m, { img, imgHover })
   })
 
   const teamFilters = teamMembers.reduce((acc, t) => {
@@ -49,7 +53,7 @@ const Team = () => {
     return activeFilter === 'Tutti' || (t.tags && t.tags.includes(activeFilter))
   })
 
-  const visibilityFilters = ['Relazioni', 'Griglia']
+  const visibilityFilters = ['Griglia', 'Relazioni']
 
   const gridClass = classNames('cp-team__members-grid', {
     'cp-team__members-grid--active': layout === 'Griglia'
@@ -66,8 +70,13 @@ const Team = () => {
     }, 0)
   }
 
+  const scrollToTeamMembers = () => {
+    teamMembersRef.current?.scrollIntoView({ block: 'start' })
+  }
+
   const changeLayout = (layout) => {
     setLayout(layout);
+    requestAnimationFrame(scrollToTeamMembers)
     setTimeout(() => {
       window.dispatchEvent(new Event('resize'));
     }, 0)
@@ -95,7 +104,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-        <div className="cp-team__members">
+        <div className="cp-team__members" ref={teamMembersRef}>
           <div className="cp-grid">
             <div className="cp-grid__container">
               <div className="cp-grid__content">

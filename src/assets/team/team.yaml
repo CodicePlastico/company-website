@@ -159,7 +159,7 @@ team:
     name: Gianni Bossini
     role: Software Engineer
     description: >-
-      Sviluppatore backend .net senior, appassionato di architetture software, attratto da tutte le possibili novità tecnologiche e costantemente alla ricerca di un pretesto per metterle in produzione. Da sempre stregato dal mondo API e dall’actor model, ho un pensiero fisso: perchè per tutte le ultime novità del mondo informatico c'è sempre una teoria, uno studio o un articolo di Martin Fowler che risale a qualche decina di anni prima?! Oltre agli aspetti tecnici mi interesso di altre tematiche quali product ownership, leadership e metodologie agili. Nel mio tempo libero svolgo con entusiasmo il ruolo di padre&marito-tifoso, cogliendo i frutti del mio impegno quotidiano quando le piccoline, spontaneamente, urlano nomi di calciatori della squadra della mia città. Nel restante (poco) tempo libero installo dispositivi spesso inutili per casa, leggo libri prevalentemente tecnici e sono un consumatore seriale di webinar e conferenze su Youtube. Credo molto nel concetto di community: non c'è niente di più bello che coinvolgere gli amici in conferenze e talk , condividere conoscenze e scambiarsi opinioni su quanto appreso.
+      Team Leader, Agile PM e senior software engineer, da sempre appassionato del mondo .NET e delle architetture software. Sono attratto da ogni nuova tecnologia e costantemente alla ricerca di un buon pretesto per sperimentarla in produzione. Ho una convinzione ricorrente: per ogni “novità” del nostro settore esiste quasi sempre una teoria, uno studio o un articolo di Martin Fowler scritto decenni prima. Negli anni ho affiancato alla competenza tecnica un forte interesse per product ownership, leadership, metodologie agili e gestione dei team. Dedico particolare attenzione alla comunicazione, al carico cognitivo e all’organizzazione del lavoro, temi che considero fondamentali per costruire contesti efficaci e sostenibili. Nel tempo libero interpreto con entusiasmo il ruolo di padre e marito‑viaggiatore: la mia più grande soddisfazione è quando le mie bambine, spontaneamente, chiedono quale sarà la prossima tappa del nostro giro del mondo. Nel poco tempo che rimane leggo libri di psicologia e organizzazione e sono un consumatore seriale di webinar e conferenze su YouTube. Credo profondamente nel valore delle community: non c’è nulla di più bello che coinvolgere amici e colleghi in conferenze e talk, condividere conoscenze e confrontarsi su ciò che si è imparato. Per questo partecipo attivamente come founder e organizzatore alla community PirlOverflow e alla conferenza internazionale SoCraTes IT
     img: gianni-bossini
     tags:
       - BackEnd
@@ -252,7 +252,7 @@ team:
     name: Erica De Giovanni
     role: Software Developer
     description: >-
-      Fin da piccola sono stata molto appassionata di informatica e videogiochi, terminato il liceo linguistico ho intrapreso un percorso lavorativo che mi ha spinta a diventare Store Manager nell'ambito retail, esperienza lontana dalle mie vere passioni ma che mi ha permesso di crescere professionalmente e comprendere l'importanza del confronto e del lavoro di squadra. Nel tempo per curiosità ho deciso di studiare programmazione da autodidatta e di affidarmi alla guida di una community, ho poi iniziato a programmare principalmente in Python e C#, scoprendo un vero e proprio amore per lo sviluppo back-end. Adoro lavorare in questo ambito perché non si smette mai di imparare, mi piace sperimentare nuove tecnologie e superarmi ogni giorno. Nel mio tempo libero mi immergo nella creazione di progetti personali, pratico yoga o guardo serie tv.
+      Fin da piccola sono stata molto appassionata di informatica e videogiochi, terminato il liceo linguistico ho intrapreso un percorso lavorativo che mi ha spinta a diventare Store Manager nell'ambito retail, esperienza lontana dalle mie vere passioni ma che mi ha permesso di crescere professionalmente e comprendere l'importanza del confronto e del lavoro di squadra. Nel tempo per curiosità ho deciso di studiare programmazione da autodidatta e di affidarmi alla guida di una community, ho poi iniziato a programmare principalmente in Python e C#, scoprendo un vero e proprio amore per lo sviluppo back-end. Adoro lavorare in questo ambito perché non si smette mai di imparare, mi piace sperimentare nuove tecnologie e superarmi ogni giorno. Nel mio tempo libero mi immergo nella creazione di progetti personali, pratico pilates o guardo serie tv ed anime.
     img: erica-de-giovanni
     tags:
       - BackEnd
@@ -272,20 +272,7 @@ team:
       - label: Linkedin
         link: https://www.linkedin.com/in/albertoturelli
       - label: GitHub
-        link: https://github.com/bibe74
-  - id: lbasoc
-    name: Lorenzo Basoc
-    role: Developer
-    description: >-
-      Lavoro principalmente con .NET e C#, sviluppando soluzioni backend affidabili e manutenibili. Mi è capitato di lavorare anche con Blazor e, quando serve, non ho problemi a interfacciarmi con il frontend o ad approfondire nuove tecnologie legate all’interfaccia utente. Preferisco soluzioni semplici e ben strutturate, con attenzione alla leggibilità, alla separazione delle responsabilità e alla testabilità. Mi interessa la qualità del codice nel lungo periodo, con particolare cura per la chiarezza, la coerenza interna e la facilità di manutenzione. Nel tempo libero mi interesso di agentic AI e tecnologie emergenti, e cerco equilibrio camminando in montagna o affrontando cammini a tappe.
-    img: lorenzo-basoc
-    tags:
-      - BackEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/lorenzo-basoc
-      - label: GitHub
-        link: https://github.com/lorenzobasoc
+        link: https://github.com/bibe74cp
   - id: sfalbo
     name: Salvatore Falbo
     role: Developer
@@ -394,3 +381,27 @@ team:
         link: https://www.linkedin.com/in/emanuele-liardo/
       - label: Github
         link: https://github.com/odrail
+  - id: mirkocasoni
+    name: Mirko Casoni
+    role: Software Developer
+    description: >-
+      Sono cresciuto respirando informatica tra le mura di casa grazie a mio padre, che mi ha trasmesso questa passione fin da piccolo. Durante le scuole superiori ho scoperto il mondo del web development e me ne sono innamorato, attratto dalle sfide continue che questo settore pone e che mi spingono a imparare costantemente nuove tecnologie, arricchendo sempre più le mie competenze. A differenza di mio padre, impegnato nel mondo sistemistico, ho scelto quindi di seguire un'altra strada: la programmazione. Quando non sono davanti a un code editor, mi dedico alle mie altre passioni come il gaming e la cultura nerd, tra anime e manga.
+    img: mirko-casoni
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/mirko-casoni-b7b888168/
+  - id: albertomori
+    name: Alberto Mori
+    role: Software Developer
+    description: >-
+      Appassionato di Web e sviluppo software in generale. Nel 2013 mi sono avvicinato per la prima volta al mondo .NET e da lì è stato amore a prima vista. Adoro il mondo community e mi piace "sporcarmi le mani" per imparare sempre qualcosa di nuovo. Per questo condivido le mie esperienze creando contenuti online: sono host dello show "Spike time" di UGIdotNET e ogni tanto pubblico video sul mio canale YouTube. Organizzo inoltre meetup mensili per la community bresciana Pirloverflow. Quando non scrivo codice divido il mio tempo tra la mia famiglia e la passione per il karate, disciplina che insegno ormai dal lontano 2008.
+    img: alberto-mori
+    tags:
+      - BackEnd
+    social:
+      - label: Linkedin
+        link: https://www.linkedin.com/in/morialberto
+      - label: Github
+        link: https://github.com/albx

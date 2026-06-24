@@ -273,19 +273,6 @@ team:
         link: https://www.linkedin.com/in/albertoturelli
       - label: GitHub
         link: https://github.com/bibe74cp
-  - id: lbasoc
-    name: Lorenzo Basoc
-    role: Developer
-    description: >-
-      Lavoro principalmente con .NET e C#, sviluppando soluzioni backend affidabili e manutenibili. Mi è capitato di lavorare anche con Blazor e, quando serve, non ho problemi a interfacciarmi con il frontend o ad approfondire nuove tecnologie legate all’interfaccia utente. Preferisco soluzioni semplici e ben strutturate, con attenzione alla leggibilità, alla separazione delle responsabilità e alla testabilità. Mi interessa la qualità del codice nel lungo periodo, con particolare cura per la chiarezza, la coerenza interna e la facilità di manutenzione. Nel tempo libero mi interesso di agentic AI e tecnologie emergenti, e cerco equilibrio camminando in montagna o affrontando cammini a tappe.
-    img: lorenzo-basoc
-    tags:
-      - BackEnd
-    social:
-      - label: Linkedin
-        link: https://www.linkedin.com/in/lorenzo-basoc
-      - label: GitHub
-        link: https://github.com/lorenzobasoc
   - id: sfalbo
     name: Salvatore Falbo
     role: Developer

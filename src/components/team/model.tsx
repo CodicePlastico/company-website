@@ -16,6 +16,7 @@ export interface MemberModel {
 
 export interface FullMember extends MemberModel {
   img: string
+  imgHover?: string
 }
 
 export interface Coordinates {

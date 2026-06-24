@@ -6,10 +6,11 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import TeamGrid from '../components/team/teamGrid'
-
-import data from '../assets/team/team.yaml'
+import { FullMember } from '../components/team/model'
 
 const TeamRelations = lazy(() => import('../components/team/teamRelations'))
+
+const data = require('../assets/team/team.yaml')
 
 const Team = () => {
 
@@ -27,10 +28,12 @@ const Team = () => {
     }`
   )
 
-  const teamMembers = data.team.map(m => {
+  const teamMembers = data.team.map((m): FullMember => {
     const nodeImg = files.allFile.nodes.find(f => f.name === m.img)
+    const nodeImgHover = files.allFile.nodes.find(f => f.name === `${m.img}-hover`)
     const img = nodeImg ? nodeImg.publicURL : ''
-    return Object.assign({}, m, {img})
+    const imgHover = nodeImgHover ? nodeImgHover.publicURL : undefined
+    return Object.assign({}, m, { img, imgHover })
   })
 
   const teamFilters = teamMembers.reduce((acc, t) => {

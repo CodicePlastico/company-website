@@ -57,7 +57,7 @@
     "file-type": "^21.3.1",
     "js-cookie": "^3.0.7",
     "postcss": "^8.5.15",
-    "qs": "^6.15.2",
+    "qs": "^6.16.0",
     "serialize-javascript": "^7.0.5",
     "cookie": "^0.7.0",
     "path-to-regexp": "^0.1.13",
